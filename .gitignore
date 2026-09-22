@@ -1,0 +1,21 @@
+# Archivos auxiliares de LaTeX
+*.aux
+*.log
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.xdv
+*.synctex.gz
+
+# Archivos temporales
+*.out
+*.bcf
+*.run.xml
+*.nav
+*.snm
+*.vrb
+
+# NO ignorar el PDF de la tesis
+!Tesis.pdf

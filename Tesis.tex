@@ -1,0 +1,282 @@
+% !TEX root = Tesis.tex
+\documentclass[12pt,letterpaper,oneside]{book}
+\usepackage{titlesec}
+\usepackage{setspace}
+
+%================================================
+% PAQUETES
+%================================================
+
+% Márgenes
+\usepackage[
+    top=2.5cm,
+    bottom=2.5cm,
+    left=3cm,
+    right=2.5cm
+]{geometry}
+
+% Codificación y español
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[
+    spanish,
+    es-nodecimaldot,
+    es-tabla
+]{babel}
+
+% Imágenes
+\usepackage{graphicx}
+
+% Espaciado
+\usepackage{setspace}
+
+%================================================
+% RUTAS DE IMÁGENES
+%================================================
+
+\graphicspath{
+    {./portada/}
+    {./figuras/}
+}
+
+%================================================
+% DOCUMENTO
+%================================================
+
+\begin{document}
+\onehalfspacing
+\setlength{\parskip}{0.5em}
+
+%================================================
+% PORTADA
+%================================================
+
+\begin{titlepage}
+
+\thispagestyle{empty}
+
+%------------------------------------------------
+% PARTE SUPERIOR
+%------------------------------------------------
+
+\noindent
+\begin{minipage}[c][0.18\textheight][c]{0.25\textwidth}
+
+    \begin{center}
+
+        \includegraphics[
+            width=3.5cm,
+            height=3.5cm,
+            keepaspectratio
+        ]{logos/UNAM_logo.pdf}
+
+    \end{center}
+
+\end{minipage}%
+\hfill
+\begin{minipage}[c][0.18\textheight][c]{0.70\textwidth}
+
+    \begin{center}
+
+        {\large
+        \textsc{Universidad Nacional Autónoma de México}
+        }
+
+        \vspace{0.35cm}
+
+        \hrule height 2.5pt
+
+        \vspace{0.15cm}
+
+        \hrule height 1pt
+
+        \vspace{0.65cm}
+
+        {\large
+        \textsc{Instituto de Geociencias}
+        }
+
+    \end{center}
+
+\end{minipage}
+
+%------------------------------------------------
+% PARTE INFERIOR
+%------------------------------------------------
+
+\vspace{0.3cm}
+
+\noindent
+\begin{minipage}[c][0.75\textheight][t]{0.25\textwidth}
+
+    \begin{center}
+
+        \vspace{0.5cm}
+
+        % Líneas verticales
+        \vrule width 1pt height 12cm
+        \hspace{2mm}
+        \vrule width 2.5pt height 12cm
+        \hspace{2mm}
+        \vrule width 1pt height 12cm
+
+        \vspace{0.7cm}
+
+        % Logo del Instituto
+        \includegraphics[
+            width=4.5cm,
+            keepaspectratio
+        ]{logos/LogoGeociencias.png}
+
+    \end{center}
+
+\end{minipage}%
+\hfill
+\begin{minipage}[c][0.75\textheight][t]{0.70\textwidth}
+
+    \begin{center}
+
+        \vspace{0.7cm}
+
+        %------------------------------------------------
+        % TÍTULO
+        %------------------------------------------------
+
+        {\large
+        \scshape
+        Huella isotópica del vapor atmosférico en
+        Salamanca, Guanajuato: develando el impacto
+        de la contaminación antropogénica
+        \par
+        }
+
+        \vspace{1.8cm}
+
+        %------------------------------------------------
+        % TESIS
+        %------------------------------------------------
+
+        {\textsc{\LARGE T E S I S}}
+
+        \vspace{0.5cm}
+
+        {\large
+        que para obtener el grado de
+        }
+
+        \vspace{0.35cm}
+
+        {\large
+        Maestra en Ciencias de la Tierra
+        }
+
+        \vspace{0.5cm}
+
+        {\large
+        presenta:
+        }
+
+        \vspace{0.35cm}
+
+        {\large
+        \textbf{Brenda Avelina López Muñiz}
+        }
+
+        \vspace{1.5cm}
+
+        %------------------------------------------------
+        % DIRECTOR
+        %------------------------------------------------
+
+        {\large
+        Director:
+        }
+
+        \vspace{0.25cm}
+
+        {\large
+        Dr. Gilles Pierre Rene Levesse
+        }
+
+        \vspace{0.7cm}
+
+        %------------------------------------------------
+        % COMITÉ
+        %------------------------------------------------
+
+        {\large
+        Comité:
+        }
+
+        \vspace{0.2cm}
+
+        \normalsize
+        Dr. Eliseo Hernández-Pérez\\
+        Dr. Alejandro Rodríguez-Trejo\\
+        Dra. Dara Salcedo-González
+
+        \vfill
+
+        %------------------------------------------------
+        % LUGAR Y FECHA
+        %------------------------------------------------
+
+        {\large
+        Santiago de Querétaro, México
+        }
+
+        \vspace{0.2cm}
+
+        {\large
+        2026
+        }
+
+    \end{center}
+
+\end{minipage}
+
+\end{titlepage}
+
+
+%================================================
+% RESTO DEL DOCUMENTO
+%================================================
+
+\frontmatter
+
+\chapter*{Dedicatoria}
+
+\chapter*{Agradecimientos}
+
+\chapter*{Resumen}
+
+\chapter*{Abstract}
+
+\tableofcontents
+
+\listoffigures
+
+\listoftables
+
+
+\mainmatter
+
+\input{Capítulos/01_introduccion}
+
+\input{Capítulos/02_marcoteo.tex}
+
+\chapter{Área de estudio}
+
+\chapter{Metodología}
+
+\chapter{Resultados}
+
+\chapter{Discusión}
+
+\chapter{Conclusiones}
+
+
+\backmatter
+
+\end{document}
+```
