@@ -1,0 +1,217 @@
+% !TEX root = ../Tesis.tex
+\chapter{Metodología}
+\section{Recolección de muestras}
+El centro de muestreo se instaló en el Instituto Salamanca
+($20.567158$, $-101.186115$) en el municipio de Salamanca, Guanajuato
+(Figura~\ref{fig:mapa_sitio}). Las campañas de recolección se
+desarrollaron del 20 de febrero al 5 de marzo de 2026 y del 25 al 29 de
+mayo de 2026 mediante un sistema de condensación. El sistema está
+compuesto por un refrigerador modificado marca Hisense, con una
+conexión de tubería de PVC en su interior. El sistema tomaba las
+muestras en un periodo entre las 22:00 y 2:00 h de forma automática.
+
+% AGREGAR MAPA DE SITIO
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{figuras/mapa_sitio.png}
+    \caption{Localización del sitio de muestreo en el Instituto
+    Salamanca, Guanajuato.}
+    \label{fig:mapa_sitio}
+\end{figure}
+
+\section{Análisis de $\delta^{2}$H y $\delta^{18}$O}
+\label{sec:analisis_isotopico}
+
+Para obtener un factor del fraccionamiento isotópico que se produce al
+condensar la muestra, se adapta el condensador a una cámara de
+ambientes controlados. Cada 24 horas se recolecta la muestra de vapor y
+una muestra líquida. La cabina mantenía las condiciones en $30$\,°C y
+$30\%$ de humedad relativa.
+
+\section{Validación de datos de las estaciones de monitoreo de aire}
+\label{sec:validacion_datos}
+
+Los datos de las estaciones de monitoreo de aire recibieron un
+tratamiento según el Protocolo de Manejo de Datos de Calidad del Aire
+propuesto por el Instituto Nacional de Ecología (Instituto Nacional de
+Ecología, s.f.). Se realiza una limpieza de los datos, asignando
+banderas según los criterios de la Tabla~\ref{tab:banderas_limpieza}.
+
+\begin{table}[H]
+\centering
+\footnotesize
+\caption{Criterios de asignación de banderas para la limpieza de datos.}
+\label{tab:banderas_limpieza}
+\begin{tabular}{lp{11cm}}
+\toprule
+\textbf{Bandera} & \textbf{Criterio} \\
+\midrule
+VA & Dato válido: dato que se considera correcto o verdadero pero que
+está sujeto a revisión en la etapa de verificación de datos. \\
+IC & Dato inválido por calibración: datos que provengan de las
+actividades de calibración de los equipos de medición. Asimismo, se
+incluirán aquellos datos generados como resultado de la ejecución del
+programa de pruebas de cero/span. \\
+IR & Dato inválido por rango de operación: valores fuera de los límites
+superior e inferior fijados en el equipo de medición
+(Tablas~\ref{tab:rangos_operacion} y~\ref{tab:limites_inferiores}). \\
+VZ & Dato válido igualado al límite de detección o a cero: datos con
+valores negativos que, excepto en el caso de las mediciones de
+temperatura, deberán ser igualados a cero o al límite de detección
+correspondiente para poderlos incluir en la base de datos revisada. \\
+IF & Dato inválido por falla del equipo: datos de los que exista
+evidencia en bitácora o en listas de verificación cuyos parámetros de
+operación (temperaturas, flujos, presiones, voltajes) se encuentran
+fuera de los valores normales de operación. \\
+ND & Dato no disponible: se aplica a cualquier dato ausente, ya sea por
+fallas en la transmisión-recepción o por cortes de energía. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\footnotesize
+\caption{Rangos de operación por contaminante.}
+\label{tab:rangos_operacion}
+\begin{tabular}{ll}
+\toprule
+\textbf{Contaminante} & \textbf{Rango de operación} \\
+\midrule
+O\textsubscript{3} & 0--500 ppb \\
+SO\textsubscript{2} & 0--500 ppb \\
+NO\textsubscript{2} & 0--500 ppb \\
+NO & 0--500 ppb \\
+NO\textsubscript{x} & 0--500 ppb \\
+CO & 0--50 ppm \\
+Hidrocarburos totales & 0--10 / 0--20 ppmc \\
+Metanos & 0--10 / 0--20 ppmc \\
+No metanos & 0--10 / 0--20 ppmc \\
+Partículas PM10 & 0--500 / 0--1000 \si{\micro\gram\per\cubic\meter} \\
+Partículas PM2.5 & 0--500 / 0--1000 \si{\micro\gram\per\cubic\meter} \\
+Humedad relativa & 0--100\% \\
+Presión barométrica & 500--760 mmHg \\
+Precipitación pluvial & 0--10 mm \\
+Radiación solar & 0--2000 \si{\watt\per\square\meter} \\
+Radiación UV-A & 0--300 mW/m\textsuperscript{2} \\
+                  & 0--2000 mW/m\textsuperscript{2} \\
+Radiación UV-B & 0--5 MED/hr \\
+                & 0--600 mW/m\textsuperscript{2} \\
+Velocidad del viento & 0--50 m/s \\
+Dirección del viento & 0--360° \\
+Temperatura ambiental & $-50$ a $500$\,°C \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\footnotesize
+\caption{Límites inferiores por contaminante.}
+\label{tab:limites_inferiores}
+\begin{tabular}{ll}
+\toprule
+\textbf{Contaminante} & \textbf{Mínimo inferior} \\
+\midrule
+O\textsubscript{3} & $-3$ ppb \\
+SO\textsubscript{2} & $-3$ ppb \\
+NO\textsubscript{2} & $-3$ ppb \\
+NO & $-3$ ppb \\
+NO\textsubscript{x} & $-6$ ppb \\
+CO & $-0.4$ ppm \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Para la verificación de datos, se asignan nuevas banderas de acuerdo con
+la Tabla~\ref{tab:banderas_verificacion}, según los siguientes
+criterios:
+
+\begin{table}[H]
+\centering
+\footnotesize
+\caption{Criterios de asignación de banderas para la verificación de
+datos.}
+\label{tab:banderas_verificacion}
+\begin{tabular}{lp{2.5cm}p{8.5cm}}
+\toprule
+\textbf{Bandera} & \textbf{Significado} & \textbf{Criterio} \\
+\midrule
+DS & Dato sospechoso &
+Cuando existen valores constantes por más de tres horas consecutivas
+de CO, NO\textsubscript{x}, NO\textsubscript{2}, NO,
+O\textsubscript{3}, SO\textsubscript{2}, PM10 o PM2.5. \\
+IO & Inválido por operador &
+Cuando la suma de NO y NO\textsubscript{2} dividida entre
+NO\textsubscript{x} se encuentra fuera del intervalo $(0.85, 1.15)$. \\
+   & &
+Cuando la relación de PM2.5 entre PM10 es mayor a $1.15$. \\
+   & &
+Para datos de radiación (total, UVA, UVB, UVC) cuando esta es diferente
+a cero durante la noche. \\
+   & &
+Para datos de velocidad de viento cuando esta no varía en más de
+$0.1$\,m/s en tres horas consecutivas o en más de $0.5$\,m/s en doce
+horas consecutivas. \\
+   & &
+Cuando los datos de dirección de viento no varían en más de $1^\circ$
+por más de tres horas consecutivas o en más de $10^\circ$ durante
+dieciocho horas consecutivas. \\
+   & &
+Cuando los datos de temperatura cambian en más de $5$\,°C respecto a la
+hora previa o no varían en más de $0.5$\,°C en doce horas consecutivas. \\
+   & &
+Para datos de presión barométrica cuando esta tiene cambios de más de
+$0.75$\,mmHg en tres horas consecutivas. \\
+VC & Dato válido calculado &
+Se usa en aquellos datos que son obtenidos por medio de interpolación o
+por el uso de series de tiempo. También es aplicable a aquellos que son
+corregidos de acuerdo con los resultados de las verificaciones de cero
+y \textit{span}. \\
+VE & Dato válido con evento extraordinario &
+Se aplica para datos cuya frecuencia y duración fueron registrados en
+la bitácora general de operación. También cuando existe evidencia
+documental de eventos que afectaron la medición, tales como incendios,
+tolvaneras o actividades de construcción. \\
+DV & Dato para verificar &
+Bandera temporal que incluye datos que deberán ser confirmados en alguna
+de las categorías anteriores. También se puede asignar esta bandera a
+datos que se presentan fuera de los límites establecidos con base en
+tendencias históricas de cada uno de los contaminantes medidos o
+parámetros meteorológicos. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Para evaluar los datos estadísticamente se utilizó un análisis de datos
+atípicos a través del cálculo de la anomalía estandarizada ($z$). Este
+parámetro se calcula restando la media muestral de los datos brutos $x$
+y dividiendo el resultado por la desviación estándar muestral
+correspondiente (Ecuación~\ref{eq:z_score}).
+
+\begin{equation}
+z = \frac{x - \bar{x}}{s_x}
+\label{eq:z_score}
+\end{equation}
+
+Se considera dato atípico cuando el valor de $z$ supera $\pm 2$ y
+$\pm 3$ desviaciones estándar. En el primer caso, se categorizan como
+sospechosos, mientras que en el segundo caso se etiquetan como dato
+extremo.
+
+Asimismo, se realizó una prueba de valores extremos mediante el rango
+intercuartílico (Ecuación~\ref{eq:iqr}).
+
+\begin{equation}
+\text{IQR} = Q_3 - Q_1
+\label{eq:iqr}
+\end{equation}
+
+Se consideran datos atípicos aquellos que permanecen fuera del rango
+definido en la Ecuación~\ref{eq:rango_atipicos}. En tal caso, se
+etiquetaron como valores extremos.
+
+\begin{equation}
+Q_1 - 1.5\,\text{IQR} > X < Q_3 + 1.5\,\text{IQR}
+\label{eq:rango_atipicos}
+\end{equation}

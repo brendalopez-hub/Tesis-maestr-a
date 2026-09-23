@@ -23,8 +23,16 @@ varios días y en ciclos diurnos (Gorski et al., 2015).
 A través de un modelo de mezcla de dos fuentes (vapor de combustión y
 vapor de la atmósfera libre), se estimó que el agua de combustión
 representó hasta el 13\% del vapor total en la capa límite durante este
-periodo. Las concentraciones de este vapor alcanzaron hasta 200 ppm en
+periodo (Figura~\ref{fig:vapor_Gorski}). Las concentraciones de este vapor alcanzaron hasta 200 ppm en
 el aire (Gorski et al., 2015).
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{imagenes marco/Gorski_isotopos.png}
+    \caption{Modelo de mezcla de \delta^{18}O y \delta^{2}D del vapor de agua en la capa límite entre la línea meteórica
+    gloabl (GMWL) y la huella isotópica del vapor de agua (Gorski et al., 2015)}
+    \label{fig:vapor_Gorski}
+\end{figure}
 
 Asimismo, la investigación realizada por Y. Yang y Yoshimura (2024)
 destaca la correlación negativa entre el valor de d-excess del vapor
@@ -66,6 +74,66 @@ mensual de CDV era del 3.4\% en SLC y 4.7\% en Beijing. La fracción
 calculada a partir de la ecuación de mezcla de dos extremos
 (f\textsubscript{CDV\_iso}) mostró valores ligeramente inferiores:
 2.3\% y 3.3\%, respectivamente.
+
+La investigación de Xing et al. (2020) tuvo como objetivo
+investigar el papel del VDC en la formación y agravamiento
+de aerosoles secundarios y episodios de contaminación por
+PM\(_{2.5}\) durante el invierno en la ciudad de Xi'an, China.
+Los autores buscaron cuantificar la fracción de VDC en la
+humedad atmosférica total y evaluar si este vapor contribuye
+de manera significativa al deterioro de la calidad del aire,
+particularmente bajo condiciones de alta humedad relativa
+y estancamiento atmosférico (Xing et al., 2020).
+
+Para ello, se midieron los valores de \(\delta D\) y
+\(\delta^{18}O\) para diferentes combustibles fósiles (carbón,
+gas natural, gasolina, diésel) utilizados en Xi'an. Se obtuvo
+una composición isotópica de \(\delta D = -134.4\)~\textperthousand~
+y \(\delta^{18}O = 9.0\)~\textperthousand, lo que da un
+\textit{d-excess} de aproximadamente \(-206.4\)~\textperthousand,
+muy inferior al del vapor natural (Xing et al., 2020) (Figura~\ref{fig:Xing_vapor}).
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{imagenes marco/Xing_isótopos.png}
+    \caption{Modelo de mezcla gaussiana de \delta^{18}O y \delta^{2}D del vapor de agua. BGL representa
+    la línea meteórica regional (Xing et al., 2020)}
+    \label{fig:Xing_vapor}
+\end{figure}
+
+Además, se determinó que la contribución promedio del VDC
+a la humedad total del aire en Xi'an fue de 6.2\%, alcanzando
+hasta un 16.2\% durante los episodios de contaminación severa.
+La fracción de VDC aumentó con la humedad relativa (RH) y con
+la concentración de PM\(_{2.5}\), especialmente durante las
+fases de rápido crecimiento de la contaminación
+(Xing et al., 2020).
+
+La correlación entre los episodios de alta contaminación
+(PM\(_{2.5}\) > 150~\(\mu\)g/m\(^3\)) ocurre solo cuando la RH
+supera el 40\% y las concentraciones de SO\(_2\) o NO\(_2\) son
+elevadas. El VDC contribuye al aumento de la RH, lo que a su
+vez acelera las reacciones heterogéneas que forman aerosoles
+secundarios, creando un \textit{feedback} positivo que agrava
+la contaminación (Xing et al., 2020).
+
+Para complementar el estudio, se modeló un episodio de
+contaminación severa de 19 días (diciembre 2015 -- enero 2016).
+Al incluir el VDC aumentó la concentración de PM\(_{2.5}\) en
+promedio 4.6~\(\mu\)g/m\(^3\) en la cuenca de Guanzhong (GZB)
+y 6.0~\(\mu\)g/m\(^3\) en Xi'an, lo que representa un 5.1\% del
+PM\(_{2.5}\) de origen antropogénico local (Xing et al., 2020).
+
+De tal manera, concluyeron que el CDW es un factor activo,
+no solo pasivo, en la degradación de la calidad del aire
+invernal en cuencas urbanas. Además, se debe tener precaución
+al implementar políticas ambientales. Por ejemplo, la campaña
+de sustitución de carbón por gas (\textit{coal-to-gas}) en el
+norte de China podría tener un efecto colateral no deseado:
+aumentar la CDW y agravar la contaminación por PM\(_{2.5}\),
+a pesar de reducir otros contaminantes. Esto debido a que la
+combustión de gas natural produce 3 veces más vapor de agua
+que la de carbón por unidad de energía (Xing et al., 2020).
 
 \section{La atmósfera urbana}
 La atmósfera terrestre es una fina capa de gases que rodea el planeta.
@@ -168,15 +236,15 @@ masas de aire. La estabilidad de estas masas toma en cuenta la
 estabilidad estática y dinámica. La estabilidad estática se ve afectada
 por las fuerzas de flotabilidad derivadas de las diferencias de
 densidades. Mientras tanto, la estabilidad dinámica se basa en las
-fuerzas de cizalladura (Vallero, 2025).
+fuerzas de cizalladura (Figura \ref{fig:estabilidad})(Vallero, 2025).
 
-% IMAGEN REDISEÑADA
-%\begin{figure}[H]
-    %\centering
-    %\includegraphics[width=0.8\textwidth]{figuras/nombre_imagen4.png}
-    %\caption{Descripción de la imagen.}
-    %\label{fig:estabilidad}
-%\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Imagenes marco/Atmos_Estable-Inestable.png}
+    \caption{Vista vertical de plumas de contaminación del aire bajo 
+    atmósfera estable (arriba) y atmósfera inestable (abajo)}
+    \label{fig:estabilidad}
+\end{figure}
 
 \section{Contaminación atmosférica}
 La contaminación atmosférica es la alteración de esta, en un ambiente
@@ -231,19 +299,20 @@ concentraciones de los inicios de la Revolución Industrial
 %\end{figure}
 
 \section{Isótopos estables}
-Los isótopos son átomos del mismo elemento que varían en su número de neutrones y, por lo tanto, existe una diferencia de masas entre ellos. 
-Esta diferencia de masa se reporta como una fracción del elemento más pesado sobre el más ligero (Smith \& Lacey, 2024; Zachleder et al., 2018). 
+Los isótopos son átomos del mismo elemento que varían en su número de 
+neutrones y, por lo tanto, existe una diferencia de masas entre ellos. 
+Esta diferencia de masa se reporta como una fracción del elemento más 
+pesado sobre el más ligero (Smith \& Lacey, 2024; Zachleder et al., 2018). 
 
-Las diferencias relativas en las abundancias isotópicas entre dos muestras pueden determinarse con mucha mayor precisión que la exactitud con la que se pueden medir las abundancias isotópicas absolutas. 
-La unidad de medida aceptada es el valor delta ($\delta$) expresado en partes por mil (Ecuación 2) (Hoefs \& Harmon, 2022).
-
-
+Las diferencias relativas en las abundancias isotópicas entre dos muestras 
+pueden determinarse con mucha mayor precisión que la exactitud con la que 
+se pueden medir las abundancias isotópicas absolutas. 
+La unidad de medida aceptada es el valor delta ($\delta$) expresado en partes 
+por mil (Ecuación 2) (Hoefs \& Harmon, 2022).
 
 \[
 \delta = \frac{R_x - R_{std}}{R_{std}} \times 1000
 \]
-
-
 
 Donde $R_x$ y $R_{std}$ denotan la razón isotópica de la muestra y del estándar, respectivamente. 
 Existen distintos estándares internacionales utilizados para el análisis de isótopos (Tabla~\ref{tab:estandares}).
@@ -371,3 +440,29 @@ emisión del vapor de agua (Froehlich et al., 2002; Shang et al., 2024).
 
 Donde $\delta$D y $\delta^{18}$O son las concentraciones de deuterio y
 oxígeno-18 en el vapor de agua.
+
+\section{Modelo FLEXPART}
+El modelo de dispersión de partícula flexible (FLEXPART, por sus siglas
+en inglés) fue desarrollado por el Instituto Noruego de Investigación
+Atmosférica. Es un modelo de dispersión y transporte lagrangiano
+(Cheng et al., 2017; Wang et al., 2021). Los modelos lagrangianos
+siguen el movimiento individual de las partículas. A diferencia de su
+contraparte euleriana, que mide cómo cambian las propiedades del fluido
+al pasar por puntos fijos, los modelos lagrangianos permiten rastrear
+el movimiento de las partículas en el espacio y el tiempo
+(Bakels et al., 2024).
+
+FLEXPART es ampliamente utilizado para formular trayectorias
+atmosféricas, transporte y dispersión de partículas. Puede emplearse
+para análisis en modo \textit{forward} y \textit{backward}. En el primer
+caso, el análisis de las trayectorias y la dispersión se realiza
+después de la liberación de las partículas. El segundo modo permite
+rastrear el origen de una parcela de aire o un conjunto de partículas
+que llegan a un punto de interés (Foreback et al., 2024).
+
+La relación fuente-receptor es un concepto importante en el modelado de
+la calidad del aire. En esencia, describe la sensibilidad de un
+receptor ante una fuente de emisión. El receptor puede ser, por
+ejemplo, la concentración promedio de cierta sustancia liberada en la
+atmósfera en una determinada celda durante cierto intervalo de tiempo
+(Agregar cita).
