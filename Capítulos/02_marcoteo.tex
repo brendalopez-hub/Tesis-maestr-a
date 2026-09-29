@@ -1,99 +1,72 @@
 % !TEX root = ../Tesis.tex
 \chapter{Marco teórico}
 \section{Antecedentes}
-Un estudio realizado por Gorski et al., 2015 en Salt Lake City
-determinó que el vapor de agua proveniente de la combustión de
-combustibles fósiles (VDC) podía ser identificada a través de la
-medición de isótopos estables.
+El incremento de las concentraciones atmosféricas de CO$_2$ asociado al 
+uso de combustibles fósiles constituye uno de los principales indicadores
+de la influencia antropogénica sobre la atmósfera. Además de la emisión 
+de CO$_2$, los procesos de combustión liberan cantidades importantes de 
+vapor de agua, cuya composición isotópica puede diferir significativamente 
+de la observada en el ciclo hidrológico natural. En consecuencia, durante 
+los últimos años se han desarrollado diversos enfoques para identificar y 
+cuantificar la contribución del vapor derivado de la combustión (VDC) mediante 
+el uso de isótopos estables del agua.
 
-El grupo de investigación tomó muestras de vapor ambiental bombeada a
-través de una tubería de cobre hasta un vaporizador acoplado a un
-espectrómetro Picarro L2130-i CRDS. El muestreo se realizó durante el
-invierno de diciembre de 2013 a enero de 2014 (Gorski et al., 2015).
+Los estudios basados en observaciones isotópicas directas han demostrado
+que el VDC presenta una firma isotópica distintiva, caracterizada por valores 
+de \textit{d-excess} considerablemente más negativos que los observados en el vapor 
+atmosférico natural. Esta diferencia permite utilizar los isótopos estables 
+de hidrógeno y oxígeno como trazadores de emisiones derivadas de la combustión 
+de combustibles fósiles (Gorski et al., 2015; Xing et al., 2020).
 
-De acuerdo con el análisis isotópico, se determinó que el agua asociada
-a la combustión presentaba valores de d-excess altamente negativos
-(entre $-471$\,\textperthousand\ y $-183$\,\textperthousand). Al mismo
-tiempo, durante episodios de inversión térmica, las concentraciones de
-CO\textsubscript{2} aumentan y los valores de d-excess del vapor de
-agua disminuyeron drásticamente (hasta $-17.2$\,\textperthousand). Esta
-relación inversa ($r^{2} = 0.33$ a $0.64$) se observó en escalas de
-varios días y en ciclos diurnos (Gorski et al., 2015).
+Las mediciones realizadas en ambientes urbanos han mostrado una relación
+inversa entre las concentraciones de CO$_2$ y los valores de \textit{d-excess} del
+vapor de agua. Durante episodios de estabilidad atmosférica e inversiones 
+térmicas, la acumulación de emisiones antropogénicas produce un aumento de las
+concentraciones de CO$_2$ acompañado por una disminución del d-excess. Estas 
+observaciones sugieren que el vapor emitido durante la combustión puede 
+representar una fracción apreciable de la humedad presente en la capa límite 
+atmosférica (Gorski et al., 2015).
 
-A través de un modelo de mezcla de dos fuentes (vapor de combustión y
-vapor de la atmósfera libre), se estimó que el agua de combustión
-representó hasta el 13\% del vapor total en la capa límite durante este
-periodo (Figura~\ref{fig:vapor_Gorski}). Las concentraciones de este vapor alcanzaron hasta 200 ppm en
-el aire (Gorski et al., 2015).
+A partir de esta información isotópica, diversos autores han aplicado modelos 
+de mezcla para estimar la contribución relativa del VDC al vapor atmosférico. 
+La Figura~\ref{fig:vapor_Gorski} muestra un ejemplo del modelo conceptual 
+propuesto por Gorski et al. (2015), donde la composición isotópica observada 
+se distribuye entre la línea meteórica global y la señal isotópica característica 
+del vapor generado por la combustión. Este enfoque permitió demostrar que el VDC 
+puede constituir una fracción significativa de la humedad atmosférica bajo condiciones
+de estancamiento atmosférico.
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.7\textwidth]{Imagenes_marco/Gorski_isotopos.png}
     \caption{Modelo de mezcla de \(\delta^{18}\mathrm{O}\) y 
     \(\delta^{2}\mathrm{D}\) del vapor de agua en la capa límite
-    entre la línea meteórica global (GMWL) y la huella isotópica
+    entre la línea meteórica global (LMM) y la huella isotópica
     del vapor de agua (Gorski et al., 2015).}
     \label{fig:vapor_Gorski}
 \end{figure}
 
-Asimismo, la investigación realizada por Y. Yang y Yoshimura (2024)
-destaca la correlación negativa entre el valor de d-excess del vapor
-atmosférico y la concentración de CO\textsubscript{2} previamente
-descrita por Gorski y colaboradores. El propósito del estudio fue
-evaluar si el modelo IsoRSM mejoraba la precisión de las simulaciones
-isotópicas al incorporar un modelo de emisión de VDC (Y. Yang y
-Yoshimura, 2024).
+Además de las observaciones \textit{in situ}, se han desarrollado estudios de modelación
+isotópica orientados a representar explícitamente las emisiones de VDC dentro de
+modelos atmosféricos regionales. Estas investigaciones han demostrado que la 
+incorporación de fuentes de vapor de combustión mejora la capacidad de los modelos
+para reproducir la variabilidad observada del d-excess, especialmente bajo condiciones 
+de atmósfera estable y baja humedad. Asimismo, permiten estimar la contribución espacial 
+y temporal del VDC a la humedad atmosférica en diferentes entornos urbanos (Yang y Yoshimura, 2024).
 
-La investigación implementó dos análisis independientes con un mes de
-duración con datos obtenidos de bases como ERA5, la Red de observación
-in situ MesoWest y la Base de Datos de Isótopos de Vapor de Agua
-Estable. El primero, en Salt Lake City, realizado en enero de 2017. Se
-situó en una región caracterizada por topografía de cuenca en una
-meseta, donde las inversiones térmicas invernales generan condiciones
-de atmósfera estable. El segundo se desarrolló en Beijing en enero de
-2007. En este caso se realizó en una llanura sometida a la influencia
-del monzón invernal (Y. Yang y Yoshimura, 2024).
+Por otra parte, el análisis espacial del VDC ha mostrado que su importancia 
+trasciende la identificación de fuentes de emisión. Investigaciones realizadas
+en ciudades altamente urbanizadas indican que este vapor contribuye al incremento
+de la humedad relativa y puede favorecer la formación de aerosoles secundarios
+durante episodios de contaminación atmosférica. En consecuencia, el VDC no solo 
+actúa como un trazador de emisiones antropogénicas, sino también como un factor 
+capaz de influir en la evolución de la calidad del aire (Xing et al., 2020)
 
-Por otro lado, la composición isotópica del VDC se fijó como
-$-134.4$\,\textperthousand, $9$\,\textperthousand\ y
-$-206.4$\,\textperthousand\ para $\delta^{2}$H, $\delta^{18}$O y
-d-excess, respectivamente, basados en experimentos realizados en Xi'an,
-China. Para la estimación de la tasa de emisión de VDC a añadir se
-consideró la tasa de emisión de CO\textsubscript{2} en zonas urbanas.
-Se evaluaron tasas de $0{,}000$ hasta $0{,}003$\,g/m\textsuperscript{2}·s
-de VDC para comprobar cuál presentaba la mejor correlación (Y. Yang y
-Yoshimura, 2024).
-
-Con ello, obtuvieron que la incorporación de VDC redujo
-significativamente el d-excess del vapor de agua, especialmente cuando
-la capa límite planetaria era estable y la humedad era baja. En Salt
-Lake City hubo una disminución aproximadamente de
-$5$\,\textperthousand, mientras que en Beijing fue más pronunciada
-(Y. Yang y Yoshimura, 2024).
-
-Mediante el método de trazadores de humedad, se estimó que la fracción
-mensual de CDV era del 3.4\% en SLC y 4.7\% en Beijing. La fracción
-calculada a partir de la ecuación de mezcla de dos extremos
-(f\textsubscript{CDV\_iso}) mostró valores ligeramente inferiores:
-2.3\% y 3.3\%, respectivamente.
-
-La investigación de Xing et al. (2020) tuvo como objetivo
-investigar el papel del VDC en la formación y agravamiento
-de aerosoles secundarios y episodios de contaminación por
-PM\(_{2.5}\) durante el invierno en la ciudad de Xi'an, China.
-Los autores buscaron cuantificar la fracción de VDC en la
-humedad atmosférica total y evaluar si este vapor contribuye
-de manera significativa al deterioro de la calidad del aire,
-particularmente bajo condiciones de alta humedad relativa
-y estancamiento atmosférico (Xing et al., 2020).
-
-Para ello, se midieron los valores de \(\delta D\) y
-\(\delta^{18}O\) para diferentes combustibles fósiles (carbón,
-gas natural, gasolina, diésel) utilizados en Xi'an. Se obtuvo
-una composición isotópica de \(\delta D = -134.4\)~\textperthousand~
-y \(\delta^{18}O = 9.0\)~\textperthousand, lo que da un
-\textit{d-excess} de aproximadamente \(-206.4\)~\textperthousand,
-muy inferior al del vapor natural (Xing et al., 2020) (Figura~\ref{fig:Xing_vapor}).
+La Figura~\ref{fig:Xing_vapor} presenta un modelo de mezcla isotópica empleado
+por Xing et al. (2020) para evaluar la contribución del VDC a la humedad atmosférica 
+en Xi'an, China. El análisis muestra cómo la composición isotópica del vapor atmosférico
+puede interpretarse como el resultado de procesos de mezcla entre fuentes naturales y 
+emisiones antropogénicas asociadas a la combustión.
 
 \begin{figure}[h!]
     \centering
@@ -104,41 +77,7 @@ muy inferior al del vapor natural (Xing et al., 2020) (Figura~\ref{fig:Xing_vapo
     \label{fig:Xing_vapor}
 \end{figure}
 
-Además, se determinó que la contribución promedio del VDC
-a la humedad total del aire en Xi'an fue de 6.2\%, alcanzando
-hasta un 16.2\% durante los episodios de contaminación severa.
-La fracción de VDC aumentó con la humedad relativa (RH) y con
-la concentración de PM\(_{2.5}\), especialmente durante las
-fases de rápido crecimiento de la contaminación
-(Xing et al., 2020).
-
-La correlación entre los episodios de alta contaminación
-(PM\(_{2.5}\) > 150~\(\mu\)g/m\(^3\)) ocurre solo cuando la RH
-supera el 40\% y las concentraciones de SO\(_2\) o NO\(_2\) son
-elevadas. El VDC contribuye al aumento de la RH, lo que a su
-vez acelera las reacciones heterogéneas que forman aerosoles
-secundarios, creando un \textit{feedback} positivo que agrava
-la contaminación (Xing et al., 2020).
-
-Para complementar el estudio, se modeló un episodio de
-contaminación severa de 19 días (diciembre 2015 -- enero 2016).
-Al incluir el VDC aumentó la concentración de PM\(_{2.5}\) en
-promedio 4.6~\(\mu\)g/m\(^3\) en la cuenca de Guanzhong (GZB)
-y 6.0~\(\mu\)g/m\(^3\) en Xi'an, lo que representa un 5.1\% del
-PM\(_{2.5}\) de origen antropogénico local (Xing et al., 2020).
-
-De tal manera, concluyeron que el CDW es un factor activo,
-no solo pasivo, en la degradación de la calidad del aire
-invernal en cuencas urbanas. Además, se debe tener precaución
-al implementar políticas ambientales. Por ejemplo, la campaña
-de sustitución de carbón por gas (\textit{coal-to-gas}) en el
-norte de China podría tener un efecto colateral no deseado:
-aumentar la CDW y agravar la contaminación por PM\(_{2.5}\),
-a pesar de reducir otros contaminantes. Esto debido a que la
-combustión de gas natural produce 3 veces más vapor de agua
-que la de carbón por unidad de energía (Xing et al., 2020).
-
-\section{La atmósfera urbana}
+\section{La atmósfera global y la atmósfera local}
 La atmósfera terrestre es una fina capa de gases que rodea el planeta.
 Esta capa es fundamental para la vida en la Tierra, ya que regula la
 temperatura de su superficie y retiene el oxígeno y el agua, esenciales
@@ -249,7 +188,7 @@ fuerzas de cizalladura (Figura \ref{fig:estabilidad})(Vallero, 2025).
     \label{fig:estabilidad}
 \end{figure}
 
-\section{Contaminación atmosférica}
+\section{Contaminación atmosférica urbana}
 La contaminación atmosférica es la alteración de esta, en un ambiente
 interior o al aire libre, por cualquier agente químico, físico o
 biológico que modifica sus características naturales. Estos agentes
