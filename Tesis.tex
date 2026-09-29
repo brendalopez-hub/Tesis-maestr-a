@@ -7,6 +7,14 @@
 \usepackage{booktabs}
 \usepackage{graphicx}   % para \resizebox
 \usepackage{siunitx}
+\DeclareSIUnit{\ppm}{ppm}   % si tu versión de siunitx ya la define, borra esta línea
+\usepackage{float}          % para [H]
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{array}
+
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
 
 \usepackage[
     top=2.5cm,
@@ -15,8 +23,8 @@
     right=2.5cm
 ]{geometry}
 
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
 \usepackage[
     spanish,
     es-nodecimaldot,

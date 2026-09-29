@@ -12,14 +12,13 @@ $757$\,km\textsuperscript{2} y una población de $273\,417$ habitantes
 (Instituto de Ecología del Estado, 2022; Instituto Nacional de
 Estadística y Geografía, 2010).
 
-% AGREGAR MAPA
-%\begin{figure}[H]
-    %\centering
-    %\includegraphics[width=0.85\textwidth]{figuras/mapa_salamanca.png}
-    %\caption{Localización del municipio de Salamanca, Guanajuato,
-    %México.}
-    %\label{fig:mapa_salamanca}
-%\end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{Imagenes_marco/Ubi_Salamanca.pdf}
+    \caption{Localización del municipio de Salamanca, Guanajuato,
+    México.}
+    \label{fig:mapa_salamanca}
+\end{figure}
 
 La ciudad tiene un clima semicálido y ligeramente húmedo, con lluvias
 de junio a agosto, cuyo rango de precipitación es de $600$ a
@@ -104,7 +103,14 @@ Fuentes naturales
 }
 \end{table}
 
-\subsection{Calidad del aire en Salamanca, Guanajuato}
+%\begin{figure}[h!]
+    %\centering
+   % \includegraphics[width=0.85\textwidth]{figuras/mapa_salamanca.png}
+  %  \caption{Localización del municipio de Salamanca, Guanajuato, México.}
+ %   \label{fig:mapa_salamanca}
+%\end{figure}
+
+\section{Calidad del aire en Salamanca, Guanajuato}
 A causa de la contingencia atmosférica, el gobierno de Guanajuato
 implementó el programa ProAire en Salamanca, Celaya, Irapuato, León y
 Silao, a lo que se le denominó ``Corredor Industrial''. Se basa en una
@@ -128,38 +134,47 @@ acuerdo con su giro industrial y pertinencia, pueden ser de
 jurisdicción estatal (Tabla~\ref{tab:retc_estatal}) o federal
 (Tabla~\ref{tab:retc_federal}).
 
-\begin{table}[h!]
-\centering
-\footnotesize
-\setlength{\tabcolsep}{4pt}
+{\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{@{}L{.16\textwidth} L{.25\textwidth} L{.19\textwidth} r r r@{}}
 \caption{Empresas de jurisdicción estatal registradas en el RETC en
 Salamanca, Guanajuato. Emisiones en toneladas/año.}
-\label{tab:retc_estatal}
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{lllrrr}
+\label{tab:retc_estatal}\\
 \toprule
 \textbf{Clave} & \textbf{Nombre de la empresa o razón social} &
 \textbf{Sector} & \textbf{CO\textsubscript{2}} &
 \textbf{CH\textsubscript{4}} & \textbf{N\textsubscript{2}O} \\
 \midrule
+\endfirsthead
+\multicolumn{6}{@{}l}{\textit{Tabla~\thetable\ (continuación)}} \\
+\toprule
+\textbf{Clave} & \textbf{Nombre de la empresa o razón social} &
+\textbf{Sector} & \textbf{CO\textsubscript{2}} &
+\textbf{CH\textsubscript{4}} & \textbf{N\textsubscript{2}O} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{6}{r}{\textit{Continúa en la página siguiente}} \\
+\endfoot
+\bottomrule
+\endlastfoot
 AEB325999112700 & ACEITES Y ESPECIALIDADES DEL BAJÍO, S.A. DE C.V. &
 Industria química & 374\,607.98 & 5.99 & 0.61 \\
 CMA339999112700 & CEBADAS Y MALTAS, S. DE R.L. DE C.V. &
 Otras industrias manufactureras & 141.34 & 0.01 & 0 \\
 DTM327111112700 & DAL-TILE MÉXICO, S. DE R.L. DE C.V. &
-Fabricación de productos a base de minerales no metálicos
-& 100\,012\,049.4 & 2\,488.50 & 309.28 \\
-FEP324120112700 & FABRICACIÓN DE EMULSIONES Y PAVIMENTOS DE GUERRERO,
-S.A. DE C.V. &
-Fabricación de productos derivados del petróleo y del carbón
-& 210\,306.18 & 3.34 & 0.33 \\
+Fabricación de productos a base de minerales no metálicos &
+100\,012\,049.4 & 2\,488.50 & 309.28 \\
+FEP324120112700 & FABRICACIÓN DE EMULSIONES Y PAVIMENTOS DE GUERRERO, S.A. DE C.V. &
+Fabricación de productos derivados del petróleo y del carbón &
+210\,306.18 & 3.34 & 0.33 \\
 ACE336320112700 & FUJIKURA AUTOMOTIVE MÉXICO QUERÉTARO, S.A. DE C.V. &
 Fabricación de equipo de transporte & 36\,036.00 & 0.92 & 0.15 \\
 HPI311212112700 & HARINERA LOS PIRINEOS, S.A. DE C.V. &
 Industria alimentaria & 27\,127.95 & 0.45 & 0.05 \\
 ITI327122112700 & IBÉRICA TILES, S.A.P.I. DE C.V. &
-Fabricación de productos a base de minerales no metálicos
-& 74\,133\,481.99 & 1\,324.25 & 133.12 \\
+Fabricación de productos a base de minerales no metálicos &
+74\,133\,481.99 & 1\,324.25 & 133.12 \\
 JCS336390112700 & J CLIMA SISTEMAS MÉXICO, S.A. DE C.V. &
 Fabricación de equipo de transporte & 10\,180.74 & 0.17 & 0.02 \\
 PME336390112700 & PENSTONE MEXICANA, S.A. DE C.V. &
@@ -173,42 +188,44 @@ Otras industrias manufactureras & 406\,295.30 & 7.21 & 0.72 \\
 SSM331220112700 & SERVILAMINA SUMMIT MEXICANA, S.A. DE C.V. &
 Industrias metálicas básicas & 39\,872.31 & 0.63 & 0.06 \\
 TSA327999112700 & TRITURADOS SALAMANCA, S.A. DE C.V. &
-Fabricación de productos a base de minerales no metálicos
-& 115\,465.11 & 4.67 & 0.93 \\
-\bottomrule
-\end{tabular}%
-}
-\end{table}
+Fabricación de productos a base de minerales no metálicos &
+115\,465.11 & 4.67 & 0.93 \\
+\end{longtable}}
 
-\begin{table}[h!]
-\centering
-\footnotesize
-\setlength{\tabcolsep}{4pt}
+{\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{longtable}{@{}L{.15\textwidth} L{.22\textwidth} L{.14\textwidth} L{.17\textwidth} r r@{}}
 \caption{Empresas de jurisdicción federal registradas en el RETC en
 Salamanca, Guanajuato. Emisiones en kg/año.}
-\label{tab:retc_federal}
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{llllrr}
+\label{tab:retc_federal}\\
 \toprule
 \textbf{Clave} & \textbf{Nombre de la empresa o razón social} &
-\textbf{Sector} & \textbf{Sustancia} &
-\textbf{Aire} & \textbf{Agua} \\
+\textbf{Sector} & \textbf{Sustancia} & \textbf{Aire} & \textbf{Agua} \\
 \midrule
-PLO1102700112 & PEMEX Logística --- Terminal de Almacenamiento y
-Despacho Salamanca & Petróleo y petroquímica &
-CO\textsubscript{2} & 316\,965.1 & --- \\
+\endfirsthead
+\multicolumn{6}{@{}l}{\textit{Tabla~\thetable\ (continuación)}} \\
+\toprule
+\textbf{Clave} & \textbf{Nombre de la empresa o razón social} &
+\textbf{Sector} & \textbf{Sustancia} & \textbf{Aire} & \textbf{Agua} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{6}{r}{\textit{Continúa en la página siguiente}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+PLO1102700112 & PEMEX Logística --- Terminal de Almacenamiento y Despacho Salamanca &
+Petróleo y petroquímica & CO\textsubscript{2} & 316\,965.1 & --- \\
 PLO1102700117 & PEMEX Logística & Petróleo y petroquímica &
 CO\textsubscript{2} & 1\,194\,300 & --- \\
-PTI1102700059 & PEMEX Transformación Industrial, Refinería Salamanca
-(Ing. Antonio M. Amor) & Petróleo y petroquímica &
-Arsénico (polvos, respirables, vapores o humos) & 338.522 & --- \\
+PTI1102700059 & PEMEX Transformación Industrial, Refinería Salamanca (Ing. Antonio M. Amor) &
+Petróleo y petroquímica & Arsénico (polvos, respirables, vapores o humos) & 338.522 & --- \\
 PTI1102700059 & PEMEX Transformación Industrial, Refinería Salamanca &
 Petróleo y petroquímica & Formaldehído & 9\,313.302 & --- \\
 PTI1102700059 & PEMEX Transformación Industrial, Refinería Salamanca &
 Petróleo y petroquímica & Fenol & --- & 558.955 \\
 PTI1102700059 & PEMEX Transformación Industrial, Refinería Salamanca &
-Petróleo y petroquímica &
-Cadmio (polvos, respirables, vapores o humos) & 102.069 & --- \\
+Petróleo y petroquímica & Cadmio (polvos, respirables, vapores o humos) & 102.069 & --- \\
 PTI1102700059 & PEMEX Transformación Industrial, Refinería Salamanca &
 Petróleo y petroquímica & Plomo (compuestos solubles) & 387.248 & --- \\
 PTI1102700059 & PEMEX Transformación Industrial, Refinería Salamanca &
@@ -223,41 +240,35 @@ TPL1102700153 & Tractocombustibles Plaza, S.A. de C.V. &
 Petróleo y petroquímica & Benceno & 753.91 & --- \\
 CGI1102700159 & CFE Generación I, Central Termoeléctrica Salamanca &
 Generación de energía eléctrica & Bifenilos policlorados & --- & 4.073 \\
-CGI1102700202 & CFE Generación I, Central Ciclo Combinado Cogeneración
-Salamanca & Generación de energía eléctrica & Metano & 131\,658.268 & --- \\
-CGI1102700202 & CFE Generación I, Central Ciclo Combinado Cogeneración
-Salamanca & Generación de energía eléctrica &
-CO\textsubscript{2} & 1\,684\,026\,621 & --- \\
+CGI1102700202 & CFE Generación I, Central Ciclo Combinado Cogeneración Salamanca &
+Generación de energía eléctrica & Metano & 131\,658.268 & --- \\
+CGI1102700202 & CFE Generación I, Central Ciclo Combinado Cogeneración Salamanca &
+Generación de energía eléctrica & CO\textsubscript{2} & 1\,684\,026\,621 & --- \\
 AEX1102700127 & Aralo Express, S.A. de C.V. & Otros &
 CO\textsubscript{2} & 18\,900\,000 & --- \\
-CBLLU1102711 & Carboquímica Block, S.A. de C.V. &
-Tratamiento de residuos peligrosos & CO\textsubscript{2} &
-109\,168.952 & --- \\
+CBLLU1102711 & Carboquímica Block, S.A. de C.V. & Tratamiento de residuos peligrosos &
+CO\textsubscript{2} & 109\,168.952 & --- \\
 GTK1102700007 & Y-Tec Keylex México, S.A. de C.V. & Automotriz &
 CO\textsubscript{2} & 19\,818\,411 & --- \\
 HCA5X1102711 & Henkel Capital, S.A. de C.V. & Química &
 CO\textsubscript{2} & 4\,153\,217.6 & --- \\
-ITI1102700197 & Ibérica Tiles, S.A.P.I. de C.V. &
-Metalúrgica (incluye la siderúrgica) &
+ITI1102700197 & Ibérica Tiles, S.A.P.I. de C.V. & Metalúrgica (incluye la siderúrgica) &
 Plomo (compuestos solubles) & --- & 1.228 \\
-MMM1102700005 & Mazda Motor Manufacturing de México, S.A. de C.V. &
-Automotriz & Plomo (compuestos solubles) & --- & 55.984 \\
-MMM1102700005 & Mazda Motor Manufacturing de México, S.A. de C.V. &
-Automotriz & Mercurio (compuestos solubles) & --- & 1.501 \\
-MMM1102700005 & Mazda Motor Manufacturing de México, S.A. de C.V. &
-Automotriz & CO\textsubscript{2} & 12\,784\,377.65 & --- \\
-MMM1102700005 & Mazda Motor Manufacturing de México, S.A. de C.V. &
-Automotriz & Cromo (compuestos solubles) & --- & 131.36 \\
-MMM1102700005 & Mazda Motor Manufacturing de México, S.A. de C.V. &
-Automotriz & Cadmio (compuestos solubles) & --- & 10.25 \\
-MMM1102700005 & Mazda Motor Manufacturing de México, S.A. de C.V. &
-Automotriz & Arsénico (compuestos solubles) & --- & 2.793 \\
-\bottomrule
-\end{tabular}%
-}
-\end{table}
+MMM1102700005 & Mazda Motor Manufacturing de México, S.A. de C.V. & Automotriz &
+Plomo (compuestos solubles) & --- & 55.984 \\
+MMM1102700005 & Mazda Motor Manufacturing de México, S.A. de C.V. & Automotriz &
+Mercurio (compuestos solubles) & --- & 1.501 \\
+MMM1102700005 & Mazda Motor Manufacturing de México, S.A. de C.V. & Automotriz &
+CO\textsubscript{2} & 12\,784\,377.65 & --- \\
+MMM1102700005 & Mazda Motor Manufacturing de México, S.A. de C.V. & Automotriz &
+Cromo (compuestos solubles) & --- & 131.36 \\
+MMM1102700005 & Mazda Motor Manufacturing de México, S.A. de C.V. & Automotriz &
+Cadmio (compuestos solubles) & --- & 10.25 \\
+MMM1102700005 & Mazda Motor Manufacturing de México, S.A. de C.V. & Automotriz &
+Arsénico (compuestos solubles) & --- & 2.793 \\
+\end{longtable}}
 
-\subsection{Normas de calidad del aire}
+\section{Normas de calidad del aire}
 En México, la NOM-172-SEMARNAT-2023 tiene por objeto establecer los
 lineamientos para la obtención y comunicación del índice de la calidad
 del aire. Lo anterior pretende brindar información estandarizada, clara
@@ -294,92 +305,90 @@ Asimismo, la normatividad mexicana establece los límites permisibles
 para contaminantes atmosféricos, con la finalidad de contar con
 indicadores que clasifiquen la calidad del aire e informen a la
 población sobre los riesgos a la salud y las medidas de protección
-(Tabla~\ref{tab:limites_permisibles}).
+(Tabla~\ref{tab:limites_permisibles}) y~\ref{tab:limites_gases}).
 
 \begin{table}[H]
 \centering
 \footnotesize
-\setlength{\tabcolsep}{4pt}
 \caption{Límites permisibles para partículas suspendidas según la
 normatividad mexicana.}
-\label{tab:limites_particulas}
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{lllrrr}
+\label{tab:limites_permisibles}
+\begin{tabularx}{\textwidth}{@{}l l Y r r r@{}}
 \toprule
 \textbf{Contaminante} & \textbf{Indicador} & \textbf{Criterio} &
 \textbf{Límite 1} & \textbf{Límite 2} & \textbf{Límite 3} \\
 \midrule
-PM10 & 24 horas &
+PM\textsubscript{10} & 24 horas &
 Percentil 99 (frecuencia tolerada 1\% de veces al año) &
 \SI{70}{\micro\gram\per\cubic\meter} &
 \SI{60}{\micro\gram\per\cubic\meter} &
 \SI{50}{\micro\gram\per\cubic\meter} \\
-     & Anual &
-Promedio anual de los promedios de 24 horas &
+ & Anual & Promedio anual de los promedios de 24 horas &
 \SI{36}{\micro\gram\per\cubic\meter} &
 \SI{28}{\micro\gram\per\cubic\meter} &
 \SI{20}{\micro\gram\per\cubic\meter} \\
 \midrule
-PM2.5 & 24 horas &
+PM\textsubscript{2.5} & 24 horas &
 Percentil 99 (frecuencia tolerada 1\% de veces al año) &
 \SI{41}{\micro\gram\per\cubic\meter} &
 \SI{33}{\micro\gram\per\cubic\meter} &
 \SI{25}{\micro\gram\per\cubic\meter} \\
-      & Anual &
-Promedio anual de los promedios de 24 horas &
+ & Anual & Promedio anual de los promedios de 24 horas &
 \SI{10}{\micro\gram\per\cubic\meter} &
 \SI{10}{\micro\gram\per\cubic\meter} &
 \SI{10}{\micro\gram\per\cubic\meter} \\
 \bottomrule
-\end{tabular}%
-}
+\end{tabularx}
 \end{table}
 
 \begin{table}[H]
 \centering
 \footnotesize
-\setlength{\tabcolsep}{4pt}
 \caption{Límites permisibles para gases criterio según la normatividad
 mexicana.}
 \label{tab:limites_gases}
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{llll}
+\begin{tabularx}{\textwidth}{@{}l l Y r@{}}
 \toprule
 \textbf{Contaminante} & \textbf{Indicador} & \textbf{Criterio} &
 \textbf{Límite} \\
 \midrule
 Ozono (O\textsubscript{3}) & 1 hora &
 Máximo de los máximos diarios de las concentraciones horarias &
-\SI{0.090}{ppm} \\
+\SI{0.090}{\ppm} \\
  & Promedio móvil de 8 horas &
-Máximo de los máximos diarios de las concentraciones de los promedios
-móviles &
-\SI{0.065}{ppm} (1) \\
+Máximo de los máximos diarios de las concentraciones de los promedios móviles &
+\SI{0.065}{\ppm}\textsuperscript{(1)} \\
 \midrule
 Dióxido de azufre (SO\textsubscript{2}) & 1 hora &
-Promedio aritmético de 3 años consecutivos de los percentiles 99
-anuales del máximo diario de los datos horarios &
-\SI{0.075}{ppm} \\
+Promedio aritmético de 3 años consecutivos de los percentiles 99 anuales del máximo diario de los datos horarios &
+\SI{0.075}{\ppm} \\
  & 24 horas &
 Máximo de tres años consecutivos de los promedios de 24 horas &
-\SI{0.040}{ppm} \\
+\SI{0.040}{\ppm} \\
 \midrule
 Dióxido de nitrógeno (NO\textsubscript{2}) & 1 hora &
 Máximo de las concentraciones horarias &
-\SI{0.106}{ppm} \\
+\SI{0.106}{\ppm} \\
  & Anual &
 Promedio aritmético anual de las concentraciones horarias &
-\SI{0.021}{ppm} \\
+\SI{0.021}{\ppm} \\
 \midrule
 Monóxido de carbono (CO) & 1 hora &
 Máximo de las concentraciones horarias &
-\SI{26}{ppm} \\
+\SI{26}{\ppm} \\
  & Promedio móvil de 8 horas &
 Máximo de los promedios móviles de 8 horas &
-\SI{9}{ppm} \\
+\SI{9}{\ppm} \\
 \bottomrule
-\end{tabular}%
-}
+\end{tabularx}
+
+\vspace{2pt}
+\begin{minipage}{\textwidth}
+\footnotesize
+\textsuperscript{(1)} Los valores de O\textsubscript{3} para el promedio móvil de
+8 horas son \SI{0.065}{\ppm}, \SI{0.060}{\ppm} y \SI{0.051}{\ppm},
+correspondientes a los tres niveles de protección establecidos en la norma.
+\end{minipage}
 \end{table}
 
 \noindent (1) Los valores de O\textsubscript{3} para el promedio móvil

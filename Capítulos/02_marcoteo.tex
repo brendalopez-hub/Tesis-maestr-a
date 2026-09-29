@@ -97,7 +97,7 @@ muy inferior al del vapor natural (Xing et al., 2020) (Figura~\ref{fig:Xing_vapo
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.7\textwidth]{Imagenes_marco/Xing_isótopos .png}
+    \includegraphics[width=0.7\textwidth]{Imagenes_marco/Xing_isotopos.png}
     \caption{Modelo de mezcla gaussiana de \(\delta^{18}\mathrm{O}\) y
     \(\delta^{2}\mathrm{D}\) del vapor de agua. BGL representa
     la línea meteórica regional (Xing et al., 2020)}
@@ -227,7 +227,7 @@ horizontalmente en capas finas, ya que apenas hay mezcla vertical
 (Sokhi et al., 2024).
 
 % IMAGEN REDISEÑADA
-%\begin{figure}[H]
+%\begin{figure}[h!]
     %\centering
     %\includegraphics[width=0.8\textwidth]{figuras/nombre_imagen3.png}
     %\caption{Descripción de la imagen.}
@@ -269,7 +269,7 @@ del agua, destrucción del hábitat y declive de la biodiversidad
 (Gorski et al., 2015; Yang, 2025).
 
 \begin{equation}
-\ce{2C8H18 + 23O2 -> 14CO2 + 2CO + 18H2O}
+\ce{2C8H18 + 24O2 -> 14CO2 + 2CO + 18H2O}
 \label{eq:combustion}
 \end{equation}
 
@@ -292,14 +292,14 @@ Esto representa casi el 50\% de incremento relativo con respecto a las
 concentraciones de los inicios de la Revolución Industrial
 ($270$--$275$\,ppm) (Salmon, 2018).
 
-% AGREGAR GRÁFICO MAUNA LOA
-%\begin{figure}[H]
-   % \centering
-    %\includegraphics[width=0.85\textwidth]{figuras/mauna_loa.png}
-    %\caption{Concentración promedio mensual de CO\textsubscript{2}
-    %atmosférico registrada en el observatorio de Mauna Loa, Hawái.}
-    %\label{fig:mauna_loa}
-%\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.85\textwidth]{Imagenes_marco/MaunaLoaAnual.pdf}
+    \caption{Concentración promedio mensual de CO\textsubscript{2}
+    atmosférico registrada en el observatorio de Mauna Loa, Hawái.}
+    \label{fig:mauna_loa}
+\end{figure}
 
 \section{Isótopos estables}
 Los isótopos son átomos del mismo elemento que varían en su número de 
@@ -311,31 +311,35 @@ Las diferencias relativas en las abundancias isotópicas entre dos muestras
 pueden determinarse con mucha mayor precisión que la exactitud con la que 
 se pueden medir las abundancias isotópicas absolutas. 
 La unidad de medida aceptada es el valor delta ($\delta$) expresado en partes 
-por mil (Ecuación 2) (Hoefs \& Harmon, 2022).
+por mil (Ecuación~\ref{eq:delta}) (Hoefs \& Harmon, 2022).
 
-\[
+\begin{equation}
 \delta = \frac{R_x - R_{std}}{R_{std}} \times 1000
-\]
+\label{eq:delta}
+\end{equation}
 
 Donde $R_x$ y $R_{std}$ denotan la razón isotópica de la muestra y del estándar, respectivamente. 
 Existen distintos estándares internacionales utilizados para el análisis de isótopos (Tabla~\ref{tab:estandares}).
 
 \begin{table}[h!]
 \centering
-\caption{Estándares isotópicos internacionales y valores aceptados}
+\small
+\caption{Estándares isotópicos internacionales y valores aceptados
+(Hoefs \& Harmon, 2022)}
 \label{tab:estandares}
-\begin{tabular}{llll}
+\begin{tabularx}{\textwidth}{@{}X l l r@{}}
 \toprule
-\textbf{Standard} & \textbf{Abreviación} & \textbf{Razón} & \textbf{Valor aceptado $\times 10^6$ (95\% confiabilidad)} \\
+\textbf{Estándar} & \textbf{Abrev.} & \textbf{Razón} &
+\textbf{Valor aceptado ($\times 10^{6}$)} \\
 \midrule
-Standard Mean Ocean Water & VSMOW & D/H & 155.76 $\pm$ 0.10 \\
-Standard Mean Ocean Water & VSMOW & $^{17}$O/$^{16}$O & 2005.20 $\pm$ 0.43 \\
-Standard Mean Ocean Water & VSMOW & $^{18}$O/$^{16}$O & 373 $\pm$ 15 \\
-Belemnitella americana (Cretácico, Peedee, USA) & VPDB & $^{13}$C/$^{12}$C & 11237.2 $\pm$ 2.9 \\
-Nitrógeno atmosférico & AIR & $^{15}$N/$^{14}$N & 3676.5 $\pm$ 8.1 \\
-Cañón Diablo (meteorito troilita) & VCDT & $^{34}$S/$^{32}$S & 40004.5 $\pm$ 9.3 \\
+Vienna Standard Mean Ocean Water & VSMOW & D/H & $155.76 \pm 0.10$ \\
+Vienna Standard Mean Ocean Water & VSMOW & $^{17}$O/$^{16}$O & $373 \pm 15$ \\
+Vienna Standard Mean Ocean Water & VSMOW & $^{18}$O/$^{16}$O & $2005.20 \pm 0.43$ \\
+\textit{Belemnitella americana} (Cretácico, Peedee, EE.\,UU.) & VPDB & $^{13}$C/$^{12}$C & $11237.2 \pm 2.9$ \\
+Nitrógeno atmosférico & AIR & $^{15}$N/$^{14}$N & $3676.5 \pm 8.1$ \\
+Troilita del meteorito Cañón Diablo & VCDT & $^{34}$S/$^{32}$S & $45004.5 \pm 9.3$ \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \subsection{$\delta$D y $\delta^{18}$O en la atmósfera}
