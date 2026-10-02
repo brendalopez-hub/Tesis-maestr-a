@@ -1,30 +1,69 @@
 % !TEX root = ../Tesis.tex
 \chapter{Metodología}
 \section{Recolección de muestras}
-El centro de muestreo se instaló en el Instituto Salamanca
-($20.567158^{\circ}$\,N y $101.186115^{\circ}$\,O) en el municipio de
-Salamanca, Guanajuato (Figura~\ref{fig:mapa_sitio}). Las campañas de
-recolección se desarrollaron del 20 de febrero al 5 de marzo de 2026 y
-del 25 al 29 de mayo de 2026 mediante un sistema de condensación. El
-sistema está compuesto por un refrigerador modificado marca Hisense, con
-una conexión de tubería de PVC en su interior. El sistema tomaba las
-muestras de forma automática entre las 22:00 y las 02:00 h.
+Las muestras se recolectaron a través de un sistema de captura y condensación.
+El sistema está compuesto por un refrigerador modificado marca Hisense, con
+una conexión de tubería de PVC en su interior. El sistema estaba adaptado 
+a un \textit{timer} para el funcionamiento automático del sistema (Fig \ref{fig:refri}). 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.85\textwidth]{Imagenes_marco/Sitio_estudio.pdf}
-    \caption{Localización del sitio de muestreo en el Instituto
-    Salamanca, Guanajuato.}
-    \label{fig:mapa_sitio}
+    \includegraphics[width=0.85\textwidth]{Resultados/Sistema_refri.png}
+    \caption{Esquema del sistema de captura y condensación para el muestreo
+    de vapor de agua.}
+    \label{fig:refri}
 \end{figure}
-\section{Análisis de $\delta^{2}$H y $\delta^{18}$O}
-\label{sec:analisis_isotopico}
 
 Para obtener un factor del fraccionamiento isotópico que se produce al
 condensar la muestra, se adapta el condensador a una cámara de
 ambientes controlados. Cada 24 horas se recolecta la muestra de vapor y
 una muestra líquida. La cabina mantenía las condiciones en
 $30\,^{\circ}\mathrm{C}$ y $30\%$ de humedad relativa.
+
+\section{Análisis de $\delta^{2}$H y $\delta^{18}$O}
+\label{sec:analisis_isotopico_metodo}
+
+Para estimar el porcentaje de mezcla entre el vapor de fondo (atmosférico) y 
+el vapor teórico de combustión, se empleó un modelo de mezcla binaria de dos 
+extremos en el espacio $\delta$D--$\delta^{18}$O. El extremo de fondo no se
+definió como un punto fijo, sino mediante la línea meteórica regional (LMR),
+$\delta D = a\,\delta^{18}O + b$, donde $a$ y $b$ corresponden a la 
+pendiente y ordenada al origen de dicha recta. El extremo de combustión se
+fijó en los valores isotópicos teóricos $\delta^{18}O_c$ y $\delta D_c$.
+
+Para cada muestra ($\delta^{18}O_s$, $\delta D_s$) se determinó su punto de
+fondo específico ($\delta^{18}O_{bg}$, $\delta D_{bg}$) mediante la intersección 
+entre la LMR y la recta que une la muestra con el extremo de combustión. 
+Primero se calculó la pendiente de dicha recta:
+
+\begin{equation}
+m_{sc} = \frac{\delta D_s - \delta D_c}{\delta^{18}O_s - \delta^{18}O_c}
+\end{equation}
+
+y, a partir de esta, las coordenadas del punto de fondo:
+
+\begin{align}
+\delta^{18}O_{bg} &= \frac{\delta D_c - m_{sc}\,\delta^{18}O_c - b}{a - m_{sc}} \\
+\delta D_{bg} &= a\,\delta^{18}O_{bg} + b
+\end{align}
+
+El porcentaje de mezcla (contribución del vapor de combustión) para 
+cada muestra se calculó de forma independiente a partir de ambos isótopos,
+
+\begin{equation}
+\% = \frac{\delta^{18}O_s - \delta^{18}O_{bg}}{\delta^{18}O_c - \delta^{18}O_{bg}} \times 100 \;=\; \frac{\delta D_s - \delta D_{bg}}{\delta D_c - \delta D_{bg}} \times 100,
+\end{equation}
+
+donde la coincidencia entre ambos valores se utilizó como criterio de 
+consistencia del modelo de mezcla. Finalmente, para la representación 
+gráfica se generaron las líneas de mezcla correspondientes a fracciones
+de combustión de $p = 0.2,\,0.4,\,0.6,\,0.8$, mediante interpolación lineal 
+entre cada punto de fondo y el extremo de combustión:
+
+\begin{align}
+O_p &= \delta^{18}O_{bg} + p\,(\delta^{18}O_c - \delta^{18}O_{bg}) \\
+D_p &= \delta D_{bg} + p\,(\delta D_c - \delta D_{bg})
+\end{align}
 
 \section{Validación de datos de las estaciones de monitoreo de aire}
 \label{sec:validacion_datos}

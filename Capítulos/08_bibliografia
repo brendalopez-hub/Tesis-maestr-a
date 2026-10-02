@@ -1,0 +1,141 @@
+% !TEX root = ../Tesis.tex
+\begin{thebibliography}{99}
+\setlength{\itemsep}{0.6em}
+\raggedright
+
+\bibitem{alvarez2025}
+Alvarez, C. I., López, S., \& Gualotuña, D. (2025). Atmospheric composition and sensing. In \emph{Data-Driven Earth Observation for Disaster Management: From Theory to Practical Applications}. \url{https://doi.org/10.1016/B978-0-443-33803-8.00043-3}
+
+\bibitem{bakels2024}
+Bakels, L., Tatsii, D., Tipka, A., Thompson, R., Dütsch, M., Blaschek, M., Seibert, P., Baier, K., Bucci, S., Cassiani, M., Eckhardt, S., Groot Zwaaftink, C., Henne, S., Kaufmann, P., Lechner, V., Maurer, C., Mulder, M. D., Pisso, I., Plach, A., \ldots{} Stohl, A. (2024). FLEXPART version 11: Improved accuracy, efficiency, and flexibility. \emph{Geoscientific Model Development}, \emph{17}(21). \url{https://doi.org/10.5194/gmd-17-7595-2024}
+
+\bibitem{baklanov2024}
+Baklanov, A. (2024). Physics of the planetary boundary layer. In \emph{Air Quality: Science, Impacts, and Management}. \url{https://doi.org/10.1016/B978-0-12-822591-2.00006-8}
+
+\bibitem{barron2012}
+Barrón-Adame, J. M., Cortina-Januchs, M. G., Vega-Corona, A., \& Andina, D. (2012). Unsupervised system to classify SO$_2$ pollutant concentrations in Salamanca, Mexico. \emph{Expert Systems with Applications}, \emph{39}(1). \url{https://doi.org/10.1016/j.eswa.2011.05.083}
+
+\bibitem{berry2022}
+Berry, K. L. (2022). But we build buildings: Urban boundary layer. In \emph{Conceptual Boundary Layer Meteorology: The Air Near Here}. \url{https://doi.org/10.1016/B978-0-12-817092-2.00004-7}
+
+\bibitem{borduas2018}
+Borduas, N., \& Donahue, N. M. (2018). The Natural Atmosphere. In \emph{Green Chemistry: An Inclusive Approach}. \url{https://doi.org/10.1016/B978-0-12-809270-5.00006-6}
+
+\bibitem{campos2012}
+Campos-Ramos, A. A., Aragon-Pina, A., Alastuey, A., Galindo-Estrada, I., \& Querol, X. (2012). Chemical composition of PM$_{2.5}$ particles in Salamanca, Guanajuato Mexico: Source apportionment with receptor models. \emph{Atmospheric Research}, \emph{107}(4), 31--41. \url{https://doi.org/10.5094/APR.2011.046}
+
+\bibitem{chen2024}
+Chen, M., Gao, J., Luo, L., Zhao, A., Niu, X., Yu, W., Liu, Y., \& Chen, G. (2024). Temporal variations of stable isotopic compositions in atmospheric water vapor on the Southeastern Tibetan Plateau and their controlling factors. \emph{Atmospheric Research}, \emph{303}. \url{https://doi.org/10.1016/j.atmosres.2024.107328}
+
+\bibitem{cheng2017}
+Cheng, S., An, X., Zhou, L., Tans, P. P., \& Jacobson, A. (2017). Atmospheric CO$_2$ at Waliguan station in China: Transport climatology, temporal patterns and source-sink region representativeness. \emph{Atmospheric Environment}, \emph{159}. \url{https://doi.org/10.1016/j.atmosenv.2017.03.055}
+
+\bibitem{dai2021}
+Dai, D., Gao, J., Steen-Larsen, H. C., Yao, T., Ma, Y., Zhu, M., \& Li, S. (2021). Continuous monitoring of the isotopic composition of surface water vapor at Lhasa, southern Tibetan Plateau. \emph{Atmospheric Research}, \emph{264}. \url{https://doi.org/10.1016/j.atmosres.2021.105827}
+
+\bibitem{fiorella2019}
+Fiorella, R. P., Bares, R., Lin, J. C., \& Bowen, G. J. (2019). Wintertime decoupling of urban valley and rural ridge hydrological processes revealed through stable water isotopes. \emph{Atmospheric Environment}, \emph{213}, 337--348. \url{https://doi.org/10.1016/J.ATMOSENV.2019.06.022}
+
+\bibitem{foreback2024}
+Foreback, B., Mahura, A., Clusius, P., Xavier, C., Baykara, M., Zhou, P., Nieminen, T., Sinclair, V., Kerminen, V. M., Kokkonen, T. V., Hakala, S., Aliaga, D., Makkonen, R., Baklanov, A., Nuterman, R., Xia, M., Hua, C., Liu, Y., Kulmala, M., \ldots{} Boy, M. (2024). A new implementation of FLEXPART with Enviro-HIRLAM meteorological input, and a case study during a heavy air pollution event. \emph{Big Earth Data}, \emph{8}(2). \url{https://doi.org/10.1080/20964471.2024.2316320}
+
+\bibitem{galewsky2016}
+Galewsky, J., Steen-Larsen, H. C., Field, R. D., Worden, J., Risi, C., \& Schneider, M. (2016). Stable isotopes in atmospheric water vapor and applications to the hydrologic cycle. In \emph{Reviews of Geophysics} (Vol. 54, Number 4). \url{https://doi.org/10.1002/2015RG000512}
+
+\bibitem{gobgto2023}
+Gobierno del Estado de Guanajuato, \& Secretaria de Seguridad Pública. (2023). \emph{Atlas de Riesgos del Municipio de Salamanca}.
+
+\bibitem{gorski2015}
+Gorski, G., Strong, C., Good, S. P., Bares, R., Ehleringer, J. R., \& Bowen, G. J. (2015). Vapor hydrogen and oxygen isotopes reflect water of combustion in the urban atmosphere. \emph{Proceedings of the National Academy of Sciences of the United States of America}, \emph{112}(11). \url{https://doi.org/10.1073/pnas.1424728112}
+
+\bibitem{gui2017}
+Gui, K., Che, H., Chen, Q., Zeng, Z., Zheng, Y., Long, Q., Sun, T., Liu, X., Wang, Y., Liao, T., Yu, J., Wang, H., \& Zhang, X. (2017). Water vapor variation and the effect of aerosols in China. \emph{Atmospheric Environment}, \emph{165}. \url{https://doi.org/10.1016/j.atmosenv.2017.07.005}
+
+\bibitem{hoefs2022}
+Hoefs, J., \& Harmon, R. (2022). The Earth's atmosphere -- A stable isotope perspective and review. In \emph{Applied Geochemistry} (Vol. 143). \url{https://doi.org/10.1016/j.apgeochem.2022.105355}
+
+\bibitem{iee2022}
+Instituto de Ecología del Estado. (2022). \emph{Programa de gestión para mejorar la calidad del aire de Salamanca, Celaya e Irapuato (2013-2022)}.
+
+\bibitem{ine_manual5}
+Instituto Nacional de Ecología. (n.d.). \emph{Manual 5: Protocolo de manejo de datos de calidad del aire}.
+
+\bibitem{inegi2010}
+Instituto Nacional de Estadística y Geografía. (2010). \emph{Compendio de información geográfica municipal 2010, Salamanca, Guanajuato}.
+
+\bibitem{kumar2025}
+Kumar, P. K., Nayak, P., \& Yadava, M. G. (2025). Isotopic composition ($\delta^{18}$O and $\delta$D) of ambient atmospheric water vapor in a semi-arid region: variabilities and controlling factors. \emph{Physics and Chemistry of the Earth}, \emph{141}. \url{https://doi.org/10.1016/j.pce.2025.104201}
+
+\bibitem{li2026}
+Li, J., Wang, J., Ma, Z., Guo, Y., \& Cao, S. J. (2026). Climate change mobilizes urban PAHs into systemic environmental risks (SERisks). In \emph{Journal of Hazardous Materials} (Vol. 501). \url{https://doi.org/10.1016/j.jhazmat.2025.140949}
+
+\bibitem{markle2025}
+Markle, B. R. (2025). Water isotopes and the hydrological cycle. \emph{Reference Module in Earth Systems and Environmental Sciences}, 11--49. \url{https://doi.org/10.1016/B978-0-323-99762-1.00135-2}
+
+\bibitem{meo2025}
+Meo, S. A. (2025). Environmental pollution: the silent global crisis. In \emph{Environmental Pollution and Cardiovascular Diseases}. \url{https://doi.org/10.1016/b978-0-443-26769-7.00005-4}
+
+\bibitem{nakajima2026}
+Nakajima, K., Adachi, I., \& Yamanaka, T. (2026). Refining isotopic estimates of the evaporation-to-inflow ratio: The role of lake-atmosphere interactions. \emph{Journal of Hydrology}, \emph{672}, 135361. \url{https://doi.org/10.1016/J.JHYDROL.2026.135361}
+
+\bibitem{salmon2018}
+Olivia E. Salmon. (2018). \emph{Urban Atmospheric Water Vapor and its Stable Isotopologues}. Purdue University.
+
+\bibitem{qu2024}
+Qu, K., \& Dan, D. (2024). Atmospheric environmental analysis. In \emph{Environmental Analytical Chemistry}. \url{https://doi.org/10.1016/b978-0-443-21966-5.00004-1}
+
+\bibitem{ramalingam2025}
+Ramalingam, G., Priya, A. K., \& Dumka, U. C. (2025). Air pollution's impacts: Environmental degradation and consequences. In \emph{Air Pollution and Related Health Risks: Investigating Environmental Health and Sustainability}. \url{https://doi.org/10.1016/B978-0-443-23965-6.00014-9}
+
+\bibitem{ramirez2024}
+Ramírez-González, L. M., Puy-Aquiza, M. J., \& Li, Y. (2024). Estudio de isótopos estables (D, $^{18}$O) de la precipitación y agua termal-subterránea en la parte central de la Cuenca Alta del Río Laja, Guanajuato, México. \emph{Acta Universitaria}, \emph{34}. \url{https://doi.org/10.15174/au.2024.4156}
+
+\bibitem{roland2006}
+Roland, S. (2006). The Atmospheric Boundary Layer. \emph{Atmospheric Science}, 375--417. \url{https://doi.org/10.1016/B978-0-12-732951-2.50014-4}
+
+\bibitem{sema2021}
+Secretaría de Agua y Medioambiente. (2021). \emph{Inventario de emisiones de contaminantes criterio y precursores}.
+
+\bibitem{semarnat2024}
+Secretaría de Medio Ambiente y Recursos Naturales. (2024). \emph{Norma Oficial Mexicana NOM-172-SEMARNAT-2023, Lineamientos para la obtención y comunicación del índice de calidad del aire y riesgos a la salud}.
+
+\bibitem{ssp2023}
+Secretaría de Seguridad Pública. (2023). \emph{Atlas de Riesgos del Municipio de Salamanca}.
+
+\bibitem{seibert2004}
+Seibert, P., \& Frank, A. (2004). Source-receptor matrix calculation with a Lagrangian particle dispersion model in backward mode. \emph{Atmospheric Chemistry and Physics}, \emph{4}(1). \url{https://doi.org/10.5194/acp-4-51-2004}
+
+\bibitem{shang2024}
+Shang, B., Gao, J., Chen, G., \& Wu, Y. (2024). Stable isotopes in atmospheric water vapour: Patterns, mechanisms and perspectives. In \emph{Science China Earth Sciences} (Vol. 67, Number 12). \url{https://doi.org/10.1007/s11430-023-1410-6}
+
+\bibitem{smith2024}
+Smith, A. C., \& Lacey, J. H. (2024). Tracing anthropogenic climate and environmental change using stable isotopes. In \emph{Quaternary Science Reviews} (Vol. 346). \url{https://doi.org/10.1016/j.quascirev.2024.109028}
+
+\bibitem{sokhi2024}
+Sokhi, R. S., Alyuz, U., \& Arghavani, S. (2024). The atmosphere---fundamental concepts. In \emph{Air Quality: Science, Impacts, and Management}. \url{https://doi.org/10.1016/B978-0-12-822591-2.00002-0}
+
+\bibitem{tsujimura2007}
+Tsujimura, M., Sasaki, L., Yamanaka, T., Sugimoto, A., Li, S. G., Matsushima, D., Kotani, A., \& Saandar, M. (2007). Vertical distribution of stable isotopic composition in atmospheric water vapor and subsurface water in grassland and forest sites, eastern Mongolia. \emph{Journal of Hydrology}, \emph{333}(1). \url{https://doi.org/10.1016/j.jhydrol.2006.07.025}
+
+\bibitem{vallero2025}
+Vallero, D. A. (2025). The Physics of the Atmosphere. \emph{Fundamentals of Air Pollution}, 24--44. \url{https://doi.org/10.1016/B978-0-443-31446-9.00033-X}
+
+\bibitem{welp2025}
+Welp, L., Oh, Y., Griffis, T., \& Yu, Z. (2025). Isotopes of modern atmospheric greenhouse gases: Improving understanding of climate change feedbacks. \emph{Reference Module in Earth Systems and Environmental Sciences}, 553--576. \url{https://doi.org/10.1016/B978-0-323-99762-1.00125-X}
+
+\bibitem{xing2020}
+Xing, M., Liu, W., Li, X., Zhou, W., Wang, Q., Tian, J., Li, X., Tie, X., Li, G., Cao, J., Bao, H., \& An, Z. (2020). Vapor isotopic evidence for the worsening of winter air quality by anthropogenic combustion-derived water. \emph{Proceedings of the National Academy of Sciences of the United States of America}, \emph{117}(52). \url{https://doi.org/10.1073/PNAS.1922840117}
+
+\bibitem{yang2025}
+Yang, X. (2025). Is fossil fuel intensity adversely affecting health improvement and sustainability? \emph{Resources Policy}, \emph{101}. \url{https://doi.org/10.1016/j.resourpol.2024.105388}
+
+\bibitem{yang2024}
+Yang, Y., \& Yoshimura, K. (2024). Simulation of Water Isotopes in Combustion-Derived Vapor Emissions in Winter. \emph{Journal of Geophysical Research: Atmospheres}, \emph{129}(15). \url{https://doi.org/10.1029/2023JD040543}
+
+\bibitem{yao2018}
+Yao, T., Zhang, X., Guan, H., Zhou, H., Hua, M., \& Wang, X. (2018). Climatic and environmental controls on stable isotopes in atmospheric water vapor near the surface observed in Changsha, China. \emph{Atmospheric Environment}, \emph{189}. \url{https://doi.org/10.1016/j.atmosenv.2018.07.008}
+
+\bibitem{zachleder2018}
+Zachleder, V., Vítová, M., Hlavová, M., Moudříková, Š., Mojzeš, P., Heumann, H., Becher, J. R., \& Bišová, K. (2018). Stable isotope compounds - production, detection, and application. In \emph{Biotechnology Advances} (Vol. 36, Number 3). \url{https://doi.org/10.1016/j.biotechadv.2018.01.010}
+
+\end{thebibliography}
