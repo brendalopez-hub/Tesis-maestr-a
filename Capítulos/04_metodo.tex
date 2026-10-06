@@ -263,3 +263,53 @@ etiquetaron como valores extremos.
 Q_1 - 1.5\,\mathrm{IQR} \le X \le Q_3 + 1.5\,\mathrm{IQR}
 \label{eq:rango_atipicos}
 \end{equation}
+
+\subsection{Evaluación de la normalidad de las variables de las estaciones de calidad 
+del aire}
+\label{subsec:normalidad}
+
+Para seleccionar las pruebas estadísticas para el análisis de los 
+datos de las estaciones de monitoreo de calidad del aire (CR, NATIVITAS y DIF), 
+se evaluó si cada variable seguía una distribución normal, con el fin de decidir 
+entre un enfoque paramétrico y uno no paramétrico. El análisis se realizó con series 
+horarias correspondientes a ambas campañas de muestreo (20 de febrero al 5 de marzo y 
+de 25 al 29 de mayo de 2026), a través de los datos validados. 
+
+Se evaluaron los contaminantes criterio (O$_3$, SO$_2$, CO, NO$_2$, PM$_{10}$ y PM$_{2.5}$) 
+y las variables meteorológicas disponibles en cada estación (velocidad del viento, 
+temperatura, presión barométrica, humedad relativa). La dirección del viento (WD) se 
+excluyó del análisis porque es una variable circular (0--360$^\circ$) y el supuesto de 
+normalidad no es aplicable. 
+
+
+Para cada variable se aplicaron tres pruebas de bondad de ajuste con hipótesis nula 
+de normalidad: Shapiro-Wilk, Lilliefors y Anderson-Darling. Se utilizó un nivel de significancia $\alpha = 0.05$ 
+y se consideró que una variable cumplía el supuesto de normalidad únicamente si ninguna de 
+las tres pruebas rechazaba la hipótesis nula ($p > 0.05$ en todas). Este criterio conservador 
+se adoptó debido a que, con muestras de tamaño moderado, las pruebas pueden discrepar entre sí.
+
+De manera complementaria, se calcularon el coeficiente de asimetría y la curtosis de 
+cada variable (para una distribución normal, 0 y 3, respectivamente) y se construyeron 
+gráficos cuantil-cuantil (Q-Q) contra la distribución normal estándar, que permitieron 
+identificar el tipo de desviación.
+
+\subsection{Análisis de correlación entre variables}
+\label{subsec:correlacion}
+
+Para explorar las relaciones entre los contaminantes y las variables meteorológicas se 
+calcularon matrices de correlación de Spearman, por separado para cada campaña de muestreo 
+y para cada estación (CR, NATIVITAS y DIF). Se incluyeron O$_3$, SO$_2$, CO, NO$_2$,
+PM$_{10}$, PM$_{2.5}$, la velocidad del viento (WS), la temperatura, la presión barométrica
+(PBAR), la humedad relativa (HR) y, en la estación DIF, la radiación ultravioleta
+(UV), según la disponibilidad de cada variable en cada estación. La dirección del 
+viento se excluyó por tratarse de una variable circular. Cada coeficiente se calculó 
+con todas las horas con dato válido para el par de variables correspondiente 
+(eliminación por pares), y se consideró significativo cuando el valor de $p$ fue menor, con 
+corrección de Benjamini-Hochberg, a $\alpha = 0.05$. Las matrices se representaron como mapas de 
+calor del triángulo inferior, con una escala divergente entre $-1$ y $1$. Se consideró 
+que $|\rho| < 0.3$ indica una correlación 
+débil, entre 0.3 y 0.7 una correlación moderada y mayor a 0.7 una correlación fuerte.
+El análisis se realizó en dos escenarios. En el primero se utilizaron todas 
+las horas de cada campaña. En el segundo se consideraron únicamente las horas 
+del periodo nocturno de muestreo, de las 22:00 a las 02:00 h. 
+

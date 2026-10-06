@@ -28,6 +28,345 @@ tomaba las muestras de forma automática entre las 22:00 y las 02:00 h (Fig \ref
 \label{sec:analisis_isotopico}
 
 \section{Estaciones de monitoreo de calidad de aire}
+\subsection{Prueba de normalidad}
+\label{subsec:res_normalidad}
+Los resultados de las pruebas de normalidad para la campaña de febrero (20 de febrero al 4 de marzo de 2026), 
+se presentan en la Tabla~\ref{tab:normalidad_feb}, y los gráficos cuantil-cuantil (Q-Q) de cada estación en las
+Figuras~\ref{fig:qq_cr_feb}, \ref{fig:qq_nativitas_feb} y \ref{fig:qq_dif_feb}. Se evaluaron 29 combinaciones 
+estación--variable: 10 en CR, 10 en NATIVITAS y 9 en DIF. El número de observaciones por variable varió entre 168 y 312 horas 
+(312 corresponde a 13 días de registro completo). Los valores faltantes fueron más frecuentes en NATIVITAS, en 
+el PM$_{10}$ ($n = 168$), el CO ($n = 201$) y el PM$_{2.5}$ ($n = 265$), y en DIF, en el SO$_2$ ($n = 253$) y el 
+PM$_{2.5}$ ($n = 258$).
+
+Solo una de las 29 combinaciones cumplió el supuesto de normalidad en las tres pruebas ($p > 0.05$): el PM$_{2.5}$ 
+en DIF (Shapiro-Wilk $p = 0.146$, Lilliefors $p = 0.223$ y Anderson-Darling $p = 0.284$), cuya asimetría y 
+curtosis (0.03 y 2.57) son cercanas a los valores de una distribución normal. En las 28 combinaciones restantes 
+se rechazó la hipótesis nula, en 26 de ellas con las tres pruebas. Las dos excepciones fueron el O$_3$ y el PM$_{2.5}$ en 
+NATIVITAS, donde la prueba de Lilliefors no rechazó la normalidad ($p = 0.120$ y $0.264$) pero Shapiro-Wilk y 
+Anderson-Darling sí ($p < 0.001$ y $0.002$ para el O$_3$; $p = 0.008$ y $0.038$ para el PM$_{2.5}$). Estos casos 
+se clasificaron como no normales de acuerdo con el criterio definido en la metodología.
+
+Los contaminantes primarios presentaron asimetría positiva en las tres estaciones. El SO$_2$ mostró los 
+valores más altos de asimetría (1.80 en CR, 2.54 en NATIVITAS y 3.37 en DIF) y de curtosis 
+(5.62, 12.51 y 19.62, frente a 3 en una distribución normal), lo que indica una cola derecha pesada. 
+El CO en CR y DIF (asimetría de 1.68 y 1.94), el PM$_{10}$ (1.04 a 1.28) y el NO$_2$ en NATIVITAS y 
+DIF (1.28 y 1.20) siguieron el mismo patrón. La velocidad del viento también presentó asimetría positiva 
+en las tres estaciones (1.18 a 1.35) con curtosis de 4.46 a 5.57. El CO en NATIVITAS fue una excepción: sus 
+valores de asimetría ($-0.17$) y curtosis (2.85) fueron cercanos a los de una distribución normal, pero las 
+tres pruebas rechazaron la normalidad, lo que indica desviaciones que estos dos estadísticos no capturan.
+
+El O$_3$, la temperatura y la humedad relativa presentaron asimetrías cercanas a cero (entre $-0.10$ y 0.54) y 
+curtosis menor a 3 (entre 2.04 y 2.43), es decir, distribuciones más aplanadas que la normal. Este comportamiento 
+es consistente con el ciclo diurno marcado de estas variables. La presión barométrica en CR y NATIVITAS mostró 
+asimetría positiva (0.85 y 0.86) y curtosis cercana a 3 (3.12 y 3.07), y fue rechazada por las tres pruebas.
+
+En los gráficos Q-Q se observa que las variables con asimetría positiva marcada se separan de la recta de 
+referencia en el extremo superior de la distribución, mientras que las variables con ciclo diurno presentan una 
+forma de colas aplanadas.
+
+Cabe señalar que, con tamaños de muestra de hasta 312 observaciones, las pruebas son más sensibles a desviaciones 
+pequeñas que en la campaña de mayo ($n \leq 120$; Tabla~\ref{tab:normalidad_may}), por lo que el mayor 
+número de rechazos también refleja en parte este aumento de potencia. En conjunto, ninguna variable 
+cumplió el supuesto de normalidad en todas las estaciones, por lo que el análisis posterior de la campaña de 
+febrero se realizó con pruebas no paramétricas.
+
+\begin{longtable}{@{}llrrrccc@{}}
+\caption{Resultados de las pruebas de normalidad por estación y variable en la campaña de febrero. Se reportan el número de observaciones ($n$), el coeficiente de asimetría, la curtosis y los valores de $p$ de las pruebas de Shapiro-Wilk (S-W), Lilliefors (Lil.) y Anderson-Darling (A-D).}
+\label{tab:normalidad_feb}\\
+\toprule
+Estación & Variable & $n$ & Asimetría & Curtosis & $p$ (S-W) & $p$ (Lil.) & $p$ (A-D) \\
+\midrule
+\endfirsthead
+
+\multicolumn{8}{c}{\tablename~\thetable{} (continuación)}\\
+\toprule
+Estación & Variable & $n$ & Asimetría & Curtosis & $p$ (S-W) & $p$ (Lil.) & $p$ (A-D) \\
+\midrule
+\endhead
+
+\midrule
+\multicolumn{8}{r}{\textit{Continúa en la siguiente página}}\\
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+CR        & O$_3$ (ppb)                      & 297 & 0.21 & 2.21  & $<0.001$ & 0.005       & $<0.001$ \\
+          & SO$_2$ (ppb)                     & 308 & 1.80 & 5.62  & $<0.001$ & $\leq0.001$ & $<0.001$ \\
+          & CO (ppm)                         & 291 & 1.68 & 6.18  & $<0.001$ & $\leq0.001$ & $<0.001$ \\
+          & NO$_2$ (ppb)                     & 308 & 0.54 & 3.05  & $<0.001$ & 0.0014      & $<0.001$ \\
+          & PM$_{10}$ ($\mu$g\,m$^{-3}$)     & 303 & 1.15 & 5.18  & $<0.001$ & $\leq0.001$ & $<0.001$ \\
+          & PM$_{2.5}$ ($\mu$g\,m$^{-3}$)    & 312 & 0.79 & 3.60  & $<0.001$ & $\leq0.001$ & $<0.001$ \\
+          & WS (m\,s$^{-1}$)                 & 312 & 1.18 & 4.46  & $<0.001$ & $\leq0.001$ & $<0.001$ \\
+          & Temp ($^{\circ}$C)               & 312 & 0.00 & 2.10  & $<0.001$ & 0.018       & $<0.001$ \\
+          & PBAR (mm Hg)                     & 312 & 0.85 & 3.12  & $<0.001$ & $\leq0.001$ & $<0.001$ \\
+          & HR (\%)                          & 310 & 0.45 & 2.43  & $<0.001$ & $\leq0.001$ & $<0.001$ \\
+\midrule
+NATIVITAS & O$_3$ (ppb)                      & 307 & 0.18 & 2.24  & $<0.001$ & 0.120       & 0.002 \\
+          & SO$_2$ (ppb)                     & 279 & 2.54 & 12.51 & $<0.001$ & $\leq0.001$ & $<0.001$ \\
+          & CO (ppm)                         & 201 & $-0.17$ & 2.85 & $<0.001$ & $\leq0.001$ & $<0.001$ \\
+          & NO$_2$ (ppb)                     & 311 & 1.28 & 3.94  & $<0.001$ & $\leq0.001$ & $<0.001$ \\
+          & PM$_{10}$ ($\mu$g\,m$^{-3}$)     & 168 & 1.04 & 3.93  & $<0.001$ & $\leq0.001$ & $<0.001$ \\
+          & PM$_{2.5}$ ($\mu$g\,m$^{-3}$)    & 265 & $-0.11$ & 2.52 & 0.008   & 0.264       & 0.038 \\
+          & WS (m\,s$^{-1}$)                 & 312 & 1.25 & 4.53  & $<0.001$ & $\leq0.001$ & $<0.001$ \\
+          & Temp ($^{\circ}$C)               & 312 & $-0.10$ & 2.14 & $<0.001$ & 0.024      & $<0.001$ \\
+          & PBAR (mm Hg)                     & 312 & 0.86 & 3.07  & $<0.001$ & $\leq0.001$ & $<0.001$ \\
+          & HR (\%)                          & 312 & 0.40 & 2.28  & $<0.001$ & 0.006       & $<0.001$ \\
+\midrule
+DIF       & O$_3$ (ppb)                      & 281 & 0.28 & 2.09  & $<0.001$ & 0.006       & $<0.001$ \\
+          & SO$_2$ (ppb)                     & 253 & 3.37 & 19.62 & $<0.001$ & $\leq0.001$ & $<0.001$ \\
+          & CO (ppm)                         & 268 & 1.94 & 9.08  & $<0.001$ & $\leq0.001$ & $<0.001$ \\
+          & NO$_2$ (ppb)                     & 281 & 1.20 & 4.13  & $<0.001$ & $\leq0.001$ & $<0.001$ \\
+          & PM$_{10}$ ($\mu$g\,m$^{-3}$)     & 275 & 1.28 & 5.41  & $<0.001$ & $\leq0.001$ & $<0.001$ \\
+          & PM$_{2.5}$ ($\mu$g\,m$^{-3}$)    & 258 & 0.03 & 2.57  & 0.146    & 0.223       & 0.284 \\
+          & WS (m\,s$^{-1}$)                 & 278 & 1.35 & 5.57  & $<0.001$ & $\leq0.001$ & $<0.001$ \\
+          & Temp ($^{\circ}$C)               & 283 & $-0.02$ & 2.04 & $<0.001$ & 0.004      & $<0.001$ \\
+          & HR (\%)                          & 283 & 0.54 & 2.42  & $<0.001$ & $\leq0.001$ & $<0.001$ \\
+\end{longtable}
+{\footnotesize \textit{Nota:} los valores de $p$ de la prueba de Lilliefors se reportan en el intervalo $[0.001, 0.5]$ (valores extremos truncados por la implementación), por lo que $\leq0.001$ indica el límite inferior de ese intervalo. Una distribución normal tiene asimetría de 0 y curtosis de 3.}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{Resultados/CR_normalidad_feb.pdf}
+    \caption{Gráficos cuantil-cuantil (Q-Q) de las variables de la estación CR en la campaña de febrero. La línea punteada es la referencia de una distribución normal.}
+    \label{fig:qq_cr_feb}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{Resultados/NATIVITAS_normalidad_feb.pdf}
+    \caption{Gráficos cuantil-cuantil (Q-Q) de las variables de la estación NATIVITAS en la campaña de febrero.}
+    \label{fig:qq_nativitas_feb}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{Resultados/DIF_normalidad_feb.pdf}
+    \caption{Gráficos cuantil-cuantil (Q-Q) de las variables de la estación DIF en la campaña de febrero.}
+    \label{fig:qq_dif_feb}
+\end{figure}
+
+Los resultados de las pruebas de normalidad para la campaña de mayo (25 al 29 de mayo de 2026) se presentan en 
+la Tabla~\ref{tab:normalidad_may}, y los gráficos cuantil-cuantil (Q-Q) de cada estación en las Figuras~\ref{fig:qq_cr}, 
+\ref{fig:qq_nativitas} y \ref{fig:qq_dif}. En total se evaluaron 30 combinaciones estación--variable: 10 en CR, 9 en 
+NATIVITAS y 11 en DIF. El número de observaciones fue de 120 horas en la mayoría de los casos; fue menor 
+en NO$_2$ y PM$_{10}$ de CR ($n = 106$ y $119$), en CO y PM$_{2.5}$ de DIF ($n = 115$) y en la velocidad del viento 
+de DIF ($n = 118$), debido a datos faltantes o inválidos.
+
+Solo cuatro de las 30 combinaciones cumplieron el supuesto de normalidad en las tres pruebas ($p > 0.05$): 
+la velocidad del viento (WS) y la presión barométrica (PBAR) en CR, la presión barométrica en NATIVITAS y
+el PM$_{10}$ en DIF. En las 26 restantes, al menos una prueba rechazó la hipótesis nula. Cabe señalar que en la 
+velocidad del viento de CR el resultado de Shapiro-Wilk estuvo muy cerca del umbral ($p = 0.051$), y que ninguna 
+de las cuatro variables que pasaron las pruebas lo hizo en las tres estaciones.
+
+Los contaminantes presentaron las desviaciones más marcadas. El SO$_2$ mostró una fuerte asimetría positiva 
+en las tres estaciones (2.73 a 3.84) con curtosis muy elevada (12.45 a 19.69, frente a 3 de una distribución normal),
+y rechazó la normalidad en las tres pruebas. Un patrón similar se observó en el CO de NATIVITAS
+(asimetría de 4.82 y curtosis de 37.04), en el NO$_2$ de NATIVITAS y DIF, y en el PM$_{10}$ de CR y NATIVITAS, 
+con asimetrías superiores a 1.6 y colas pesadas. En los gráficos Q-Q, estas variables se separan de la recta de 
+referencia en el extremo superior, y en SO$_2$ y NO$_2$ se aprecia además un tramo aplanado en los valores mínimos.
+
+Las variables meteorológicas, y la radiación UV en DIF, mostraron un comportamiento distinto: asimetrías 
+cercanas a cero, pero curtosis menor a 3 (por ejemplo, 1.76 en la temperatura de CR y 2.01 en UV de DIF), 
+lo que indica distribuciones más aplanadas que la normal. En los gráficos Q-Q esto se refleja de tal forma 
+que las colas se aplanan en los extremos. 
+
+Algunos casos presentaron resultados discrepantes entre pruebas. El PM$_{2.5}$ de CR no rechazó la 
+normalidad con Shapiro-Wilk ($p = 0.070$) ni con Anderson-Darling ($p = 0.100$), pero sí con Lilliefors ($p = 0.007$). 
+En la humedad relativa de CR y DIF, la prueba de Lilliefors no rechazó la normalidad ($p = 0.088$ y $0.067$),
+mientras que Shapiro-Wilk y Anderson-Darling sí. La presión barométrica de DIF fue rechazada por Shapiro-Wilk
+($p = 0.042$) y Lilliefors ($p = 0.012$), pero no por Anderson-Darling ($p = 0.074$). Dado el criterio establecido 
+en la metodología, estos casos se consideraron como no normales.
+
+En conjunto, ninguna variable cumplió el supuesto de normalidad en todas las estaciones, por lo que el análisis 
+posterior de la campaña de mayo se realizó con pruebas no paramétricas.
+
+\begin{longtable}{@{}llrrrccc@{}}
+\caption{Resultados de las pruebas de normalidad por estación y variable en la campaña de mayo. Se reportan el número de observaciones ($n$), el coeficiente de asimetría, la curtosis y los valores de $p$ de las pruebas de Shapiro-Wilk (S-W), Lilliefors (Lil.) y Anderson-Darling (A-D).}
+\label{tab:normalidad_may}\\
+\toprule
+Estación & Variable & $n$ & Asimetría & Curtosis & $p$ (S-W) & $p$ (Lil.) & $p$ (A-D) \\
+\midrule
+\endfirsthead
+
+\multicolumn{8}{c}{\tablename~\thetable{} (continuación)}\\
+\toprule
+Estación & Variable & $n$ & Asimetría & Curtosis & $p$ (S-W) & $p$ (Lil.) & $p$ (A-D) \\
+\midrule
+\endhead
+
+\midrule
+\multicolumn{8}{r}{\textit{Continúa en la siguiente página}}\\
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+CR        & O$_3$ (ppb)                      & 120 & 0.44 & 2.53  & 0.010    & 0.132       & 0.018 \\
+          & SO$_2$ (ppb)                     & 120 & 2.73 & 12.45 & $<0.001$ & $\leq0.001$ & $<0.001$ \\
+          & CO (ppm)                         & 120 & 0.80 & 3.82  & 0.002    & 0.033       & 0.004 \\
+          & NO$_2$ (ppb)                     & 106 & 0.60 & 2.01  & $<0.001$ & $\leq0.001$ & $<0.001$ \\
+          & PM$_{10}$ ($\mu$g\,m$^{-3}$)     & 119 & 2.66 & 17.58 & $<0.001$ & $\leq0.001$ & $<0.001$ \\
+          & PM$_{2.5}$ ($\mu$g\,m$^{-3}$)    & 120 & 0.45 & 3.64  & 0.070    & 0.007       & 0.100 \\
+          & WS (m\,s$^{-1}$)                 & 120 & 0.51 & 3.18  & 0.051    & 0.057       & 0.094 \\
+          & Temp ($^{\circ}$C)               & 120 & 0.12 & 1.76  & $<0.001$ & 0.015       & $<0.001$ \\
+          & PBAR (mm Hg)                     & 120 & 0.01 & 2.24  & 0.093    & $\geq0.5$   & 0.374 \\
+          & HR (\%)                          & 120 & 0.42 & 2.27  & $<0.001$ & 0.088       & 0.002 \\
+\midrule
+NATIVITAS & O$_3$ (ppb)                      & 120 & 0.36 & 2.32  & 0.015    & 0.002       & 0.009 \\
+          & SO$_2$ (ppb)                     & 120 & 3.84 & 19.69 & $<0.001$ & $\leq0.001$ & $<0.001$ \\
+          & CO (ppm)                         & 120 & 4.82 & 37.04 & $<0.001$ & $\leq0.001$ & $<0.001$ \\
+          & NO$_2$ (ppb)                     & 120 & 1.90 & 8.19  & $<0.001$ & $\leq0.001$ & $<0.001$ \\
+          & PM$_{10}$ ($\mu$g\,m$^{-3}$)     & 120 & 1.78 & 8.29  & $<0.001$ & $\leq0.001$ & $<0.001$ \\
+          & PM$_{2.5}$ ($\mu$g\,m$^{-3}$)    & 120 & 0.71 & 3.38  & 0.005    & 0.078       & 0.010 \\
+          & WS (m\,s$^{-1}$)                 & 120 & 0.64 & 2.08  & $<0.001$ & $\leq0.001$ & $<0.001$ \\
+          & Temp ($^{\circ}$C)               & 120 & 0.48 & 2.42  & $<0.001$ & 0.091       & 0.003 \\
+          & PBAR (mm Hg)                     & 120 & 0.08 & 2.31  & 0.141    & $\geq0.5$   & 0.552 \\
+\midrule
+DIF       & O$_3$ (ppb)                      & 120 & 0.56 & 2.40  & $<0.001$ & $\leq0.001$ & $<0.001$ \\
+          & SO$_2$ (ppb)                     & 120 & 3.43 & 14.39 & $<0.001$ & $\leq0.001$ & $<0.001$ \\
+          & CO (ppm)                         & 115 & $-0.47$ & 2.86 & $<0.001$ & $\leq0.001$ & $<0.001$ \\
+          & NO$_2$ (ppb)                     & 120 & 1.61 & 8.19  & $<0.001$ & $\leq0.001$ & $<0.001$ \\
+          & PM$_{10}$ ($\mu$g\,m$^{-3}$)     & 120 & 0.49 & 3.29  & 0.067    & 0.205       & 0.089 \\
+          & PM$_{2.5}$ ($\mu$g\,m$^{-3}$)    & 115 & 0.96 & 4.82  & $<0.001$ & 0.003       & 0.005 \\
+          & WS (m\,s$^{-1}$)                 & 118 & 0.73 & 3.42  & 0.004    & 0.012       & 0.011 \\
+          & Temp ($^{\circ}$C)               & 120 & 0.07 & 1.78  & $<0.001$ & 0.013       & $<0.001$ \\
+          & PBAR (mm Hg)                     & 120 & $-0.17$ & 2.25 & 0.042   & 0.012       & 0.074 \\
+          & UV                               & 120 & 0.79 & 2.01  & $<0.001$ & $\leq0.001$ & $<0.001$ \\
+          & HR (\%)                          & 120 & 0.42 & 2.34  & $<0.001$ & 0.067       & 0.003 \\
+\end{longtable}
+{\footnotesize \textit{Nota:} los valores de $p$ de la prueba de Lilliefors se reportan en el intervalo $[0.001, 0.5]$ (valores extremos truncados por la implementación), por lo que $\leq0.001$ y $\geq0.5$ indican los límites de ese intervalo. Una distribución normal tiene asimetría de 0 y curtosis de 3.}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{Resultados/CR_normalidad_may.pdf}
+    \caption{Gráficos cuantil-cuantil (Q-Q) de las variables de la estación CR en la campaña de mayo. La línea punteada es la referencia de una distribución normal.}
+    \label{fig:qq_cr}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{Resultados/NATIVITAS_normalidad_may.pdf}
+    \caption{Gráficos cuantil-cuantil (Q-Q) de las variables de la estación NATIVITAS en la campaña de mayo.}
+    \label{fig:qq_nativitas}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{Resultados/DIF_normalidad_may.pdf}
+    \caption{Gráficos cuantil-cuantil (Q-Q) de las variables de la estación DIF en la campaña de mayo.}
+    \label{fig:qq_dif}
+\end{figure}
+
+\subsection{Correlación de Spearman}
+\label{subsec:corr_Spearman}
+
+Las matrices de correlación de Spearman se realizaron para la jornada completa 
+(24 h) y para el horario de muestreo (22:00 a 2:00 h) de cada campaña. 
+Los asteriscos indican las correlaciones cuyo valor de $p$ fue menor a 
+0.05. 
+
+En la Figura \ref{fig:corr_feb} se muestra la matriz de correlación de Spearman
+para la jornada completa de la campañade muestreo de febrero.
+Las relaciones más intensas y consistentes entre 
+las tres estaciones fueron 
+la correlación negativa entre la temperatura y la humedad relativa 
+($\rho = -0.87$ en CR, NATIVITAS y DIF) y la correlación negativa entre 
+el O$_3$ y el NO$_2$ ($\rho = -0.47$, $-0.71$ y $-0.68$, respectivamente). 
+El O$_3$ se correlacionó positivamente con la temperatura 
+($\rho = 0.46$, $0.57$ y $0.78$) y con la velocidad del viento 
+($\rho = 0.54$, $0.54$ y $0.37$), mientras que el NO$_2$ lo hizo de forma 
+negativa con la velocidad del viento ($\rho = -0.79$, $-0.71$ 
+y $-0.56$). Entre los contaminantes criterio se observaron correlaciones 
+positivas moderadas entre el NO$_2$ y el CO ($\rho = 0.35$, $0.37$ y $0.47$) 
+y entre el NO$_2$ y el PM$_{10}$ ($\rho = 0.56$, $0.38$ y $0.38$), y entre 
+el PM$_{10}$ y el PM$_{2.5}$ en CR ($\rho = 0.70$) y DIF ($\rho = 0.45$). 
+El SO$_2$ no mostró un patrón común: su correlación con el NO$_2$ fue 
+negativa en CR ($\rho = -0.40$) y positiva en NATIVITAS ($\rho = 0.42$) 
+y DIF ($\rho = 0.28$).
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{Resultados/Correlacion_BH_Febrero.pdf}  
+    \caption{Matriz de correlación de Spearman entre variables en las estaciones 
+    CR, NATIVITAS y DIF durante la campaña de febrero (jornada completa). 
+    Los asteriscos indican correlaciones significativas ($p < 0.05$, ajustado 
+    por Benjamini-Hochberg).}
+    \label{fig:corr_feb}
+\end{figure}
+
+Por el contrario, al limitar el análisis a las horas de 22:00 a 02:00 (Figura \ref{fig:corr_feb_noche}),
+la relación del O$_3$ con la temperatura desapareció o cambió de 
+signo ($\rho = -0.17$ en CR y $-0.10$ en DIF, no significativas, y $-0.34$ en NATIVITAS), 
+mientras que las relaciones con el viento se intensificaron: el O$_3$ se correlacionó 
+positivamente con la velocidad del viento ($\rho = 0.81$, $0.71$ y $0.69$) y 
+el NO$_2$ negativamente ($\rho = -0.85$, $-0.82$ y $-0.81$). La correlación 
+negativa entre O$_3$ y NO$_2$ se mantuvo ($\rho = -0.77$, $-0.73$ y $-0.76$). 
+En CR y NATIVITAS, la presión barométrica se correlacionó negativamente con 
+el NO$_2$ ($\rho = -0.87$ en ambas) y positivamente con la velocidad del 
+viento ($\rho = 0.85$ y $0.84$). La correlación entre temperatura y humedad 
+relativa se debilitó ($\rho = -0.62$, $-0.62$ y $-0.51$) y la del PM$_{10}$ 
+con el PM$_{2.5}$ aumentó ($\rho = 0.82$ en CR y $0.59$ en DIF). El SO$_2$ y 
+el NO$_2$ siguieron mostrando signos distintos entre estaciones ($\rho = -0.45$ 
+en CR, $0.78$ en NATIVITAS y $0.63$ en DIF).
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{Resultados/Correlacion_BH_Febrero_22a02h.pdf}
+    \caption{Matriz de correlación de Spearman entre variables durante la campaña 
+    de febrero, considerando únicamente las horas de 22:00 a 02:00.}
+    \label{fig:corr_feb_noche}
+\end{figure}
+
+En mayo (Figura \ref{fig:corr_may}), el acoplamiento entre O$_3$, temperatura y humedad relativa fue 
+más fuerte que en febrero: el O$_3$ se correlacionó positivamente con la 
+temperatura ($\rho = 0.86$, $0.88$ y $0.89$) y negativamente con la humedad 
+relativa ($\rho = -0.81$, $-0.81$ y $-0.83$), y la temperatura y la humedad 
+relativa alcanzaron $\rho = -0.96$ en las tres estaciones. En DIF, la radiación 
+UV se correlacionó positivamente con el O$_3$ ($\rho = 0.77$) y la temperatura 
+($\rho = 0.85$) y negativamente con la humedad relativa ($\rho = -0.73$). La 
+correlación negativa entre O$_3$ y NO$_2$ fue marcada en NATIVITAS ($\rho = -0.80$) 
+y DIF ($\rho = -0.72$) pero débil en CR ($\rho = -0.24$). Las correlaciones del 
+NO$_2$ con la velocidad del viento fueron más débiles que en febrero 
+($\rho = -0.28$ en CR, $-0.41$ en NATIVITAS y no significativa en DIF). 
+El SO$_2$ volvió a comportarse de forma diferente entre estaciones: en DIF 
+siguió el ciclo diurno (correlación positiva con la temperatura, $\rho = 0.64$, 
+y negativa con la humedad relativa, $\rho = -0.72$), en CR mostró signos 
+opuestos ($\rho = -0.46$ y $0.42$) y en NATIVITAS no presentó correlaciones 
+significativas con estas variables.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{Resultados/Correlacion_BH_Mayo.pdf}
+    \caption{Matriz de correlación de Spearman entre variables durante la 
+    campaña de mayo (jornada completa).}
+    \label{fig:corr_may}
+\end{figure}
+
+\paragraph{Mayo, periodo nocturno.} 
+Durante la noche en la campaña de muestreo de mayo (Figura \ref{fig:corr_may_noche}), 
+el O$_3$ dejó de estar correlacionado significativamente 
+con la temperatura en las tres estaciones, y la correlación O$_3$--NO$_2$ 
+se mantuvo en NATIVITAS ($\rho = -0.69$) y DIF ($\rho = -0.67$), pero no 
+en CR. La correlación entre temperatura y humedad relativa se conservó 
+($\rho = -0.80$, $-0.83$ y $-0.82$). El rasgo más notable fue la correlación 
+positiva del PM$_{10}$ con la temperatura ($\rho = 0.83$, $0.82$ y $0.74$) 
+y negativa con la humedad relativa ($\rho = -0.68$, $-0.61$ y $-0.65$) en 
+las tres estaciones, y la del PM$_{2.5}$ con la temperatura en CR ($\rho = 0.54$) 
+y DIF ($\rho = 0.72$). En DIF, el SO$_2$ se correlacionó positivamente con 
+el NO$_2$ ($\rho = 0.68$) y el PM$_{10}$ ($\rho = 0.57$), mientras que en 
+NATIVITAS lo hizo con la presión barométrica ($\rho = 0.66$) y la humedad 
+relativa ($\rho = 0.60$) y negativamente con la temperatura ($\rho = -0.59$).
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{Resultados/Correlacion_BH_Mayo_22a02h.pdf}
+    \caption{Matriz de correlación de Spearman entre variables durante la campaña 
+    de mayo, considerando únicamente las horas de 22:00 a 02:00.}
+    \label{fig:corr_may_noche}
+\end{figure}
+
+\subsection{Series de tiempo}
 En la Figura~\ref{fig:ozono} se observa la variación del ozono
 (O\textsubscript{3}) durante el periodo de muestreo. La concentración
 más alta ocurrió el 23 de febrero con $45$\,ppb en la estación de Cruz
