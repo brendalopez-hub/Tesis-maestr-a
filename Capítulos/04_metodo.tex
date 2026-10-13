@@ -4,7 +4,7 @@
 Las muestras se recolectaron a través de un sistema de captura y condensación.
 El sistema está compuesto por un refrigerador modificado marca Hisense, con
 una conexión de tubería de PVC en su interior. El sistema estaba adaptado 
-a un \textit{timer} para el funcionamiento automático del sistema (Fig \ref{fig:refri}). 
+a un \textit{timer} para el funcionamiento automático del sistema (Figura \ref{fig:refri}). 
 
 \begin{figure}[H]
     \centering
@@ -281,7 +281,6 @@ temperatura, presión barométrica, humedad relativa). La dirección del viento 
 excluyó del análisis porque es una variable circular (0--360$^\circ$) y el supuesto de 
 normalidad no es aplicable. 
 
-
 Para cada variable se aplicaron tres pruebas de bondad de ajuste con hipótesis nula 
 de normalidad: Shapiro-Wilk, Lilliefors y Anderson-Darling. Se utilizó un nivel de significancia $\alpha = 0.05$ 
 y se consideró que una variable cumplía el supuesto de normalidad únicamente si ninguna de 
@@ -312,4 +311,22 @@ débil, entre 0.3 y 0.7 una correlación moderada y mayor a 0.7 una correlación
 El análisis se realizó en dos escenarios. En el primero se utilizaron todas 
 las horas de cada campaña. En el segundo se consideraron únicamente las horas 
 del periodo nocturno de muestreo, de las 22:00 a las 02:00 h. 
+
+\section{Variación temporal de contaminantes criterio mediante diagramas tipo Hovmöller}
+\label{sec:met_hovmoller}
+
+\subsection{Datos de calidad del aire}
+\label{subsec:met_datos_aire}
+
+Se utilizaron datos horarios validados de tres estaciones de monitoreo de la 
+calidad del aire: CR, NATIVITAS y DIF. Los datos corresponden a las dos campañas de
+muestreo de vapor de agua atmosférico: la primera del 20 de febrero al 4 de marzo 
+y la segunda del 25 al 29 de mayo de 2026.
+
+
+Las variables analizadas fueron los contaminantes criterio: O$_3$ (ppb), 
+SO$_2$ (ppb), CO (ppm), NO$_2$ (ppb), PM10 y PM2.5 ($\mu$g\,m$^{-3}$). Adicionalmente 
+se incluyó la humedad relativa (HR, \%). Las horas sin registro se conservaron como datos ausentes.
+Para describir la variación de cada contaminante a lo largo de cada campaña 
+y del ciclo diario se emplearon diagramas tipo Hovmöller. 
 

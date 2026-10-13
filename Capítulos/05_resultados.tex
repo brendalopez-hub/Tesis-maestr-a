@@ -6,7 +6,7 @@ El centro de muestreo se instaló en el Instituto Salamanca
 Salamanca, Guanajuato (Figura~\ref{fig:mapa_sitio}). Las campañas de
 recolección se desarrollaron del 20 de febrero al 5 de marzo de 2026 y
 del 25 al 29 de mayo de 2026 mediante el sistema de condensación. El sistema 
-tomaba las muestras de forma automática entre las 22:00 y las 02:00 h (Fig \ref{fig:foto_salamanca}).
+tomaba las muestras de forma automática entre las 22:00 y las 02:00 h (Figura \ref{fig:foto_salamanca}).
 
 \begin{figure}[H]
     \centering
@@ -32,43 +32,32 @@ tomaba las muestras de forma automática entre las 22:00 y las 02:00 h (Fig \ref
 \label{subsec:res_normalidad}
 Los resultados de las pruebas de normalidad para la campaña de febrero (20 de febrero al 4 de marzo de 2026), 
 se presentan en la Tabla~\ref{tab:normalidad_feb}, y los gráficos cuantil-cuantil (Q-Q) de cada estación en las
-Figuras~\ref{fig:qq_cr_feb}, \ref{fig:qq_nativitas_feb} y \ref{fig:qq_dif_feb}. Se evaluaron 29 combinaciones 
-estación--variable: 10 en CR, 10 en NATIVITAS y 9 en DIF. El número de observaciones por variable varió entre 168 y 312 horas 
-(312 corresponde a 13 días de registro completo). Los valores faltantes fueron más frecuentes en NATIVITAS, en 
-el PM$_{10}$ ($n = 168$), el CO ($n = 201$) y el PM$_{2.5}$ ($n = 265$), y en DIF, en el SO$_2$ ($n = 253$) y el 
-PM$_{2.5}$ ($n = 258$).
+Figuras~\ref{fig:qq_cr_feb}, \ref{fig:qq_nativitas_feb} y \ref{fig:qq_dif_feb}. 
 
-Solo una de las 29 combinaciones cumplió el supuesto de normalidad en las tres pruebas ($p > 0.05$): el PM$_{2.5}$ 
+Solo una de las combinaciones cumplió el supuesto de normalidad en las tres pruebas ($p > 0.05$): el PM$_{2.5}$ 
 en DIF (Shapiro-Wilk $p = 0.146$, Lilliefors $p = 0.223$ y Anderson-Darling $p = 0.284$), cuya asimetría y 
-curtosis (0.03 y 2.57) son cercanas a los valores de una distribución normal. En las 28 combinaciones restantes 
-se rechazó la hipótesis nula, en 26 de ellas con las tres pruebas. Las dos excepciones fueron el O$_3$ y el PM$_{2.5}$ en 
-NATIVITAS, donde la prueba de Lilliefors no rechazó la normalidad ($p = 0.120$ y $0.264$) pero Shapiro-Wilk y 
-Anderson-Darling sí ($p < 0.001$ y $0.002$ para el O$_3$; $p = 0.008$ y $0.038$ para el PM$_{2.5}$). Estos casos 
-se clasificaron como no normales de acuerdo con el criterio definido en la metodología.
+curtosis (0.03 y 2.57). Los valores de referencia de una distribución normal de asimetría y curtosis
+son 0 y 3, respectivamente. En NATIVITAS, el O$_3$ y el PM$_{2.5}$ en la prueba de Lilliefors no 
+rechazó la normalidad ($p = 0.120$ y $0.264$) pero Shapiro-Wilk y 
+Anderson-Darling sí ($p < 0.001$ y $0.002$ para el O$_3$; $p = 0.008$ y $0.038$ para el PM$_{2.5}$).
 
 Los contaminantes primarios presentaron asimetría positiva en las tres estaciones. El SO$_2$ mostró los 
 valores más altos de asimetría (1.80 en CR, 2.54 en NATIVITAS y 3.37 en DIF) y de curtosis 
-(5.62, 12.51 y 19.62, frente a 3 en una distribución normal), lo que indica una cola derecha pesada. 
+(5.62, 12.51 y 19.62), lo que indica una prevalencia de los datos hacia la cola derecha. 
 El CO en CR y DIF (asimetría de 1.68 y 1.94), el PM$_{10}$ (1.04 a 1.28) y el NO$_2$ en NATIVITAS y 
 DIF (1.28 y 1.20) siguieron el mismo patrón. La velocidad del viento también presentó asimetría positiva 
 en las tres estaciones (1.18 a 1.35) con curtosis de 4.46 a 5.57. El CO en NATIVITAS fue una excepción: sus 
 valores de asimetría ($-0.17$) y curtosis (2.85) fueron cercanos a los de una distribución normal, pero las 
-tres pruebas rechazaron la normalidad, lo que indica desviaciones que estos dos estadísticos no capturan.
+tres pruebas rechazaron la normalidad.
 
 El O$_3$, la temperatura y la humedad relativa presentaron asimetrías cercanas a cero (entre $-0.10$ y 0.54) y 
-curtosis menor a 3 (entre 2.04 y 2.43), es decir, distribuciones más aplanadas que la normal. Este comportamiento 
-es consistente con el ciclo diurno marcado de estas variables. La presión barométrica en CR y NATIVITAS mostró 
+curtosis menor a 3 (entre 2.04 y 2.43), es decir, distribuciones más aplanadas que la normal. La presión barométrica 
+en CR y NATIVITAS mostró 
 asimetría positiva (0.85 y 0.86) y curtosis cercana a 3 (3.12 y 3.07), y fue rechazada por las tres pruebas.
 
 En los gráficos Q-Q se observa que las variables con asimetría positiva marcada se separan de la recta de 
 referencia en el extremo superior de la distribución, mientras que las variables con ciclo diurno presentan una 
 forma de colas aplanadas.
-
-Cabe señalar que, con tamaños de muestra de hasta 312 observaciones, las pruebas son más sensibles a desviaciones 
-pequeñas que en la campaña de mayo ($n \leq 120$; Tabla~\ref{tab:normalidad_may}), por lo que el mayor 
-número de rechazos también refleja en parte este aumento de potencia. En conjunto, ninguna variable 
-cumplió el supuesto de normalidad en todas las estaciones, por lo que el análisis posterior de la campaña de 
-febrero se realizó con pruebas no paramétricas.
 
 \begin{longtable}{@{}llrrrccc@{}}
 \caption{Resultados de las pruebas de normalidad por estación y variable en la campaña de febrero. Se reportan el número de observaciones ($n$), el coeficiente de asimetría, la curtosis y los valores de $p$ de las pruebas de Shapiro-Wilk (S-W), Lilliefors (Lil.) y Anderson-Darling (A-D).}
@@ -123,7 +112,6 @@ DIF       & O$_3$ (ppb)                      & 281 & 0.28 & 2.09  & $<0.001$ & 0
           & Temp ($^{\circ}$C)               & 283 & $-0.02$ & 2.04 & $<0.001$ & 0.004      & $<0.001$ \\
           & HR (\%)                          & 283 & 0.54 & 2.42  & $<0.001$ & $\leq0.001$ & $<0.001$ \\
 \end{longtable}
-{\footnotesize \textit{Nota:} los valores de $p$ de la prueba de Lilliefors se reportan en el intervalo $[0.001, 0.5]$ (valores extremos truncados por la implementación), por lo que $\leq0.001$ indica el límite inferior de ese intervalo. Una distribución normal tiene asimetría de 0 y curtosis de 3.}
 
 \begin{figure}[htbp]
     \centering
@@ -148,19 +136,14 @@ DIF       & O$_3$ (ppb)                      & 281 & 0.28 & 2.09  & $<0.001$ & 0
 
 Los resultados de las pruebas de normalidad para la campaña de mayo (25 al 29 de mayo de 2026) se presentan en 
 la Tabla~\ref{tab:normalidad_may}, y los gráficos cuantil-cuantil (Q-Q) de cada estación en las Figuras~\ref{fig:qq_cr}, 
-\ref{fig:qq_nativitas} y \ref{fig:qq_dif}. En total se evaluaron 30 combinaciones estación--variable: 10 en CR, 9 en 
-NATIVITAS y 11 en DIF. El número de observaciones fue de 120 horas en la mayoría de los casos; fue menor 
-en NO$_2$ y PM$_{10}$ de CR ($n = 106$ y $119$), en CO y PM$_{2.5}$ de DIF ($n = 115$) y en la velocidad del viento 
-de DIF ($n = 118$), debido a datos faltantes o inválidos.
+\ref{fig:qq_nativitas} y \ref{fig:qq_dif}. 
 
-Solo cuatro de las 30 combinaciones cumplieron el supuesto de normalidad en las tres pruebas ($p > 0.05$): 
+Solo cuatro de las combinaciones cumplieron el supuesto de normalidad en las tres pruebas ($p > 0.05$): 
 la velocidad del viento (WS) y la presión barométrica (PBAR) en CR, la presión barométrica en NATIVITAS y
-el PM$_{10}$ en DIF. En las 26 restantes, al menos una prueba rechazó la hipótesis nula. Cabe señalar que en la 
-velocidad del viento de CR el resultado de Shapiro-Wilk estuvo muy cerca del umbral ($p = 0.051$), y que ninguna 
-de las cuatro variables que pasaron las pruebas lo hizo en las tres estaciones.
+el PM$_{10}$ en DIF. En las restantes, al menos una prueba rechazó la hipótesis nula. 
 
 Los contaminantes presentaron las desviaciones más marcadas. El SO$_2$ mostró una fuerte asimetría positiva 
-en las tres estaciones (2.73 a 3.84) con curtosis muy elevada (12.45 a 19.69, frente a 3 de una distribución normal),
+en las tres estaciones (2.73 a 3.84) con curtosis muy elevada (12.45 a 19.69),
 y rechazó la normalidad en las tres pruebas. Un patrón similar se observó en el CO de NATIVITAS
 (asimetría de 4.82 y curtosis de 37.04), en el NO$_2$ de NATIVITAS y DIF, y en el PM$_{10}$ de CR y NATIVITAS, 
 con asimetrías superiores a 1.6 y colas pesadas. En los gráficos Q-Q, estas variables se separan de la recta de 
@@ -173,13 +156,10 @@ que las colas se aplanan en los extremos.
 
 Algunos casos presentaron resultados discrepantes entre pruebas. El PM$_{2.5}$ de CR no rechazó la 
 normalidad con Shapiro-Wilk ($p = 0.070$) ni con Anderson-Darling ($p = 0.100$), pero sí con Lilliefors ($p = 0.007$). 
-En la humedad relativa de CR y DIF, la prueba de Lilliefors no rechazó la normalidad ($p = 0.088$ y $0.067$),
+Por el contrario, la humedad relativa de CR y DIF, la prueba de Lilliefors no rechazó la normalidad ($p = 0.088$ y $0.067$),
 mientras que Shapiro-Wilk y Anderson-Darling sí. La presión barométrica de DIF fue rechazada por Shapiro-Wilk
 ($p = 0.042$) y Lilliefors ($p = 0.012$), pero no por Anderson-Darling ($p = 0.074$). Dado el criterio establecido 
 en la metodología, estos casos se consideraron como no normales.
-
-En conjunto, ninguna variable cumplió el supuesto de normalidad en todas las estaciones, por lo que el análisis 
-posterior de la campaña de mayo se realizó con pruebas no paramétricas.
 
 \begin{longtable}{@{}llrrrccc@{}}
 \caption{Resultados de las pruebas de normalidad por estación y variable en la campaña de mayo. Se reportan el número de observaciones ($n$), el coeficiente de asimetría, la curtosis y los valores de $p$ de las pruebas de Shapiro-Wilk (S-W), Lilliefors (Lil.) y Anderson-Darling (A-D).}
@@ -235,7 +215,6 @@ DIF       & O$_3$ (ppb)                      & 120 & 0.56 & 2.40  & $<0.001$ & $
           & UV                               & 120 & 0.79 & 2.01  & $<0.001$ & $\leq0.001$ & $<0.001$ \\
           & HR (\%)                          & 120 & 0.42 & 2.34  & $<0.001$ & 0.067       & 0.003 \\
 \end{longtable}
-{\footnotesize \textit{Nota:} los valores de $p$ de la prueba de Lilliefors se reportan en el intervalo $[0.001, 0.5]$ (valores extremos truncados por la implementación), por lo que $\leq0.001$ y $\geq0.5$ indican los límites de ese intervalo. Una distribución normal tiene asimetría de 0 y curtosis de 3.}
 
 \begin{figure}[htbp]
     \centering
@@ -400,7 +379,7 @@ significativas con estas variables.
 \end{figure}
 
 Durante la noche en la campaña de muestreo de mayo (Figuras~\ref{fig:corr_may_noche_CR},
-\ref{fig:corr_may_noche_DIF},\ref{fig:corr_may_noche_NAT}), 
+\ref{fig:corr_may_noche_DIF},\ref{fig:corr_may_noche_NATflexpartfl}), 
 el O$_3$ dejó de estar correlacionado significativamente 
 con la temperatura en las tres estaciones, y la correlación O$_3$--NO$_2$ 
 se mantuvo en NATIVITAS ($\rho = -0.69$) y DIF ($\rho = -0.67$), pero no 
@@ -438,161 +417,214 @@ relativa ($\rho = 0.60$) y negativamente con la temperatura ($\rho = -0.59$).
     \label{fig:corr_may_noche_NAT}
 \end{figure}
 
-\subsection{Series de tiempo}
-En la Figura~\ref{fig:ozono} se observa la variación del ozono
-(O\textsubscript{3}) durante el periodo de muestreo. La concentración
-más alta ocurrió el 23 de febrero con $45$\,ppb en la estación de Cruz
-Roja. Por otro lado, el mínimo alcanzado fue en Salamanca con $17$\,ppb
-el 20 de febrero.
+\subsection{Variación temporal de los contaminantes criterio}
+\label{sec:resul_hovmoller}
+
+En las tres estaciones el O$_3$ presentó un ciclo diurno bien definido, con máximos entre 
+las 12 y las 18~h y mínimos durante la noche y la madrugada. En la primera campaña, las 
+máximas vespertinas fueron de aproximadamente 40 a 60~ppb y en varias noches (por ejemplo, 
+20, 21 y 26 de febrero) la concentración en la madrugada descendió por debajo de 10--15~ppb; 
+en DIF y NATIVITAS los máximos fueron más sostenidos del 24 de febrero al 4 de marzo. 
+En la segunda campaña los máximos fueron más intensos y prolongados ($\geq$60~ppb entre 
+las 12 y las 18~h, con valores que saturan la escala los días 26 y 29 de mayo) y los 
+mínimos nocturnos fueron menos marcados (alrededor de 20 a 30~ppb). Las tres estaciones 
+mostraron un comportamiento muy similar entre sí en ambas campañas (Figuras~\ref{fig:hov_O3_1} 
+y~\ref{fig:hov_O3_2}).
 
 \begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.85\textwidth]{Resultados/O3_diario.pdf}
-    \caption{Variación de la concentración de O\textsubscript{3} en las
-    estaciones de monitoreo del del 20 de febrero al 5 de marzo del 2026.}
-    \label{fig:ozono}
-\end{figure}
-
-En la Figura~\ref{fig:ciclo_ozono} se expone el ciclo diurno del ozono
-(O\textsubscript{3}). Se observa que el pico más alto reportado fue a
-las 17\,h en la estación DIF y un mínimo a las 7\,h. No existen datos
-suficientes para las estaciones de Nativitas y Cruz Roja para obtener un
-promedio representativo.
-
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.85\textwidth]{Resultados/O3_horario.pdf}
-    \caption{Ciclo diurno de O\textsubscript{3} del del 20 de febrero al 5 de marzo del 2026}
-    \label{fig:ciclo_ozono}
-\end{figure}
-
-La variación del dióxido de azufre (SO\textsubscript{2}) se observa en
-la Figura~\ref{fig:so2}. La estación de Cruz Roja muestra niveles de
-concentración más variables, mientras que Nativitas mantiene
-concentraciones superiores a las demás, oscilando entre $18$ y $20$\,ppb.
-Por su parte, DIF se mantiene estable, con concentraciones entre $10$ y
-$12$\,ppb.
-
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.85\textwidth]{Resultados/SO2_diario.pdf}
-    \caption{Variación de la concentración de SO\textsubscript{2} en las
-    estaciones de monitoreo del 20 de febrero al 5 de marzo del 2026.}
-    \label{fig:so2}
-\end{figure}
-
-Así mismo, la Figura~\ref{fig:so2_horario} refleja la concentración
-horaria de dióxido de azufre (SO\textsubscript{2}). El pico más alto de
-concentración se presenta en Cruz Roja a las 10\,h y el mínimo a las
-18\,h en la misma estación. Mientras tanto, Nativitas y DIF sostienen un
-ciclo más estable, con un pico máximo a las 21\,h.
-
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.85\textwidth]{Resultados/SO2_horario.pdf}
-    \caption{Ciclo diurno de SO\textsubscript{2} en las estaciones de
-    monitoreo del 20 de febrero al 5 de marzo del 2026.}
-    \label{fig:so2_horario}
-\end{figure}
-
-Las partículas PM\textsubscript{10} tienen máximos de concentración en
-Nativitas, con aproximadamente \SI{100}{\micro\gram\per\cubic\meter} el
-22 de febrero. Esta estación presenta las mayores concentraciones,
-mientras que DIF presenta el punto mínimo el 2 de marzo con
-\SI{45}{\micro\gram\per\cubic\meter} (Figura~\ref{fig:pm10}). Por otro
-lado, en el comportamiento horario, Nativitas presenta un pico a las
-21\,h y mantiene las máximas concentraciones, excepto en un periodo de
-10\,h a 15\,h (Figura~\ref{fig:pm10_horario}).
-
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.85\textwidth]{Resultados/PM10_diario.pdf}
-    \caption{Variación de la concentración de PM\textsubscript{10} en las
-    estaciones de monitoreo del 20 de febrero al 5 de marzo del 2026.}
-    \label{fig:pm10}
+  \centering
+  \includegraphics[width=\textwidth,height=0.8\textheight,keepaspectratio]{Resultados/Hovmoller/Hovmoller_O3_primera.pdf}
+  \caption{Variación de O$_3$ -- primera campaña (20/02/26--04/03/26). Los paneles corresponden, de arriba hacia abajo, a las 
+  estaciones DIF, NATIVITAS y CR. El color indica la concentración horaria, las líneas discontinuas delimitan la 
+  ventana de muestreo isotópico (22:00 a 02:00~h) y las zonas grises indican datos ausentes.}
+  \label{fig:hov_O3_1}
 \end{figure}
 
 \begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.85\textwidth]{Resultados/PM10_horario.pdf}
-    \caption{Ciclo diurno de PM\textsubscript{10} en las estaciones de
-    monitoreo del 20 de febrero al 5 de marzo del 2026.}
-    \label{fig:pm10_horario}
+  \centering
+  \includegraphics[width=\textwidth,height=0.8\textheight,keepaspectratio]{Resultados/Hovmoller/Hovmoller_O3_segunda.pdf}
+  \caption{Variación de O$_3$ -- segunda campaña (25/05/26--29/05/26).}
+  \label{fig:hov_O3_2}
 \end{figure}
 
-La variación diaria y horaria de PM\textsubscript{2.5} se encuentra en
-la Figura~\ref{fig:pm25} y la Figura~\ref{fig:pm25_horario},
-respectivamente. Para este contaminante, Nativitas no reporta ninguna
-concentración. Por otro lado, DIF presenta las mayores concentraciones,
-con un pico máximo el 20 de febrero de aproximadamente
-\SI{27}{\micro\gram\per\cubic\meter} y, en el comportamiento horario, a
-las 20\,h. Cruz Roja presenta el mínimo el 23 de febrero.
+En la primera campaña, el SO$_2$ en CR se mantuvo mayormente por debajo de 10~ppb, con episodios aislados de 
+hasta 25--35~ppb (en la tarde del 22 de febrero y al mediodía del 24 de febrero) y con valores elevados de forma 
+más persistente entre el 28 de febrero y el 4 de marzo, principalmente de madrugada y por la mañana (0 a 12~h). En 
+DIF las concentraciones fueron bajas (5 a 10~ppb), con episodios puntuales de hasta cerca de 40~ppb (alrededor de 
+las 14~h del 24 de febrero y de las 21 a 22~h del 1 y 2 de marzo). En NATIVITAS el SO$_2$ se mantuvo en un intervalo 
+estrecho (aproximadamente 18 a 24~ppb), por encima de los valores de las otras dos estaciones y con poca variación en 
+el tiempo.
+
+En la segunda campaña las concentraciones en CR fueron bajas durante casi todo el periodo (alrededor de 5 a 10~ppb), 
+con picos matutinos (6 a 9~h) los días 25 y 29 de mayo y un pico en la madrugada del 26 de mayo. DIF registró los 
+valores más bajos (menores a 8~ppb), con un ligero aumento por la tarde y la noche (18 a 21~h) del 28 y 29 de mayo. 
+En NATIVITAS el intervalo siguió siendo estrecho (18 a 24~ppb), con el valor más alto en la tarde (12 a 18~h) del 28 
+y 29 de mayo, cercano a 23--24~ppb (Figuras~\ref{fig:hov_SO2_1} y~\ref{fig:hov_SO2_2}).
 
 \begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.85\textwidth]{Resultados/PM25_diario.pdf}
-    \caption{Variación de la concentración de PM\textsubscript{2.5} en las
-    estaciones de monitoreo del 20 de febrero al 5 de marzo del 2026.}
-    \label{fig:pm25}
-\end{figure}
-
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.85\textwidth]{Resultados/PM25_horario.pdf}
-    \caption{Ciclo diurno de PM\textsubscript{2.5} en las estaciones de
-    monitoreo del 20 de febrero al 5 de marzo del 2026.}
-    \label{fig:pm25_horario}
-\end{figure}
-
-La concentración máxima de CO se presenta en Nativitas, con las
-máximas concentraciones del 20 al 26 de febrero. Cruz Roja presenta el
-mínimo global el 22 de febrero (Figura~\ref{fig:co}). Se observa
-ausencia de datos en esta especie. Por otro lado, en el ciclo diurno,
-Nativitas conserva las concentraciones más altas, con un pico a las
-20\,h. Un segundo pico se presenta a las 8\,h en las tres estaciones
-(Figura~\ref{fig:co_horario}).
-
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.85\textwidth]{Resultados/CO_diario.pdf}
-    \caption{Variación de la concentración de CO en las estaciones de
-    monitoreo durante el periodo de muestreo.}
-    \label{fig:co}
+  \centering
+  \includegraphics[width=\textwidth,height=0.8\textheight,keepaspectratio]{Resultados/Hovmoller/Hovmoller_SO2_primera.pdf}
+  \caption{Variación de SO$_2$ -- primera campaña (20/02/26--04/03/26).}
+  \label{fig:hov_SO2_1}
 \end{figure}
 
 \begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.85\textwidth]{Resultados/CO_horario.pdf}
-    \caption{Ciclo diurno de CO en las estaciones de monitoreo durante
-    el periodo de muestreo.}
-    \label{fig:co_horario}
+  \centering
+  \includegraphics[width=\textwidth,height=0.8\textheight,keepaspectratio]{Resultados/Hovmoller/Hovmoller_SO2_segunda.pdf}
+  \caption{Variación de SO$_2$ -- segunda campaña (25/05/26--29/05/26).}
+  \label{fig:hov_SO2_2}
 \end{figure}
 
-El dióxido de nitrógeno (NO\textsubscript{2}) mantiene concentraciones
-superiores en la estación Cruz Roja con respecto a las otras. Los
-máximos se encuentran el 27 y 28 de febrero, que conservan
-aproximadamente la misma concentración
-(\SI{32}{\micro\gram\per\cubic\meter}). En el caso contrario, la
-estación DIF mantuvo los niveles más bajos de este contaminante
-(Figura~\ref{fig:no2}). En el ciclo diurno se presentan dos picos: el
-máximo global a las 20\,h y el segundo a las 8\,h
-(Figura~\ref{fig:no2_horario}).
+En la primera campaña, el CO en CR varió entre aproximadamente 0.6 y 1.9~ppm, con alta variabilidad entre días y
+máximos en la noche (21 a 23~h) y en la mañana (8 a 9~h). En NATIVITAS, los primeros días registraron de 1.5 a 
+2.4~ppm, con máximos alrededor de las 21 a 22~h (24 y 25 de febrero, cerca de 2.4~ppm) y de las 8 a 9~h; a partir 
+del 25--26 de febrero hay vacíos extensos de información y los pocos datos de finales de febrero y marzo fueron 
+menores (0.7 a 1.0~ppm). En DIF el CO se mantuvo en 0.9 a 1.5~ppm, con picos nocturnos (22 a 23~h) como el del 
+24 de febrero (cerca de 2.2~ppm).
 
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.85\textwidth]{Resultados/NO2_diario.pdf}
-    \caption{Variación de la concentración de NO\textsubscript{2} en las
-    estaciones de monitoreo del del 20 de febrero al 5 de marzo del 2026}
-    \label{fig:no2}
-\end{figure}
+En la segunda campaña los valores en CR fueron homogéneos (cerca de 1.0 a 1.2~ppm), con incrementos ligeros
+ a las 8--9~h los días 26 y 27 de mayo y alrededor de las 21--22~h los días 27 y 29 de mayo. NATIVITAS 
+ también fue homogéneo (cerca de 1.5 a 1.7~ppm), con un máximo a las 21--22~h del 29 de mayo ($>$2.2~ppm). 
+ En contraste, DIF presentó concentraciones notablemente más altas: de 1.8 a 2.2~ppm durante casi todo el día 
+ desde el 26 de mayo, con el máximo entre las 6 y las 10~h del 27 de mayo (Figuras~\ref{fig:hov_CO_1} y~\ref{fig:hov_CO_2}).
 
 \begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.85\textwidth]{Resultados/NO2_horario.pdf}
-    \caption{Ciclo diurno de NO\textsubscript{2} en las estaciones de
-    monitoreo del 20 de febrero al 5 de marzo del 2026}
-    \label{fig:no2_horario}
+  \centering
+  \includegraphics[width=\textwidth,height=0.8\textheight,keepaspectratio]{Resultados/Hovmoller/Hovmoller_CO_primera.pdf}
+  \caption{Variación de CO -- primera campaña (20/02/26--04/03/26).}
+  \label{fig:hov_CO_1}
 \end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth,height=0.8\textheight,keepaspectratio]{Resultados/Hovmoller/Hovmoller_CO_segunda.pdf}
+  \caption{Variación de CO -- segunda campaña (25/05/26--29/05/26).}
+  \label{fig:hov_CO_2}
+\end{figure}
+
+En la primera campaña, el NO$_2$ en CR varió de 10 a más de 40~ppb, con los valores
+ más altos durante la noche y la madrugada (21 a 3~h) los días 20, 24 a 27 de febrero y 
+ 4 de marzo, y concentraciones menores el 22 y 23 de febrero y el 2 de marzo. En NATIVITAS 
+ varió entre 3 y 30~ppb, con máximos en la madrugada (0 a 3~h) y la mañana (6 a 9~h) los días
+  20 y 21 de febrero y por la noche (21 a 23~h) del 24 al 27 de febrero ($>$30~ppb), y con 
+  mínimos también el 22 y 23 de febrero y el 2 de marzo. En DIF las concentraciones fueron 
+  menores (4 a 16~ppb), con máximos nocturnos y de madrugada (21 a 3~h) en varios días (20 y 
+  24 de febrero, 27 y 28 de febrero, y del 2 al 4 de marzo) y mínimos por la tarde (12 a 18~h, 
+  alrededor de 4 a 6~ppb).
+
+En la segunda campaña las concentraciones fueron menores en las tres estaciones. En CR 
+fueron de cerca de 20 a 25~ppb el 25 de mayo y por debajo de 15~ppb del 27 al 29 de mayo,
+con vacíos de información la noche del 27 de mayo y en la madrugada y mañana del 28 de mayo.
+En NATIVITAS predominaron valores inferiores a 10~ppb, con excepciones a las 6--9~h del 26 
+de mayo (alrededor de 25~ppb) y a las 21~h del 29 de mayo ($>$30~ppb). En DIF se mantuvo 
+entre 5 y 10~ppb, con un máximo a las 21~h del 29 de mayo (cerca de 16~ppb), coincidente 
+con el de NATIVITAS (Figuras~\ref{fig:hov_NO2_1} y~\ref{fig:hov_NO2_2}).
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth,height=0.8\textheight,keepaspectratio]{Resultados/Hovmoller/Hovmoller_NO2_primera.pdf}
+  \caption{Variación de NO$_2$ -- primera campaña (20/02--04/03). Misma representación y escala de color que en la Figura~\ref{fig:hov_O3_1}.}
+  \label{fig:hov_NO2_1}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth,height=0.8\textheight,keepaspectratio]{Resultados/Hovmoller/Hovmoller_NO2_segunda.pdf}
+  \caption{Variación de NO$_2$ -- segunda campaña (25/05--29/05). Misma representación y escala de color que en la Figura~\ref{fig:hov_O3_1}.}
+  \label{fig:hov_NO2_2}
+\end{figure}
+
+En la primera campaña, el PM$_{10}$ en CR fue el más alto (aproximadamente 40 
+a 110~$\mu$g\,m$^{-3}$), con mucha variabilidad y máximos tanto en la mañana (9 
+a 12~h, del 25 al 27 de febrero) como en la noche. En NATIVITAS varió entre 20 y 
+120~$\mu$g\,m$^{-3}$ en los días con datos, aunque a partir del 25--26 de febrero 
+hay vacíos extensos. En DIF fue de 30 a 95~$\mu$g\,m$^{-3}$, con valores altos en
+la mañana del 20 de febrero y entre las 9 y las 15~h del 25 al 28 de febrero.
+
+En la segunda campaña las concentraciones fueron menores. En CR predominaron valores
+de 30 a 60~$\mu$g\,m$^{-3}$, con episodios puntuales alrededor de las 20 a 22~h los días
+25 y 26 de mayo ($>$100~$\mu$g\,m$^{-3}$). En NATIVITAS fue de 20 a 50~$\mu$g\,m$^{-3}$,
+con picos a las 21~h del 25 y 27 de mayo (alrededor de 90 a 100~$\mu$g\,m$^{-3}$) y un 
+mínimo en la mañana del 28 de mayo. En DIF fue de 30 a 50~$\mu$g\,m$^{-3}$, con un pico
+a las 21~h del 25 de mayo (cerca de 90~$\mu$g\,m$^{-3}$) y un mínimo a la misma hora del
+27 de mayo. El pico de las 21~h del 25 de mayo se presentó en las tres estaciones (Figuras~\ref{fig:hov_PM10_1} y~\ref{fig:hov_PM10_2}).
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth,height=0.8\textheight,keepaspectratio]{Resultados/Hovmoller/Hovmoller_PM10_primera.pdf}
+  \caption{Variación de PM$_{10}$ -- primera campaña (20/02/26--04/03/26).}
+  \label{fig:hov_PM10_1}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth,height=0.8\textheight,keepaspectratio]{Resultados/Hovmoller/Hovmoller_PM10_segunda.pdf}
+  \caption{Variación de PM$_{10}$ -- segunda campaña (25/05/26--29/05/26).}
+  \label{fig:hov_PM10_2}
+\end{figure}
+
+En la primera campaña, el PM$_{2.5}$ en CR varió entre 10 y 27~$\mu$g\,m$^{-3}$, con los valores más 
+altos en la madrugada (0 a 3~h) y la mañana (6 a 10~h). En DIF el intervalo fue mayor (5 a 40~$\mu$g\,m$^{-3}$), 
+con máximos entre las 21 y las 3~h (30 a 40~$\mu$g\,m$^{-3}$) y vacíos de información principalmente en horas de la tarde.
+En la estación NATIVITAS no se dispuso de datos de PM$_{2.5}$, por lo que el panel correspondiente aparece vacío en ambas campañas.
+
+En la segunda campaña, CR se mantuvo cerca de 10 a 15~$\mu$g\,m$^{-3}$, con un mínimo en la 
+tarde del 28 de mayo y un ligero aumento en la madrugada del 26 de mayo (alrededor de 20~$\mu$g\,m$^{-3}$). 
+DIF fue más homogéneo (15 a 25~$\mu$g\,m$^{-3}$), con picos a las 21~h del 25 de mayo (cerca de 35~$\mu$g\,m$^{-3}$)
+y a las 9~h del 27 de mayo (cerca de 40~$\mu$g\,m$^{-3}$). En ambas campañas DIF alcanzó concentraciones máximas
+mayores que CR (Figuras~\ref{fig:hov_PM25_1} y~\ref{fig:hov_PM25_2}).
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth,height=0.8\textheight,keepaspectratio]{Resultados/Hovmoller/Hovmoller_PM25_primera.pdf}
+  \caption{Variación de PM$_{2.5}$ -- primera campaña (20/02--04/03).}
+  \label{fig:hov_PM25_1}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth,height=0.8\textheight,keepaspectratio]{Resultados/Hovmoller/Hovmoller_PM25_segunda.pdf}
+  \caption{Variación de PM$_{2.5}$ -- segunda campaña (25/05--29/05).}
+  \label{fig:hov_PM25_2}
+\end{figure}
+
+La HR siguió un ciclo diario similar en las tres estaciones. En la primera campaña presentó 
+mínimos por la tarde (alrededor de 10 a 20~\%) y máximos en la madrugada y la mañana (40 a 60~\%, 
+y hasta cerca de 70~\% en DIF); los días 22 y 23 de febrero fueron más húmedos, mientras que los
+días 20--21 de febrero y 1--3 de marzo fueron particularmente secos durante la tarde. En DIF hay
+un vacío de información entre el 22 y el 23 de febrero.
+
+En la segunda campaña la HR fue mayor en la madrugada y la mañana ($\geq$60~\%, con 
+saturación de la escala el 25 y del 28 al 29 de mayo) y alcanzó alrededor de 60~\% a
+las 21--22~h del 27 de mayo; por la tarde fue de aproximadamente 20 a 30~\% (Figuras~\ref{fig:hov_HR_1} y~\ref{fig:hov_HR_2}).
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth,height=0.8\textheight,keepaspectratio]{Resultados/Hovmoller/Hovmoller_HR_primera.pdf}
+  \caption{Variación de HR -- primera campaña (20/02--04/03).}
+  \label{fig:hov_HR_1}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth,height=0.8\textheight,keepaspectratio]{Resultados/Hovmoller/Hovmoller_HR_segunda.pdf}
+  \caption{Variación de HR -- segunda campaña (25/05--29/05).}
+  \label{fig:hov_HR_2}
+\end{figure}
+
+Al comparar ambas campañas se observan patrones consistentes en las tres estaciones. El O$_3$ fue mayor en la 
+segunda campaña, con máximos vespertinos más intensos y prolongados y mínimos nocturnos menos marcados. En 
+contraste, el NO$_2$ y el PM$_{10}$ fueron más altos y más variables en la primera campaña, al igual que el 
+SO$_2$ y el PM$_{2.5}$ en CR. La HR fue más alta durante la madrugada y la mañana en la segunda campaña.
+
+Dentro de la ventana de muestreo isotópico (22:00 a 02:00~h), en la primera campaña el NO$_2$, el CO y 
+el material particulado presentaron valores elevados en varias noches, en particular alrededor de las 
+21 a 23~h. En la segunda campaña los valores en esa ventana fueron más homogéneos, con picos puntuales 
+cerca de las 21 a 22~h (25, 27 y 29 de mayo).
+
+Entre estaciones, el CO de DIF en la segunda campaña fue claramente superior al de CR y NATIVITAS, y
+el SO$_2$ de NATIVITAS se mantuvo en un intervalo estrecho y con valores base más altos que los de 
+CR y DIF.
 
 En la Figura~\ref{fig:rosa_estaciones} se presenta la rosa de los
 vientos para las estaciones de Salamanca. Se observa un comportamiento
@@ -604,10 +636,10 @@ la estación DIF.
 
 Por otro lado, durante el periodo de muestreo los vientos predominantes
 provienen del noreste. Los rangos más frecuentes son de
-\SIrange{2.1}{3.6}{\meter\per\second} y de
-\SIrange{3.6}{5.7}{\meter\per\second}. La dirección menos frecuente es
+2.1 a 3.6{\meter\per\second} y de
+3.6 a 5.7{\meter\per\second}. La dirección menos frecuente es
 el noroeste, la cual solo aparece en vientos débiles de
-\SIrange{0.5}{2.1}{\meter\per\second}
+0.5 a 2.1{\meter\per\second}
 (Figura~\ref{fig:rosa_muestreo}).
 
 \begin{figure}[htbp]
