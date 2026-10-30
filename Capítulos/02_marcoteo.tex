@@ -198,6 +198,14 @@ y por fuentes antropogénicas, como la industrialización y la
 urbanización. Estas emisiones suelen contribuir al calentamiento global
 (Alvarez et al., 2025).
 
+Hay dos categorías significantes de contaminantes del aire: 
+primarios y secundarios. Los primarios se forman y son 
+emitidos directamente desde la fuente, como el material CO,
+NO\textsubscript{2}, SO\textsubscript{2}, PM\textsubscript{10}
+y PM\textsubscript{2.5}. Los secundarios se generan a 
+través de procesos o reacciones biológicas o químicas, y sus 
+sustancias precursoras están en el ambiente (Meo, 2025). 
+
 El impacto por las emisiones antropogénicas en el ciclo del agua en
 algunas zonas se ha incrementado por la urbanización. Los combustibles
 fósiles son reconocidos por liberar altas cantidades de energía cuando
@@ -215,7 +223,8 @@ del agua, destrucción del hábitat y declive de la biodiversidad
 
 Uno de los contribuyentes más grandes a la contaminación del aire es el
 proceso de combustión, en particular, la quema de combustibles fósiles
-y biomasa para generar energía (Secretaría de Seguridad Pública, 2023).
+y biomasa para generar energía (Ramalingam et al., 2025; 
+Secretaría de Seguridad Pública, 2023).
 Según las emisiones anuales de carbono y la relación entre las
 emisiones de CO\textsubscript{2} y H\textsubscript{2}O(v), la
 combustión de combustibles fósiles libera aproximadamente
@@ -232,12 +241,11 @@ Esto representa casi el 50\% de incremento relativo con respecto a las
 concentraciones de los inicios de la Revolución Industrial
 ($270$--$275$\,ppm) (Salmon, 2018).
 
-
-\begin{figure}[h!]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=0.85\textwidth]{Imagenes_marco/MaunaLoaAnual.pdf}
+    \includegraphics[width=0.7\textwidth]{Imagenes_marco/MaunaLoaAnual.pdf}
     \caption{Concentración promedio mensual de CO\textsubscript{2}
-    atmosférico registrada en el observatorio de Mauna Loa, Hawái.}
+    atmosférico registrado en el observatorio de Mauna Loa, Hawái.}
     \label{fig:mauna_loa}
 \end{figure}
 
@@ -391,10 +399,14 @@ oxígeno-18 en el vapor de agua.
 \section{Modelo FLEXPART}
 El modelo de dispersión de partícula flexible (FLEXPART, por sus siglas
 en inglés) fue desarrollado por el Instituto Noruego de Investigación
-Atmosférica. Es un modelo de dispersión y transporte lagrangiano
-(Cheng et al., 2017; Wang et al., 2021). Los modelos lagrangianos
-siguen el movimiento individual de las partículas. A diferencia de su
-contraparte euleriana, que mide cómo cambian las propiedades del fluido
+Atmosférica. Es un modelo de dispersión y transporte lagrangiano de código 
+libre, codificado en Fortran 95 y se puede copilar en gfortran e ifort 
+bajo distintos sistemas operativos (Linux, Solaris, etc.)
+(Cheng et al., 2017; Vaz de Jesus et al., 2018; Wang et al., 2021). 
+
+Este tipo de modelos siguen el movimiento individual de las partículas, 
+a diferencia de su contraparte euleriana, que mide cómo cambian 
+las propiedades del fluido
 al pasar por puntos fijos. Los modelos lagrangianos permiten rastrear
 el movimiento de las partículas en el espacio y el tiempo
 (Bakels et al., 2024).
@@ -406,6 +418,12 @@ caso, el análisis de las trayectorias y la dispersión se realiza
 después de la liberación de las partículas. El segundo modo permite
 rastrear el origen de una parcela de aire o un conjunto de partículas
 que llegan a un punto de interés (Foreback et al., 2024).
+
+FLEXPART es un modelo \textit{off-line} y, por lo tanto, necesita campos
+meteorológicos procedentes de modelos de predicción del tiempo. En particular, 
+puede copilar con campos del \textit{European Centre for Medium-Range 
+Weather (ECMWF)}, NCEP y, alfunas versiones, con \textit{Weather Research and Forecasting
+(WRF)} (Vaz de Jesus et al., 2018).
 
 La relación fuente-receptor es un concepto importante en el modelado de
 la calidad del aire. En esencia, describe la sensibilidad de un

@@ -23,6 +23,13 @@ $30\,^{\circ}\mathrm{C}$ y $30\%$ de humedad relativa.
 \section{Análisis de $\delta^{2}$H y $\delta^{18}$O}
 \label{sec:analisis_isotopico_metodo}
 
+Las muestras fueron analizadas en el Centro de Invstigación Científica y 
+de Educación Superior de Ensedada (CICESE) a través de la Unidad de Isótopos 
+Estables de Oxígeno, Hidrógeno y Carbono. Se utilizó un analizador de isótopos 
+de agua de alta precisión Picarro L2130-i con automuestreador. 
+
+\subsection{Modelo binario de mezcla}
+
 Para estimar el porcentaje de mezcla entre el vapor de fondo (atmosférico) y 
 el vapor teórico de combustión, se empleó un modelo de mezcla binaria de dos 
 extremos en el espacio $\delta$D--$\delta^{18}$O. El extremo de fondo no se
@@ -65,172 +72,31 @@ O_p &= \delta^{18}O_{bg} + p\,(\delta^{18}O_c - \delta^{18}O_{bg}) \\
 D_p &= \delta D_{bg} + p\,(\delta D_c - \delta D_{bg})
 \end{align}
 
-\section{Validación de datos de las estaciones de monitoreo de aire}
+
+Por otro lado, se realizó un análisis explotatorio para evaluar la variabilidad del 
+\textit{d-excess} del vapor de agua con la concentración de 
+contaminantes. Para ello, se graficó el \textit{d-excess} frente al 
+promedio nocturno de cada variable. El promedio se calculó con los datos horarios
+válidos de la ventana de muestreo. La HR, 
+la temperatura, el CO, el NO$_2$, el SO$_2$ y el O$_3$ corresponden a la estación
+Nativitas, la más cercana al sitio de muestreo. Sin embargo, debido a que 
+esta estación no cuenta 
+con mediciones de PM$_{2.5}$, las concentraciones de PM$_{2.5}$ y PM$_{10}$ se 
+tomaron de la estación Cruz Roja, de modo que ambas fracciones provienen del 
+mismo equipo. 
+
+\section{Datos de calidad del aire}
+\subsection{Validación de datos de las estaciones de monitoreo de aire}
 \label{sec:validacion_datos}
 
-Los datos de las estaciones de monitoreo de aire recibieron un
-tratamiento según el Protocolo de Manejo de Datos de Calidad del Aire
+Los datos de las estaciones de monitoreo de aire de Cruz Roja (CR),
+Nativitas y DIF fueron validados según el Protocolo de 
+Manejo de Datos de Calidad del Aire
 propuesto por el Instituto Nacional de Ecología (Instituto Nacional de
 Ecología, s.f.). Se realiza una limpieza de los datos, asignando
 banderas según los criterios de la Tabla~\ref{tab:banderas_limpieza}.
-
-\begin{table}[H]
-\centering
-\footnotesize
-\caption{Criterios de asignación de banderas para la limpieza de datos.}
-\label{tab:banderas_limpieza}
-\begin{tabular}{@{}lL{.78\textwidth}@{}}
-\toprule
-\textbf{Bandera} & \textbf{Criterio} \\
-\midrule
-VA & Dato válido: dato que se considera correcto o verdadero pero que
-está sujeto a revisión en la etapa de verificación de datos. \\
-IC & Dato inválido por calibración: datos que provengan de las
-actividades de calibración de los equipos de medición. Asimismo, se
-incluirán aquellos datos generados como resultado de la ejecución del
-programa de pruebas de cero/span. \\
-IR & Dato inválido por rango de operación: valores fuera de los límites
-superior e inferior fijados en el equipo de medición
-(Tablas~\ref{tab:rangos_operacion} y~\ref{tab:limites_inferiores}). \\
-VZ & Dato válido igualado al límite de detección o a cero: datos con
-valores negativos que, excepto en el caso de las mediciones de
-temperatura, deberán ser igualados a cero o al límite de detección
-correspondiente para poderlos incluir en la base de datos revisada. \\
-IF & Dato inválido por falla del equipo: datos de los que exista
-evidencia en bitácora o en listas de verificación cuyos parámetros de
-operación (temperaturas, flujos, presiones, voltajes) se encuentran
-fuera de los valores normales de operación. \\
-ND & Dato no disponible: se aplica a cualquier dato ausente, ya sea por
-fallas en la transmisión-recepción o por cortes de energía. \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-\begin{table}[H]
-\centering
-\footnotesize
-\caption{Rangos de operación por contaminante.}
-\label{tab:rangos_operacion}
-\begin{tabular}{@{}ll@{}}
-\toprule
-\textbf{Contaminante} & \textbf{Rango de operación} \\
-\midrule
-O\textsubscript{3} & 0--500 ppb \\
-SO\textsubscript{2} & 0--500 ppb \\
-NO\textsubscript{2} & 0--500 ppb \\
-NO & 0--500 ppb \\
-NO\textsubscript{x} & 0--500 ppb \\
-CO & 0--50 ppm \\
-Hidrocarburos totales & 0--10 / 0--20 ppmc \\
-Metanos & 0--10 / 0--20 ppmc \\
-No metanos & 0--10 / 0--20 ppmc \\
-Partículas PM\textsubscript{10} & 0--500 / 0--1000 \si{\micro\gram\per\cubic\meter} \\
-Partículas PM\textsubscript{2.5} & 0--500 / 0--1000 \si{\micro\gram\per\cubic\meter} \\
-Humedad relativa & 0--100\% \\
-Presión barométrica & 500--760 mmHg \\
-Precipitación pluvial & 0--10 mm \\
-Radiación solar & 0--2000 \si{\watt\per\square\meter} \\
-Radiación UV-A & 0--300 mW/m\textsuperscript{2} \\
-                & 0--2000 mW/m\textsuperscript{2} \\
-Radiación UV-B & 0--5 MED/hr \\
-                & 0--600 mW/m\textsuperscript{2} \\
-Velocidad del viento & 0--50 m/s \\
-Dirección del viento & 0--360$^{\circ}$ \\
-Temperatura ambiental & $-50$ a $500\,^{\circ}\mathrm{C}$ \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-\begin{table}[H]
-\centering
-\footnotesize
-\caption{Límites inferiores por contaminante.}
-\label{tab:limites_inferiores}
-\begin{tabular}{@{}ll@{}}
-\toprule
-\textbf{Contaminante} & \textbf{Mínimo inferior} \\
-\midrule
-O\textsubscript{3} & $-3$ ppb \\
-SO\textsubscript{2} & $-3$ ppb \\
-NO\textsubscript{2} & $-3$ ppb \\
-NO & $-3$ ppb \\
-NO\textsubscript{x} & $-6$ ppb \\
-CO & $-0.4$ ppm \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-Para la verificación de datos, se asignan nuevas banderas de acuerdo con
+Posteriormente, para la verificación de datos, se asignan nuevas banderas de acuerdo con
 la Tabla~\ref{tab:banderas_verificacion}.
-
-{\footnotesize
-\begin{longtable}{@{}l L{.17\textwidth} L{.62\textwidth}@{}}
-\caption{Criterios de asignación de banderas para la verificación de
-datos.}\label{tab:banderas_verificacion}\\
-\toprule
-\textbf{Bandera} & \textbf{Significado} & \textbf{Criterio} \\
-\midrule
-\endfirsthead
-\multicolumn{3}{@{}l}{\textit{Tabla~\thetable\ (continuación)}} \\
-\toprule
-\textbf{Bandera} & \textbf{Significado} & \textbf{Criterio} \\
-\midrule
-\endhead
-\midrule
-\multicolumn{3}{r}{\textit{Continúa en la página siguiente}} \\
-\endfoot
-\bottomrule
-\endlastfoot
-DS & Dato sospechoso &
-Cuando existen valores constantes por más de tres horas consecutivas
-de CO, NO\textsubscript{x}, NO\textsubscript{2}, NO,
-O\textsubscript{3}, SO\textsubscript{2}, PM\textsubscript{10} o
-PM\textsubscript{2.5}. \\
-\midrule
-IO & Inválido por operador &
-Cuando la suma de NO y NO\textsubscript{2} dividida entre
-NO\textsubscript{x} se encuentra fuera del intervalo $(0.85,\,1.15)$. \\
-   & &
-Cuando la relación de PM\textsubscript{2.5} entre PM\textsubscript{10}
-es mayor a $1.15$. \\
-   & &
-Para datos de radiación (total, UVA, UVB, UVC) cuando esta es diferente
-a cero durante la noche. \\
-   & &
-Para datos de velocidad de viento cuando esta no varía en más de
-$0.1$\,m/s en tres horas consecutivas o en más de $0.5$\,m/s en doce
-horas consecutivas. \\
-   & &
-Cuando los datos de dirección de viento no varían en más de
-$1^{\circ}$ por más de tres horas consecutivas o en más de
-$10^{\circ}$ durante dieciocho horas consecutivas. \\
-   & &
-Cuando los datos de temperatura cambian en más de
-$5\,^{\circ}\mathrm{C}$ respecto a la hora previa o no varían en más de
-$0.5\,^{\circ}\mathrm{C}$ en doce horas consecutivas. \\
-   & &
-Para datos de presión barométrica cuando esta tiene cambios de más de
-$0.75$\,mmHg en tres horas consecutivas. \\
-\midrule
-VC & Dato válido calculado &
-Se usa en aquellos datos que son obtenidos por medio de interpolación o
-por el uso de series de tiempo. También es aplicable a aquellos que son
-corregidos de acuerdo con los resultados de las verificaciones de cero
-y \textit{span}. \\
-\midrule
-VE & Dato válido con evento extraordinario &
-Se aplica para datos cuya frecuencia y duración fueron registrados en
-la bitácora general de operación. También cuando existe evidencia
-documental de eventos que afectaron la medición, tales como incendios,
-tolvaneras o actividades de construcción. \\
-\midrule
-DV & Dato para verificar &
-Bandera temporal que incluye datos que deberán ser confirmados en alguna
-de las categorías anteriores. También se puede asignar esta bandera a
-datos que se presentan fuera de los límites establecidos con base en
-tendencias históricas de cada uno de los contaminantes medidos o
-parámetros meteorológicos. \\
-\end{longtable}}
 
 Para evaluar los datos estadísticamente se utilizó un análisis de datos
 atípicos a través del cálculo de la anomalía estandarizada ($z$). Este
@@ -292,6 +158,36 @@ cada variable (para una distribución normal, 0 y 3, respectivamente) y se const
 gráficos cuantil-cuantil (Q-Q) contra la distribución normal estándar, que permitieron 
 identificar el tipo de desviación.
 
+\subsection{Prueba de Friedman entre estaciones de monitoreo}
+\label{subsec:comparacion_estaciones}
+Se utilizaron los datos horarios de las estaciones de monitoreo de calidad del aire.
+El análisis se restingió a las dos campañas de muestreo. A su vez, para cada 
+campaña se evaluó la variación entre la campaña completa y la ventana de muestreo 
+nocturno (22 h a 2 h). 
+
+Debido a que las tres estaciones registran simultánemanete, las observaciones 
+se consideran pareadas por marca de tiempo. Por ello, se utilizaron únicamente 
+las horas en las que las estaciones contaban con datos válidos. 
+
+La diferencia entre las tres estaciones se evaluó con la prueba de Friedman. 
+Como medida del tamaño del efecto se calculó la W de Kendall (Ecuación~\ref{eq:kendall_w}). 
+
+\begin{equation}
+  W = \frac{\chi^2_F}{N\,(k-1)},
+  \label{eq:kendall_w}
+\end{equation}
+
+donde $\chi^2_F$ es el estadístico de Friedman, $N$ el número de horas con datos
+completos y $k$ el número de estaciones. Cuando la prueba resultó significativa,
+se realizaron comparaciones por pares mediante la prueba de rangos con signo de
+Wilcoxon, aplicando la corrección de Bonferroni ($p_{\mathrm{aj}} = 3p$) para
+controlar el error tipo~I por comparaciones múltiples. 
+
+Se consideró significativa toda diferencia con $p < 0.05$. Dado que los datos
+horarios presentan autocorrelación temporal, los valores de $p$ pueden estar
+subestimados; por ello, la interpretación de los resultados se basó
+principalmente en el tamaño del efecto.
+
 \subsection{Análisis de correlación entre variables}
 \label{subsec:correlacion}
 
@@ -312,17 +208,13 @@ El análisis se realizó en dos escenarios. En el primero se utilizaron todas
 las horas de cada campaña. En el segundo se consideraron únicamente las horas 
 del periodo nocturno de muestreo, de las 22:00 a las 02:00 h. 
 
-\section{Variación temporal de contaminantes criterio mediante diagramas tipo Hovmöller}
+\subsection{Variación temporal de contaminantes criterio mediante diagramas tipo Hovmöller}
 \label{sec:met_hovmoller}
-
-\subsection{Datos de calidad del aire}
-\label{subsec:met_datos_aire}
 
 Se utilizaron datos horarios validados de tres estaciones de monitoreo de la 
 calidad del aire: CR, NATIVITAS y DIF. Los datos corresponden a las dos campañas de
 muestreo de vapor de agua atmosférico: la primera del 20 de febrero al 4 de marzo 
 y la segunda del 25 al 29 de mayo de 2026.
-
 
 Las variables analizadas fueron los contaminantes criterio: O$_3$ (ppb), 
 SO$_2$ (ppb), CO (ppm), NO$_2$ (ppb), PM10 y PM2.5 ($\mu$g\,m$^{-3}$). Adicionalmente 
@@ -330,3 +222,13 @@ se incluyó la humedad relativa (HR, \%). Las horas sin registro se conservaron 
 Para describir la variación de cada contaminante a lo largo de cada campaña 
 y del ciclo diario se emplearon diagramas tipo Hovmöller. 
 
+\section{Modelo de dispersión FLEXPART}
+
+El modelo de dispersión FLEXPART versión 11 fue configurado en 
+\textit{backaward} para calcular la matriz fuente-receptor
+para el CO con respecto al sitio de muestreo y las estaciones 
+de monitoreo (Seibert \& Frank, 2004; Wang et al., 2021). 
+El contaminante fue liberado desde el receptor 
+en retrotrayectoria por hora. Se utilizaron datos meteorológicos
+de reánalisis de ERA5 de ECMWF con una resolución de gradilla de  0.25° x 0.25° de 00:00 a 
+23:00 para los periodos de muestreo. 

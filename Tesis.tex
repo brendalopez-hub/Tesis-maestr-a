@@ -5,15 +5,19 @@
 \usepackage[version=4]{mhchem}
 \usepackage{booktabs}
 \usepackage{booktabs}
-\usepackage{graphicx}   % para \resizebox
+\usepackage{graphicx}   
 \usepackage{siunitx}
-\DeclareSIUnit{\ppm}{ppm}   % si tu versión de siunitx ya la define, borra esta línea
-\usepackage{float}          % para [H]
+\DeclareSIUnit{\ppm}{ppm}   
+\usepackage{float}          
 \usepackage{longtable}
 \usepackage{tabularx}
 \usepackage{array}
 \usepackage{url}
 \usepackage[hidelinks]{hyperref}
+\usepackage{subcaption}
+
+%\usepackage{titlesec} 
+%\titlespacing*{\section}{-70pt}{-2pt}{0pt}
 
 \newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
 \newcolumntype{Y}{>{\raggedright\arraybackslash}X}
@@ -199,7 +203,7 @@
         \vspace{0.25cm}
 
         {\large
-        Dr. Gilles Pierre Rene Levesse
+        Dr. Gilles Pierre Rene Levresse
         }
 
         \vspace{0.7cm}
@@ -277,9 +281,18 @@
 
 \input{Capítulos/06_discusion.tex}
 
-\chapter{Conclusiones}
+\input{Capítulos/07_conclusion.tex}
 
 \input{Capítulos/08_bibliografia}
+
+\clearpage
+\appendix
+
+\chapter*{Anexos}
+%\addcontentsline{toc}{chapter}{Anexos}
+%\markboth{Anexos}{Anexos}
+
+\input{Anexos/AnexoA.tex}
 
 \backmatter
 

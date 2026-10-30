@@ -1,0 +1,164 @@
+% !TEX root = ../Tesis.tex
+\chapter{Tablas de validación de datos 
+de las estaciones de monitoreo de calidad 
+del aire}
+\label{anexo:tablas_validacion}
+
+En este apéndice se presentan las tablas de criterios, rangos de operación y
+límites utilizados para la limpieza y verificación de los datos de calidad
+del aire y variables meteorológicas empleados en esta tesis.
+
+\begin{table}[H]
+\centering
+\footnotesize
+\caption{Criterios de asignación de banderas para la limpieza de datos.}
+\label{tab:banderas_limpieza}
+\begin{tabular}{@{}lL{.78\textwidth}@{}}
+\toprule
+\textbf{Bandera} & \textbf{Criterio} \\
+\midrule
+VA & Dato válido: dato que se considera correcto o verdadero pero que
+está sujeto a revisión en la etapa de verificación de datos. \\
+IC & Dato inválido por calibración: datos que provengan de las
+actividades de calibración de los equipos de medición. Asimismo, se
+incluirán aquellos datos generados como resultado de la ejecución del
+programa de pruebas de cero/span. \\
+IR & Dato inválido por rango de operación: valores fuera de los límites
+superior e inferior fijados en el equipo de medición
+(Tablas~\ref{tab:rangos_operacion} y~\ref{tab:limites_inferiores}). \\
+VZ & Dato válido igualado al límite de detección o a cero: datos con
+valores negativos que, excepto en el caso de las mediciones de
+temperatura, deberán ser igualados a cero o al límite de detección
+correspondiente para poderlos incluir en la base de datos revisada. \\
+IF & Dato inválido por falla del equipo: datos de los que exista
+evidencia en bitácora o en listas de verificación cuyos parámetros de
+operación (temperaturas, flujos, presiones, voltajes) se encuentran
+fuera de los valores normales de operación. \\
+ND & Dato no disponible: se aplica a cualquier dato ausente, ya sea por
+fallas en la transmisión-recepción o por cortes de energía. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\footnotesize
+\caption{Rangos de operación por contaminante.}
+\label{tab:rangos_operacion}
+\begin{tabular}{@{}ll@{}}
+\toprule
+\textbf{Contaminante} & \textbf{Rango de operación} \\
+\midrule
+O\textsubscript{3} & 0--500 ppb \\
+SO\textsubscript{2} & 0--500 ppb \\
+NO\textsubscript{2} & 0--500 ppb \\
+NO & 0--500 ppb \\
+NO\textsubscript{x} & 0--500 ppb \\
+CO & 0--50 ppm \\
+Hidrocarburos totales & 0--10 / 0--20 ppmc \\
+Metanos & 0--10 / 0--20 ppmc \\
+No metanos & 0--10 / 0--20 ppmc \\
+Partículas PM\textsubscript{10} & 0--500 / 0--1000 \si{\micro\gram\per\cubic\meter} \\
+Partículas PM\textsubscript{2.5} & 0--500 / 0--1000 \si{\micro\gram\per\cubic\meter} \\
+Humedad relativa & 0--100\% \\
+Presión barométrica & 500--760 mmHg \\
+Precipitación pluvial & 0--10 mm \\
+Radiación solar & 0--2000 \si{\watt\per\square\meter} \\
+Radiación UV-A & 0--300 mW/m\textsuperscript{2} \\
+                & 0--2000 mW/m\textsuperscript{2} \\
+Radiación UV-B & 0--5 MED/hr \\
+                & 0--600 mW/m\textsuperscript{2} \\
+Velocidad del viento & 0--50 m/s \\
+Dirección del viento & 0--360$^{\circ}$ \\
+Temperatura ambiental & $-50$ a $500\,^{\circ}\mathrm{C}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\footnotesize
+\caption{Límites inferiores por contaminante.}
+\label{tab:limites_inferiores}
+\begin{tabular}{@{}ll@{}}
+\toprule
+\textbf{Contaminante} & \textbf{Mínimo inferior} \\
+\midrule
+O\textsubscript{3} & $-3$ ppb \\
+SO\textsubscript{2} & $-3$ ppb \\
+NO\textsubscript{2} & $-3$ ppb \\
+NO & $-3$ ppb \\
+NO\textsubscript{x} & $-6$ ppb \\
+CO & $-0.4$ ppm \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+{\footnotesize
+\begin{longtable}{@{}l L{.17\textwidth} L{.62\textwidth}@{}}
+\caption{Criterios de asignación de banderas para la verificación de
+datos.}\label{tab:banderas_verificacion}\\
+\toprule
+\textbf{Bandera} & \textbf{Significado} & \textbf{Criterio} \\
+\midrule
+\endfirsthead
+\multicolumn{3}{@{}l}{\textit{Tabla~\thetable\ (continuación)}} \\
+\toprule
+\textbf{Bandera} & \textbf{Significado} & \textbf{Criterio} \\
+\midrule
+\endhead
+\midrule
+\multicolumn{3}{r}{\textit{Continúa en la página siguiente}} \\
+\endfoot
+\bottomrule
+\endlastfoot
+DS & Dato sospechoso &
+Cuando existen valores constantes por más de tres horas consecutivas
+de CO, NO\textsubscript{x}, NO\textsubscript{2}, NO,
+O\textsubscript{3}, SO\textsubscript{2}, PM\textsubscript{10} o
+PM\textsubscript{2.5}. \\
+\midrule
+IO & Inválido por operador &
+Cuando la suma de NO y NO\textsubscript{2} dividida entre
+NO\textsubscript{x} se encuentra fuera del intervalo $(0.85,\,1.15)$. \\
+   & &
+Cuando la relación de PM\textsubscript{2.5} entre PM\textsubscript{10}
+es mayor a $1.15$. \\
+   & &
+Para datos de radiación (total, UVA, UVB, UVC) cuando esta es diferente
+a cero durante la noche. \\
+   & &
+Para datos de velocidad de viento cuando esta no varía en más de
+$0.1$\,m/s en tres horas consecutivas o en más de $0.5$\,m/s en doce
+horas consecutivas. \\
+   & &
+Cuando los datos de dirección de viento no varían en más de
+$1^{\circ}$ por más de tres horas consecutivas o en más de
+$10^{\circ}$ durante dieciocho horas consecutivas. \\
+   & &
+Cuando los datos de temperatura cambian en más de
+$5\,^{\circ}\mathrm{C}$ respecto a la hora previa o no varían en más de
+$0.5\,^{\circ}\mathrm{C}$ en doce horas consecutivas. \\
+   & &
+Para datos de presión barométrica cuando esta tiene cambios de más de
+$0.75$\,mmHg en tres horas consecutivas. \\
+\midrule
+VC & Dato válido calculado &
+Se usa en aquellos datos que son obtenidos por medio de interpolación o
+por el uso de series de tiempo. También es aplicable a aquellos que son
+corregidos de acuerdo con los resultados de las verificaciones de cero
+y \textit{span}. \\
+\midrule
+VE & Dato válido con evento extraordinario &
+Se aplica para datos cuya frecuencia y duración fueron registrados en
+la bitácora general de operación. También cuando existe evidencia
+documental de eventos que afectaron la medición, tales como incendios,
+tolvaneras o actividades de construcción. \\
+\midrule
+DV & Dato para verificar &
+Bandera temporal que incluye datos que deberán ser confirmados en alguna
+de las categorías anteriores. También se puede asignar esta bandera a
+datos que se presentan fuera de los límites establecidos con base en
+tendencias históricas de cada uno de los contaminantes medidos o
+parámetros meteorológicos. \\
+\end{longtable}}
