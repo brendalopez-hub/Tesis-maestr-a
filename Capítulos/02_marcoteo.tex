@@ -156,7 +156,8 @@ arrastre (ZA), por encima de la cual se encuentra la atmósfera libre
 (AL). La ZA suele estar centrada en la base de una inversión de
 cubierta elevada (IC) (Baklanov, 2024; Vallero, 2025).
 
-Por otro lado, durante la noche (Figura \ref{fig:clu_nocturna}B), la capa de inversión superficial
+Por otro lado, durante la noche (Figura \ref{fig:clu_nocturna}B), 
+la capa de inversión superficial
 nocturna (CISN) de la zona rural situada a barlovento es arrastrada
 hacia la ciudad, lo que da lugar a una inversión elevada débil y poco
 profunda. Suele quedar cubierta sucesivamente por la capa residual
@@ -228,7 +229,11 @@ Secretaría de Seguridad Pública, 2023).
 Según las emisiones anuales de carbono y la relación entre las
 emisiones de CO\textsubscript{2} y H\textsubscript{2}O(v), la
 combustión de combustibles fósiles libera aproximadamente
-$21.1$\,Pg/año de agua a la atmósfera. Aunque este vapor derivado de la
+$21.1$\,Pg/año de agua a la atmósfera. Incluso, en zonas urbanas 
+altamente pobladas, el agua derivada de estas emisiones, puede exceder
+el 10\% de la CLP (Xing et al., 2026). 
+
+Aunque este vapor derivado de la
 combustión es insignificante a escala global y anual, desempeña un
 papel importante en el ciclo hidrológico urbano y la meteorología
 debido a la concentración espacial y temporal de las emisiones de
@@ -266,8 +271,10 @@ por mil (Ecuación~\ref{eq:delta}) (Hoefs \& Harmon, 2022).
 \label{eq:delta}
 \end{equation}
 
-Donde $R_x$ y $R_{std}$ denotan la razón isotópica de la muestra y del estándar, respectivamente. 
-Existen distintos estándares internacionales utilizados para el análisis de isótopos (Tabla~\ref{tab:estandares}).
+Donde $R_x$ y $R_{std}$ denotan la razón isotópica de la muestra y
+del estándar, respectivamente. 
+Existen distintos estándares internacionales utilizados para el 
+análisis de isótopos (Tabla~\ref{tab:estandares}).
 
 \begin{table}[h!]
 \centering
@@ -323,8 +330,13 @@ atmósfera desde el comienzo de la era industrial. Pueden distinguirse
 los componentes naturales por su composición de isótopos estables
 (Hoefs \& Harmon, 2022).
 
-Debido a diferencias de fuentes, procesos de saturación de vapor y difusión molecular, la abundancia relativa de los isotopólogos estables (H$_2^{16}$O, HD$^{16}$O, H$_2^{18}$O) provoca cambios en los procesos hidrológicos (Tabla~\ref{tab:isotopos}). 
-El estudio de la composición de isótopos estables del vapor de agua atmosférico puede proveer información sobre el transporte y mezclas en la atmósfera (Dai et al., 2021; Galewsky et al., 2016).
+Debido a diferencias de fuentes, procesos de saturación de vapor y 
+difusión molecular, la abundancia relativa de los isotopólogos estables
+(H$_2^{16}$O, HD$^{16}$O, H$_2^{18}$O) provoca cambios en los procesos
+hidrológicos (Tabla~\ref{tab:isotopos}). 
+El estudio de la composición de isótopos estables del vapor de agua 
+atmosférico puede proveer información sobre el transporte y mezclas 
+en la atmósfera (Dai et al., 2021; Galewsky et al., 2016).
 
 \begin{table}[h!]
 \centering
@@ -394,7 +406,35 @@ emisión del vapor de agua (Froehlich et al., 2002; Shang et al., 2024).
 \end{equation}
 
 Donde $\delta$D y $\delta^{18}$O son las concentraciones de deuterio y
-oxígeno-18 en el vapor de agua.
+oxígeno-18 en el vapor de agua. Este valor tiende a ser más negativo 
+cuando proviene de fuentes antropogénicas. Al mismo tiempo, el 
+fraccionamiento isotópico del VDC y el \textit{d-excess}, varía 
+de acuerdo al tipo de combustible fósil (Xing et al., 2026).
+
+\begin{table}[htbp]
+\centering
+\caption{Composición isotópica del $\delta^{2}\mathrm{H}$ y $\delta^{18}\mathrm{O}$ 
+en H$_2$O derivada de la combustión de distintos combustibles bajo diferentes 
+condiciones de ralentí, 20~km/h y 40~km/h (Xing et al., 2026).}
+\label{tab:isotopic_vehicle_exhaust}
+\begin{tabular}{llrrrrrr}
+\toprule
+Tipo de vehículo & Velocidad (km/h) & $\delta^{18}\mathrm{O}_\mathrm{v}$ & $\delta^{2}\mathrm{H}_\mathrm{v}$ & d-excess$_\mathrm{v}$ \\
+\midrule
+gasolina    & ralentí & $-12.7$ &   $-98.9$   & 2.6   \\
+            & 20      & 14.3    &   $-184.6$  & $-299.1$ \\
+            & 40      & 14.9    &   $-189.3$  & $-308.6$ \\
+\addlinespace
+disel      & ralentí  & $-0.4$  &   $-118.4$  & $-115.2$ \\
+            & 20      & 9.1     &   $-205.7$  & $-278.3$ \\
+            & 40      & 14.3    &   $-205.9$  & $-275.9$ \\
+\addlinespace
+metanol    & 20       & 8.5     &   $-230.2$  & $-298.1$ \\
+gas natural & 20      & 11.3    &   $-217.0$  & $-307.0$ \\
+\bottomrule
+\end{tabular}
+
+\end{table}
 
 \section{Modelo FLEXPART}
 El modelo de dispersión de partícula flexible (FLEXPART, por sus siglas
@@ -422,7 +462,7 @@ que llegan a un punto de interés (Foreback et al., 2024).
 FLEXPART es un modelo \textit{off-line} y, por lo tanto, necesita campos
 meteorológicos procedentes de modelos de predicción del tiempo. En particular, 
 puede copilar con campos del \textit{European Centre for Medium-Range 
-Weather (ECMWF)}, NCEP y, alfunas versiones, con \textit{Weather Research and Forecasting
+Weather (ECMWF)}, NCEP y, algunas versiones, con \textit{Weather Research and Forecasting
 (WRF)} (Vaz de Jesus et al., 2018).
 
 La relación fuente-receptor es un concepto importante en el modelado de

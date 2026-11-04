@@ -24,7 +24,7 @@ $30\,^{\circ}\mathrm{C}$ y $30\%$ de humedad relativa.
 \label{sec:analisis_isotopico_metodo}
 
 Las muestras fueron analizadas en el Centro de Invstigación Científica y 
-de Educación Superior de Ensedada (CICESE) a través de la Unidad de Isótopos 
+de Educación Superior de Ensenada (CICESE) a través de la Unidad de Isótopos 
 Estables de Oxígeno, Hidrógeno y Carbono. Se utilizó un analizador de isótopos 
 de agua de alta precisión Picarro L2130-i con automuestreador. 
 
@@ -36,7 +36,8 @@ extremos en el espacio $\delta$D--$\delta^{18}$O. El extremo de fondo no se
 definió como un punto fijo, sino mediante la línea meteórica regional (LMR),
 $\delta D = a\,\delta^{18}O + b$, donde $a$ y $b$ corresponden a la 
 pendiente y ordenada al origen de dicha recta. El extremo de combustión se
-fijó en los valores isotópicos teóricos $\delta^{18}O_c$ y $\delta D_c$.
+fijó en los valores isotópicos teóricos $\delta^{18}O_c$ y $\delta D_c$, basados
+en los datos fijados por Gorski et al. (2015) y Xing et al. (2020). 
 
 Para cada muestra ($\delta^{18}O_s$, $\delta D_s$) se determinó su punto de
 fondo específico ($\delta^{18}O_{bg}$, $\delta D_{bg}$) mediante la intersección 
@@ -71,7 +72,6 @@ entre cada punto de fondo y el extremo de combustión:
 O_p &= \delta^{18}O_{bg} + p\,(\delta^{18}O_c - \delta^{18}O_{bg}) \\
 D_p &= \delta D_{bg} + p\,(\delta D_c - \delta D_{bg})
 \end{align}
-
 
 Por otro lado, se realizó un análisis explotatorio para evaluar la variabilidad del 
 \textit{d-excess} del vapor de agua con la concentración de 
@@ -221,6 +221,11 @@ SO$_2$ (ppb), CO (ppm), NO$_2$ (ppb), PM10 y PM2.5 ($\mu$g\,m$^{-3}$). Adicional
 se incluyó la humedad relativa (HR, \%). Las horas sin registro se conservaron como datos ausentes.
 Para describir la variación de cada contaminante a lo largo de cada campaña 
 y del ciclo diario se emplearon diagramas tipo Hovmöller. 
+
+Adicionalmente, se añadió un análisis de la rosa de los vientos para cada
+campaña. Estos se obtuvieron a través del programa \textit{WRPLOT View, 
+Wind Rose Plots for Meteorological Data} en la versión 8.0.2, distribuido 
+por Lakes Environmental. 
 
 \section{Modelo de dispersión FLEXPART}
 

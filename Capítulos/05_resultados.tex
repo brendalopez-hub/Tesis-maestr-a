@@ -838,15 +838,19 @@ Entre estaciones, el CO de DIF en la segunda campaña fue claramente superior al
 el SO$_2$ de NATIVITAS se mantuvo en un intervalo estrecho y con valores base más altos que los de 
 CR y DIF.
 
-En la Figura~\ref{fig:rosa_estaciones} se presenta la rosa de los
-vientos para las estaciones de Salamanca. Se observa un comportamiento
+\subsection{Rosa de los vientos}
+
+En la Figura~\ref{fig:rosa_completa} se presenta la rosa de los
+vientos para las estaciones de Salamanca. Para el periodo global de 
+muestreo (Figura~\ref{fig:rosa_estaciones}), se observa un comportamiento
 similar en los tres puntos, con vientos predominantes del sureste en un
 rango de \SIrange{2.1}{3.6}{\meter\per\second}. Existen ligeras
 variaciones en la frecuencia de vientos superiores a
 \SI{3.6}{\meter\per\second}, los cuales tienden a ser más frecuentes en
 la estación DIF.
 
-Por otro lado, durante el periodo de muestreo los vientos predominantes
+Por otro lado, durante el periodo de muestreo (Figura~\ref{fig:rosa_muestreo})
+los vientos predominantes
 provienen del noreste. Los rangos más frecuentes son de
 2.1 a 3.6\,\si{\meter\per\second} y de
 3.6 a 5.7\,\si{\meter\per\second}. La dirección menos frecuente es
@@ -856,18 +860,70 @@ el noroeste, la cual solo aparece en vientos débiles de
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.65\textwidth]{Resultados/Rosa_diario.pdf}
-    \caption{Rosas de los vientos de las estaciones de monitoreo de
-    Salamanca.}
+    \begin{subfigure}{0.95\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Resultados/Rosa_diario.pdf}
+    \caption{}
     \label{fig:rosa_estaciones}
+  \end{subfigure}
+
+  \vspace{0.5cm}
+
+\begin{subfigure}{0.95\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Resultados/Rosa_horario.pdf}
+    \caption{}
+    \label{fig:rosa_muestreo}
+  \end{subfigure}
+  \caption{Rosa de los vientos: (A) Periodo de muestreo (20 de febrero - 5 de marzo 
+  de 2026) y (B) en la ventana de muestreo (22:00 a 2 h).}
+  \label{fig:rosa_completa}
 \end{figure}
+
+Para la campaña de mayo, en el conjunto de las jornada completa (Figura~\ref{fig:rosas_24h}), 
+los sectores de mayor frecuencia se orientan 
+hacia el este y el sureste, con un sector secundario, menos frecuente, hacia el oeste 
+y el suroeste. En la estación Nativitas, la más cercana al sitio de muestreo, el sector 
+del este-sureste es el más largo y las velocidades entree 0.5 a 2.1~m\,s$^{-1}$ son 
+predominantes, seguida de la clase de 2.1 a 3.6~m\,s$^{-1}$; la 
+clase de 3.6 a 5.7~m\,s$^{-1}$ aparece solo en el extremo de los sectores. Un 
+comportamiento análogo se observa en las otras dos estaciones, 
+que se encuentran a mayor distancia del sitio de muestreo 
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.65\textwidth]{Resultados/Rosa_horario.pdf}
-    \caption{Rosa de los vientos durante el periodo de muestreo.}
-    \label{fig:rosa_muestreo}
+    \begin{subfigure}[b]{0.95\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Resultados/RV_MAYO_24.png}
+        \caption{}
+        \label{fig:rosas_24h}
+    \end{subfigure}
+
+    \vspace{0.8em}
+
+    \begin{subfigure}[b]{0.95\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Resultados/RV_MAYO_22-2.png}
+        \caption{}
+        \label{fig:rosas_2202}
+    \end{subfigure}
+
+    \caption{Rosa de los vientos: (A) Periodo de muestreo (25 de mayo - 29 de mayo 
+  de 2026) y (B) en la ventana de muestreo (22:00 a 2 h).}
+    \label{fig:rosas_viento}
 \end{figure}
+
+En la ventana nocturna (Figura~\ref{fig:rosas_2202}) se mantiene la 
+orientación predominante este-sureste en las tres estaciones, pero la rosa 
+se simplifica: los sectores secundarios del oeste y suroeste se reducen, 
+de modo que el viento se concentra en un intervalo angular más estrecho. 
+Además, disminuye la proporción de la clase de menor velocidad 
+(0.5 a 2.1~m\,s$^{-1}$) y aumenta la de 2.1 a 3.6 y de 3.6 a 5.7~m\,s$^{-1}$, 
+que ocupan la mayor parte de los sectores. En la estación del suroeste se 
+observan, además, algunos sectores con velocidades de 5.7 a 11.1~m\,s$^{-1}$, 
+aunque de baja frecuencia. Nativitas y la estación del norte muestran un sector 
+principal bien definido hacia el este-sureste, con pequeños sectores secundarios 
+hacia el suroeste y el norte, respectivamente.
 
 \section{Composición isotópica}
 La Figura~\ref{fig:mezcla_salamanca} presenta el diagrama
@@ -997,6 +1053,7 @@ lo cual es compatible con una noche de mayor acumulación de emisiones primarias
 consumo de O$_3$ por titulación con NO.
  
 \section{Modelo de dispersión FLEXPART}
+\subsection{Retrotrayectoria del viento}
 La Figura~\ref{fig:retrotrayectorias} muestra la retrotrayectoria
 promedio nocturna (22:00--02:00\,h), correspondiente al promedio de
 todos los días de muestreo dentro de esta franja horaria, para los
@@ -1080,6 +1137,7 @@ independientemente del sitio considerado.
    \label{fig:retro_24h}
 \end{figure}
 
+\subsection{Matriz de sensibilidad fuente-receptor}
 La Figura~\ref{fig:footprints_co} muestra las matrices de sensibilidad
 fuente-receptor (\textit{footprints}) de CO obtenidas mediante las
 simulaciones retro-trayectoria de FLEXPART para las cuatro estaciones de
@@ -1106,13 +1164,15 @@ particular de cada receptor dentro del dominio.
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=\textwidth]{Resultados/FOOTPRINT_horario.pdf}
-    \caption{Matrices de sensibilidad fuente-receptor (\textit{footprints})
-    de CO obtenidas con FLEXPART en modo retro-trayectoria para las
-    estaciones Nativitas, DIF, Cruz Roja y Sitio de muestreo, durante el
-    horario de muestreo (22:00--02:00\,h). El cuadro negro indica la
+    \includegraphics[width=\textwidth]{Resultados/TODAS_feb_22-02.pdf}
+    \caption{Matriz de sensibilidad fuente-receptor (\textit{footprints})
+    de CO obtenidas con FLEXPART en modo retrotrayectoria para las
+    estaciones Nativitas, DIF, Cruz Roja y Sitio de muestreo, durante
+    el horario de muestreo (22:00--02:00\,h) para la campaña de febrero-marzo. 
+    El recuadro rojo indica la
     posición de cada receptor; la sensibilidad se expresa en unidades
-    arbitrarias (u.a.).}
+    arbitrarias (u.a.). Las industrias están basadas en el reporte de 
+    RETC de las Tablas~\ref{tab:retc_federal} y \ref{tab:retc_estatal}}
     \label{fig:footprints_co}
 \end{figure}
 
@@ -1125,6 +1185,19 @@ concentran en una franja orientada hacia el sureste del dominio, en las
 celdas inmediatas a cada punto receptor (marcado con un cuadro negro),
 con los valores máximos ($>0.5$\,u.a.) restringidos a las celdas
 contiguas al receptor.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{Resultados/TODAS_feb_24h_campana.pdf}
+    \caption{Matriz de sensibilidad fuente-receptor (\textit{footprints})
+    de CO obtenidas con FLEXPART en modo retrotrayectoria para las
+    estaciones Nativitas, DIF, Cruz Roja y Sitio de muestreo, durante la jornada completa de 
+    febrero-marzo. El recuadro rojo indica la
+    posición de cada receptor; la sensibilidad se expresa en unidades
+    arbitrarias (u.a.). Las industrias están basadas en el reporte de 
+    RETC de las Tablas~\ref{tab:retc_federal} y \ref{tab:retc_estatal}.}
+     \label{fig:footprints_co_24h}
+\end{figure}
 
 Sin embargo, al considerar el ciclo diurno completo, esta zona de alta
 sensibilidad se presenta de manera más compacta y de menor extensión
@@ -1139,13 +1212,55 @@ con variaciones menores en la orientación y extensión de la franja de
 mayor sensibilidad, asociadas a la posición particular de cada receptor
 dentro del dominio.
 
+En la Figura~\ref{fig:flexpart_24h}, se presenta el análisis de sensibilidad
+fuente-receptor para la campaña completa de mayo. Se observa que, en los cuatro receptores, 
+la mayor sensibilidad (mayor a 1) se limita a la celda que contiene al receptor 
+y a su entorno inmediato, como es de esperar por el tiempo de residencia de las 
+partículas cerca del punto de liberación. A su alrededor se extiende un área de 
+sensibilidad entre 0.3 y 0.5, con una prolongación hacia el este y noreste en 
+dirección al conjunto de industrias, y un lóbulo 
+más pequeño hacia el suroeste. La zona de sensibilidad entre 0.1 y 0.3 es más 
+amplia y se extiende principalmente hacia el este, además de hacia el oeste y 
+el sur de los receptores.
+
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=\textwidth]{Resultados/FOOTPRINT_diario.pdf}
-    \caption{Matrices de sensibilidad fuente-receptor (\textit{footprints})
-    de CO obtenidas con FLEXPART para el promedio de 24\,h durante todo
-    el periodo de muestreo, en las estaciones Nativitas, DIF, Cruz Roja y
-    Sitio de muestreo. El cuadro negro indica la posición de cada
-    receptor; la sensibilidad se expresa en unidades arbitrarias (u.a.).}
-    \label{fig:footprints_co_24h}
+    \includegraphics[width=\textwidth]{Resultados/TODAS_mayo_24h_campana.pdf}
+    \caption{Matriz de sensibilidad fuente-receptor (\textit{footprints})
+    de CO obtenidas con FLEXPART en modo retrotrayectoria para la campaña de mayo
+    considerando las 24~h del día.}
+    \label{fig:flexpart_24h}
 \end{figure}
+
+Los patrones de los cuatro receptores son muy parecidos entre sí, lo cual es 
+consistente con la corta distancia que los separa. Las diferencias se limitan 
+a pequeños desplazamientos del área de influencia asociados con la posición de 
+cada estación. En todos los casos, las industrias más cercanas a los receptores 
+(al este y noreste) quedan dentro de las zonas con sensibilidad de al menos 0.1,
+mientras que el grupo de industrias del noroeste de la zona y, en general, las del 
+extremo sureste se ubican en el borde o fuera de dichas zonas, con sensibilidades 
+entre 0.01 y 0.1.
+
+Por otro lado, al considerar únicamente la ventana nocturna (Figura~\ref{fig:flexpart_2202}), 
+el área de influencia es considerablemente más reducida que la del promedio de 24~h. 
+Desaparece prácticamente la zona de sensibilidad de 0.3 a 0.5 y el área con sensibilidad entre 0.1 y 0.3 
+se acota a una franja alargada que se extiende hacia el oeste de los receptores, hasta 
+el borde occidental del dominio mostrado ($\approx 101.3^{\circ}$W), junto con un lóbulo 
+más corto hacia el noreste, en el que se encuentran algunas de las industrias cercanas. 
+Adicionalmente, aparece una pequeña zona aislada de sensibilidad entre 0.1 y 0.3 al 
+sur de los receptores. Una diferencia destacable respecto al promedio de 24~h es que el sector sureste y este del
+dominio, donde se ubican las industrias del extremo sureste, presenta sensibilidades menores
+a 0.01 para los cuatro receptores. 
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{Resultados/TODAS_mayo_22-02.pdf}
+    \caption{Sensibilidad fuente-receptor promedio (razón de mezcla, u.a.) 
+    de la campaña de mayo para los receptores Nativitas, DIF, Cruz Roja y 
+    sitio de muestreo, considerando únicamente la ventana de 22:00 a 02:00~h. 
+    Las estrellas indican la ubicación de las industrias del RETC de Salamanca 
+    y el cuadro rojo el receptor.}
+    \label{fig:flexpart_2202}
+\end{figure}
+
+
