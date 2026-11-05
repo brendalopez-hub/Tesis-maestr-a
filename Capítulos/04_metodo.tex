@@ -1,6 +1,10 @@
 % !TEX root = ../Tesis.tex
 \chapter{Metodología}
 \section{Recolección de muestras}
+
+El sitio de muestreo se seleccionó a partir de la comparación de datos 
+históricos de calidad del aire del 2023, contrastado con la normatividad
+mexicana %(ver \ref{anexo:histo_cont}).
 Las muestras se recolectaron a través de un sistema de captura y condensación.
 El sistema está compuesto por un refrigerador modificado marca Hisense, con
 una conexión de tubería de PVC en su interior. El sistema estaba adaptado 
@@ -15,7 +19,7 @@ a un \textit{timer} para el funcionamiento automático del sistema (Figura \ref{
 \end{figure}
 
 Para obtener un factor del fraccionamiento isotópico que se produce al
-condensar la muestra, se adapta el condensador a una cámara de
+condensar la muestra con el equipo, se adoptó el condensador a una cámara de
 ambientes controlados. Cada 24 horas se recolecta la muestra de vapor y
 una muestra líquida. La cabina mantenía las condiciones en
 $30\,^{\circ}\mathrm{C}$ y $30\%$ de humedad relativa.
@@ -36,13 +40,14 @@ extremos en el espacio $\delta$D--$\delta^{18}$O. El extremo de fondo no se
 definió como un punto fijo, sino mediante la línea meteórica regional (LMR),
 $\delta D = a\,\delta^{18}O + b$, donde $a$ y $b$ corresponden a la 
 pendiente y ordenada al origen de dicha recta. El extremo de combustión se
-fijó en los valores isotópicos teóricos $\delta^{18}O_c$ y $\delta D_c$, basados
+fijó en los valores isotópicos teóricos ($\delta^{18}O_c$=$9$\,\textpertenthousand y 
+$\delta D_c$=$-134.4$\,\textperthousand), basados
 en los datos fijados por Gorski et al. (2015) y Xing et al. (2020). 
 
 Para cada muestra ($\delta^{18}O_s$, $\delta D_s$) se determinó su punto de
 fondo específico ($\delta^{18}O_{bg}$, $\delta D_{bg}$) mediante la intersección 
-entre la LMR y la recta que une la muestra con el extremo de combustión. 
-Primero se calculó la pendiente de dicha recta:
+entre la LAMR-SAL y la recta que une la muestra con el extremo de combustión. 
+Primero se calculó la pendiente de dicha recta (\ref{eq:lml}):
 
 \begin{equation}
 m_{sc} = \frac{\delta D_s - \delta D_c}{\delta^{18}O_s - \delta^{18}O_c}

@@ -1,21 +1,14 @@
 % !TEX root = ../Tesis.tex
 \chapter{Discusión de resultados}
-\section{Condiciones atmosféricas y calidad del aire}
+\section{Calidad del aire y condiciones atmosféricas en Salamanca, Guanajuato}
 
-Durante la campaña del 20 de febrero al 5 de marzo de 2026, las concentraciones de los contaminantes 
-criterio en las estaciones de monitoreo se mantuvieron, en general, por debajo de los valores de referencia
-de la normatividad mexicana (Tablas 3.5 y 3.6). El ozono alcanzó un máximo diario de 45~ppb 
-(Cruz Roja, 23 de febrero); el SO$_2$ se mantuvo entre aproximadamente 10 y 20~ppb en DIF y Nativitas, 
-frente al límite de 0.040~ppm para 24~h; y el PM$_{2.5}$ llegó a cerca de 27~$\mu$g\,m$^{-3}$ 
-(DIF, 20 de febrero), por debajo de los 41~$\mu$g\,m$^{-3}$ del primer nivel de la norma. La excepción 
-fue el PM$_{10}$, que alcanzó cerca de 100~$\mu$g\,m$^{-3}$ en Nativitas el 22 de febrero, por encima del 
-valor de 70~$\mu$g\,m$^{-3}$. Sin embargo, la norma se evalúa con el percentil 99 anual de los promedios 
-de 24~h, por lo que un periodo de dos semanas no permite dictaminar cumplimiento: estos valores caracterizan
-las condiciones del muestreo, no el estado normativo de la ciudad. 
-
-Las diferencias entre estaciones son sistemáticas. Nativitas presentó las concentraciones más 
-altas de SO$_2$, PM$_{10}$ y CO; Cruz Roja, las de NO$_2$; y DIF, las de PM$_{2.5}$ 
-(Nativitas no reportó PM$_{2.5}$). A escala estatal, el inventario de emisiones de 2021 atribuye 
+De acuerdo con el análisis de Friedman y W de Kendall indica que las diferencias entre 
+estaciones son sistemáticas. Nativitas presentó las concentraciones más 
+altas de SO$_2$, PM$_{10}$ y CO, lo cual es coherente, ya que se encuentra cerca de 
+distintas industrias. Además, Cruz Roja, presenta los máximos de NO$_2$. Finalmente, en DIF, las de PM$_{2.5}$.
+Sin embargo, es importante considerar que la estación Nativitas no reportó PM$_{2.5}$, por 
+lo que la conclusión respecto a este contaminante no es determinante. 
+A escala estatal, el inventario de emisiones de 2021 atribuye 
 casi todo el SO$_2$ a fuentes fijas (7\,331.79 de 7\,426.74~t/año) y la mayor parte del CO a 
 fuentes móviles (23\,411.99 de 26\,974.73~t/año) (\ref{tab:contaminantes}). El patrón de Nativitas sugiere 
 entonces una combinación de influencia industrial y vehicular, mientras que el de Cruz Roja podría 
@@ -29,7 +22,6 @@ límite poco profunda, y sitúa el máximo vespertino inmediatamente antes de la
 (Figura~\ref{fig:clu_nocturna}), los contaminantes emitidos al final de la tarde tienden 
 a permanecer cerca de la superficie durante la 
 noche, lo que hace de esa ventana un momento favorable para detectar vapor derivado de la combustión. 
-El ozono, con máximo a las 17~h y mínimo a las 7~h, sigue el ciclo fotoquímico esperado.
 
 Las dos campañas difieren en ese contexto. En febrero el NO$_2$ y el PM$_{10}$ fueron más 
 altos y variables, con noches de más de 30~ppb de NO$_2$ entre las 21 y las 23~h (24 al 27 
@@ -38,7 +30,7 @@ fue mayor (máximos más intensos y mínimos nocturnos de 20 a 30~ppb en lugar d
 El menor ozono nocturno y el mayor NO$_2$ de febrero indican noches más estables y con más 
 acumulación de emisiones 
 primarias, mientras que la mayor temperatura y humedad de mayo implican más mezcla y una 
-atmósfera de fondo más húmeda %CITA BIBLIOGRAFICA.
+atmósfera de fondo más húmeda (Vallero, 2025).
 
 Así mismo, un contraste relevante con los estudios de referencia en Salt Lake City y Xi\'an
 es el régimen de vientos. Mientras que aquellas investigaciones se desarrollaron bajo episodios 
@@ -47,7 +39,37 @@ las velocidades durante el muestreo oscilaron principalmente entre 2.1 y 5.7~m\,
 ventilación moderada que diluye 
 las emisiones locales.
 
-\section{Firma isotópica del vapor y contribución del vapor de combustión}
+Las correlaciones de Spearman (Figuras~\ref{fig:corr_feb_CR} a \ref{fig:corr_may_NAT}) 
+sugieren que el comportamiento 
+de los contaminantes está dominado por la meteorología local. Las relaciones más intensas 
+y consistentes entre estaciones son la correlación negativa entre temperatura y humedad 
+relativa ($\rho\approx-0.87$ en febrero), la correlación negativa entre O$_3$ y NO$_2$ 
+($\rho$ de $-0.47$ a $-0.80$). Esta última está relacionada con la firma de 
+la titulación del ozono por NO, donde estos gases reaccionan para generar NO$_2$, 
+disminuyendo la concentración de O$_3$ (Escudero et al., 2016).
+
+Por el contrario, la correlación positiva del O$_3$ con la temperatura y la 
+radiación UV durante el día se debe a que estos parámetros propician la formación de ozono
+a través de una reacción fotoquímica (Andrade et al., 2024). En 
+la ventana nocturna de febrero la relación del O$_3$ con la temperatura desaparece o 
+cambia de signo, y la velocidad del viento pasa a controlar ambos gases: el O$_3$ aumenta 
+con el viento ($\rho$ de 0.69 a 0.81) y el NO$_2$ disminuye ($\rho$ de $-0.81$ a $-0.85$). 
+Esto podría indicar que, por la noche, las concentraciones 
+de contaminantes primarios dependen sobre todo de la ventilación y que las noches de 
+vientos débiles acumulan emisiones, que es la condición en la que otros autores detectan 
+mejor el VDC (Fiorella et al., 2018).
+
+No obstante, algunas correlaciones no son consistentes entre estaciones. 
+El SO$_2$ es el contaminante que refleja el comportamiento más divergente entre 
+las estaciones. Se observa que cambia de signo 
+según la estación y la campaña, por ejemplo con el NO$_2$ ($-0.45$ en CR, $+0.78$ en 
+Nativitas). Esta variación podría sugerir que, en Nativitas, la fuente del SO$_2$ 
+está dada por fuentes fijas, mientras que en las otras estaciones puede deberse a 
+una contribución mixta del tráfico vehicular y fuentes industriales. 
+Por su parte, el PM$_{10}$ se correlaciona positivamente con la temperatura en mayo, lo que sugiere 
+resuspensión o formación secundaria durante el día (Zender-Świercz et al., 2024). 
+
+\section{Firma isotópica del vapor de agua atmosférico}
 
 Las muestras de vapor de agua colectadas en Salamanca se alinean en torno a la isolínea de mezcla 
 de 20\,\% del diagrama $\delta^{2}$H--$\delta^{18}$O (Figura~\ref{fig:mezcla_salamanca}),
@@ -58,7 +80,7 @@ positivos (heredados del $\text{O}_2$ atmosférico, $\approx $+23.9\$\,\textpert
 valores de $\delta^2\text{H}$ negativos (heredados del hidrógeno de los combustibles fósiles), 
 lo que produce un $d\text{-excess}$ fuertemente negativo, típicamente entre $-470$\,\textperthousand 
 y $-180$\,\textperthousand. %CITA BIBLIOGRAFICA 
-En contraste, las muestras de San Juan del Río (SDR) obtenidas con 
+En contraste, las muestras de SDR obtenidas con 
 el mismo sistema de muestreo caen por debajo de 2~\%.
 Esta distribución de los puntos sufiere que la señal de combustión es estable 
 en su proporción, mientras que las ligeras variaciones isotópicas observadas pueden deberse a la 
@@ -70,9 +92,11 @@ La diferencia con estudios como el de Gorski et al. (2015) en Salt Lake City, do
 alcanzó hasta el 13\% bajo condiciones de estancamiento invernal; Fiorella et al. (2018),
 en la misma cuenca, donde estimaron que el VDC representa típicamente de 
 5 a 10~\% de la humedad urbana, con un máximo de 16.7~\%, y un \textit{d-excess} del 
-VDC de $-179\pm17$~‰, o el de Xing et al. 
+VDC de $-179\pm17$~‰; o el de Xing et al. 
 (2020) en Xi’an, con fracciones mayores durante episodios severos de contaminación, 
-radica en el régimen de vientos antes mencionado. En Salamanca, la ventilación moderada 
+radica en el régimen de vientos antes mencionado. Estudios como el de Wu et al. (2020), 
+que en Beijing determinaron una contribución alrededor del 11\%, señalaron que los vientos, en 
+los episodios de muestreo eran débiles. En Salamanca, la ventilación moderada 
 impide que el VDC se acumule en la capa límite hasta concentraciones tan altas, 
 pero también permite que una fracción detectable se mantenga mezclada en el aire nocturno. Además, 
 debido a la ventana de muestreo, fuentes como el tránsito, la quema de esquilmos y las ladrilleras
@@ -100,89 +124,81 @@ los mayores valores de PM$_{2.5}$, PM$_{10}$, CO y NO$_2$ y el menor de O$_3$,
 lo que sugiere que el \textit{d-excess} más alto de esa campaña ocurrió en la noche de 
 mayor influencia de emisiones locales. 
 
+El exceso de vapor de agua en el aire puede 
+provocar que algunas partículas de aerosoles lo absorban e incrementen su tamaño. 
+Inevitablemente, esto conduce a la formación de aerosoles secundarios y 
+promueve reacciones heterogéneas que conllevan al incremento de PM$_{2.5}$ 
+(Liu et al., 2022; S.Yang et al., 2026). Además, se 
+ha demostrado que estas reacciones heterogéneas en las que interviene el agua líquida 
+de los aerosoles desempeñan un papel predominante en la formación de sulfatos durante 
+la niebla de ciudades como en Pekín y Beijing, mediante el uso de mediciones isotópicas 
+(Wu et al., 2022). 
+
 \section{Modelos de dispersión con FLEXPART}
 
-Las retrotrayectorias promedio nocturnas (22:00--02:00~h) de los cuatro receptores son similares: 
-descienden desde 3.0--3.5~km hasta 1.5--2.0~km en los últimos $\sim$130~km y se proyectan hasta poco más 
-de 400~km del receptor en dirección noreste (Figura 5.18). Por tratarse de retrotrayectorias, esto indica 
-que el aire llegó a Salamanca desde esa dirección, en concordancia con la rosa de viento del periodo de
-muestreo (Figura 5.16). 
+Los resultados de las simulaciones de FLEXPART permiten inferir un origen de la contaminación. 
+Se utilizó CO como \textit{footprint} al ser un gas relacionado con la combustión de 
+combustibles fósiles y cuantificado en las estaciones de monitoreo de calidad del 
+aire. 
 
-Este origen común tiene dos implicaciones. La primera es que el vapor de fondo que llega a los cuatro 
-puntos es esencialmente el mismo, de modo que las diferencias entre estaciones (Sección 6.1) se atribuyen 
-a emisiones locales. La segunda es que el flujo descendente implica subsidencia, que tiende a estabilizar 
-los niveles bajos y a aportar aire probablemente más seco, condiciones que limitan la dilución del VDC 
-emitido en superficie y favorecen su detección.
+Sumado al análisis de la rosa de los vientos, cuyos patrones son similares entre estaciones
+y que sugiere un origen de vientos común, implica que el vapor de fondo que ingresa
+a las estaciones es esencialmente el mismo, por lo que las diferencias isotópicas y en las
+concentraciones de contaminantes pueden atribuirse a emisiones locales y no de transporte
+regional. 
 
-Los \textit{footprints} de CO refuerzan esta lectura local. En los cuatro receptores, la sensibilidad 
-más alta ($>0.3$~u.a.) se concentra en una franja continua contigua al receptor, con máximos ($>0.5$~u.a.) 
-en las celdas inmediatas, y decae a menos de 0.1~u.a. en la mayor parte del dominio (Figuras 5.20 y 5.21). 
-El CO medido en cada punto procede, por tanto, sobre todo de emisiones próximas, dentro del área urbana, y 
-no de fuentes distantes. Si el vapor de combustión se emite junto con el CO, esto sugiere que la señal 
-isotópica refleja principalmente combustión local. La inferencia es indirecta: el CO es un trazador de 
-combustión, pero el vapor de agua tiene además fuentes naturales y no se emite en proporción fija con 
-el CO, de modo que el \textit{footprint} describe la región fuente del CO y solo es un indicador 
-aproximado de la del VDC. La zona de alta sensibilidad es más extensa en la ventana nocturna que en el 
-promedio de 24~h. 
+Las matrices de sensibilidad de CO refuerzan esta interpretación. En ambas campañas, 
+la mayor sensibilidad se concentra en una franja contigua a cada receptor en las 
+celdas inmediatas y una disminución progresiva hacia el resto del dominio. Por lo 
+tanto, se infiere que el CO medido en cada punto procede, en gran medida, 
+de emisiones próximas dentro del área urbana. Sin embargo, similitud entre los \textit{footprints}
+limita la capacidad de distinguir diferencias espaciales finas en el origen de las emisiones. 
+
+Un aspecto relevante es la diferencia entre la ventana noctura y el ciclo completo. En 
+la campaña de febrero, la zona de alta sensibilidad es más alta durante la noche 
+que la jornada completa. Eso es consistente con la dinámica de la capa límite: 
+durante la noche, la estabilidad atmosférica y la menor mezcla vertical confinan las 
+emisiones a una capa superficial más delgada, lo que se traduce a una mayor sensibilidad
+de los receptores a las fuentes cercanas. Por el contrario, durante el día, la mayor mezcla
+vertical y la turbulencia dispersan las emisiones, resultando \textit{footprint} más 
+compacto y con menor extensión espacial. 
+
+Por otro lado, los \textit{footprints} de mayo, la desaparición de la zona 
+de sensibilidad de 0.3-0.5 y la reducción del área de influencia nocturna indican que
+las emisiones de las industrias del sureste tuvieron una menor probabilidad de alcanzar 
+los receptores. 
+
+No obstante, es fundamental señalar que el campo de sensibilidad describe 
+únicamente el transporte atmosférico y no la magnitud de las emisiones. 
+Es decir, una zona de alta sensibilidad no implica una mayor contribución a la
+concentración observada si en ella no hay fuentes activas. En el caso de 
+Salamanca, se ubican bajo el área de mayor influencia para el sitio 
+de muestreo y Nativitas empresas como la refinería, la termoeléctrica y 
+empresas de movilización de combustible. En tal caso destaca, por ejemplo, 
+el ciclo combinado de CFE con cerca de  $1.7\times10^{6}$~t de CO$_2$ al año.
+
+Tanto la refinería como la termoeléctrica podrían mantener un aporte 
+relativamente constante de VDC durante la noche, a diferencia de otras 
+fuentes como el tráfico, cuya señal varía con la hora y la ventilación. 
+Las chimeneas de la 
+termoeléctrica, de entre 50 y 65~m (Violante Gavira et al., 2022), emiten por 
+encima de la capa de inversión superficial en muchas noches, por lo que su vapor 
+no necesariamente llega a un sitio de muestreo a nivel del suelo, pero puede 
+hacerlo en condiciones de fumigación o de mezcla vertical parcial. 
 
 
-
-
-
-
-
-
-
-En conjunto, las rosas indican que el régimen de viento durante 
-la campaña fue de baja a moderada intensidad (principalmente entre 
-0.5 y 5.7~m\,s$^{-1}$) y con una dirección dominante consistente entre 
-estaciones, lo que sugiere que las condiciones locales de transporte 
-son comparables en los tres puntos. La ventana nocturna presenta un 
-patrón más direccional y con velocidades ligeramente mayores que el 
-promedio diario. Esta información complementa los campos de 
-sensibilidad fuente-receptor de la sección anterior 
-(Figuras~\ref{fig:flexpart_24h} y~\ref{fig:flexpart_2202}) y 
-permite contrastar la dirección del viento local medido con las 
-zonas de influencia calculadas con FLEXPART. Cabe señalar que las 
-rosas se construyeron con un número limitado de días y que las 
-diferencias entre estaciones son pequeñas, por lo que deben 
-interpretarse como una caracterización descriptiva del periodo de estudio.
-
-Esto indica que, durante la noche, el aire que llega a
-las estaciones prácticamente no proviene de esa zona. Al igual que en el caso anterior, los
-cuatro receptores muestran patrones similares; la contribución nocturna de las industrias
-cercanas queda así restringida a las ubicadas inmediatamente al noreste de cada receptor, y
-se reduce hacia el este y el sureste.
-En conjunto, los campos de sensibilidad muestran que la influencia sobre los receptores
-durante la campaña de mayo está dominada por la zona inmediata a cada estación, con una
-contribución secundaria del área industrial al este-noreste, y que esta influencia se reorienta
-y se reduce durante la ventana nocturna, en la que predomina el aporte desde el oeste y se anula
-el del sureste. Esto es relevante para interpretar los promedios nocturnos de contaminantes y del
-$d$-excess, ya que las muestras de esa ventana reflejan un área fuente distinta a la del promedio
-diario. Cabe señalar que el campo de sensibilidad describe únicamente el transporte y no la magnitud 
-de las emisiones, por lo que una zona de alta sensibilidad no implica necesariamente una mayor 
-contribución a la concentración observada si en ella no hay fuentes activas. Asimismo, la similitud 
-entre los cuatro receptores, separados por pocos kilómetros, limita la capacidad de distinguir 
-diferencias de origen entre ellos con la resolución de los datos meteorológicos empleados.
-Lo relevante para el objetivo 
-isotópico es que las retrotrayectorias de los cuatro receptores son prácticamente coincidentes 
-(Sección 5.5), de modo que estas diferencias reflejan fuentes locales y no un transporte regional distinto.
+ 
 
 
 
 
 
-Esta combinación (fracción alta, poco variable y obtenida con ventilación moderada) puede deberse a tres causas, que no se excluyen entre sí:
 
-\begin{enumerate}
-\item \textbf{Una señal real de combustión local persistente durante la noche.} Salamanca concentra grandes fuentes de combustión: el ciclo combinado de la CFE con cerca de $1.7\times10^{6}$~t de CO$_2$ al año, la refinería, la termoeléctrica y las industrias cerámica y automotriz del RETC (Tablas 3.2 y 3.3). La refinería y la termoeléctrica podrían mantener un aporte relativamente constante de vapor de combustión durante la noche, a diferencia del tránsito vehicular, cuya señal varía con la hora y la ventilación. Las chimeneas de la termoeléctrica, de entre 50 y 65~m (Violante Gavira et al., 2022), emiten por encima de la capa de inversión superficial en muchas noches, por lo que su vapor no necesariamente llega a un sitio de muestreo a nivel del suelo, pero puede hacerlo en condiciones de fumigación o de mezcla vertical parcial.
-\item \textbf{Un desplazamiento de fondo no atribuible a combustión.} La fracción de VDC se calcula suponiendo que todo el desplazamiento del exceso de deuterio respecto del vapor de fondo se debe a combustión. Cualquier proceso que reduzca el exceso de deuterio (una captura incompleta de vapor en el condensador, una línea de fondo mal asignada o variaciones estacionales de la fuente de humedad) se interpretaría como VDC (véase la Sección 6.2.4).
-\item \textbf{Una combinación de ambas.}
-\end{enumerate}
 
-No obstante, estos resultados deben robustecerse con más muestras, ya que con seis 
-muestras en febrero y cinco en mayo no es posible establecer relaciones 
-estadísticamente sólidas, y las concentraciones de PM$_{2.5}$ y PM$_{10}$ provienen
-de una estación distinta a la de las demás variables. Por ello, las asociaciones 
-señaladas deben interpretarse como indicios que se contrastan con el análisis de 
-correlación y con el cálculo de mezcla con vapor de combustión presentados en otras secciones.
+
+
+
+
+
+
+

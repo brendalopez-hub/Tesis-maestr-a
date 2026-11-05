@@ -1008,7 +1008,7 @@ los casos, los círculos representan la campaña de febrero
         \label{fig:dexcess_SO2}
     \end{subfigure}
  
-    \caption{Exceso de deuterio ($d$-excess) frente al promedio nocturno (22:00--02:00~h) de 
+    \caption{Exceso de deuterio (\textit{d-excess} $\geq -34.855$) frente al promedio nocturno (22:00--02:00~h) de 
     los días de muestreo de las variables meteorológicas y contaminantes criterio, 
     para las campañas de febrero (círculos) y mayo 
     (triángulos).}
@@ -1047,96 +1047,13 @@ se mantienen en un intervalo estrecho en ambas campañas (aproximadamente 18.2 a
 de modo que el \textit{d-excess} no muestra un patrón asociado con este gas. El O$_3$ sí 
 diferencia las campañas: en febrero las concentraciones nocturnas son de alrededor 
 de 20 a 23~ppb y en mayo de alrededor de 26 a 32~ppb. La muestra de febrero con 
-menor O$_3$ ($\approx 20$~ppb) es la misma que presenta el mayor $d$-excess de esa 
+menor O$_3$ ($\approx 20$~ppb) es la misma que presenta el mayor \textit{d-excess} de esa 
 campaña, y coincide con las mayores concentraciones de CO, NO$_2$ y material particulado,
 lo cual es compatible con una noche de mayor acumulación de emisiones primarias y 
 consumo de O$_3$ por titulación con NO.
  
 \section{Modelo de dispersión FLEXPART}
-\subsection{Retrotrayectoria del viento}
-La Figura~\ref{fig:retrotrayectorias} muestra la retrotrayectoria
-promedio nocturna (22:00--02:00\,h), correspondiente al promedio de
-todos los días de muestreo dentro de esta franja horaria, para los
-cuatro sitios receptores considerados (Sitio de muestreo, Nativitas, DIF
-y Cruz Roja).
-
-El panel superior presenta el perfil vertical de la trayectoria,
-expresado como altura sobre el nivel del suelo (km) en función de la
-distancia horizontal a la estación (km). En él se observa que, en los
-primeros $\sim$\SI{130}{\kilo\meter} previos a la llegada a los
-receptores, las masas de aire de los cuatro sitios descienden de manera
-prácticamente coincidente desde alturas de
-\SIrange{3.0}{3.5}{\kilo\meter} hasta aproximadamente
-\SIrange{1.5}{2.0}{\kilo\meter}. A distancias mayores, las trayectorias
-se dispersan verticalmente, alcanzando alturas de
-\SIrange{2.5}{5.0}{\kilo\meter}, con el sitio Cruz Roja (verde)
-mostrando la mayor variabilidad en este segmento.
-
-El panel inferior presenta la proyección horizontal de las mismas
-retrotrayectorias sobre un mapa de la región de estudio, con la posición
-de cada estación receptora marcada mediante un asterisco y el contorno
-de la cuenca delimitado con línea punteada. Las cuatro trayectorias
-siguen un recorrido horizontal muy similar entre sí, con dirección
-predominante desde el sur-suroeste hacia el norte-noreste,
-extendiéndose hasta poco más de \SI{400}{\kilo\meter} de distancia
-respecto a las estaciones. Esto indica un origen común de las masas de
-aire nocturnas durante el periodo de muestreo, independientemente del
-sitio receptor considerado.
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.85\textwidth]{Resultados/trayectoria_nocturna.pdf}
-  \caption{Retrotrayectoria promedio nocturna (22:00--02:00\,h) para
-   los sitios receptores. Panel superior: perfil vertical (altura sobre
-   el nivel del suelo vs.\ distancia horizontal). Panel inferior:
-   proyección horizontal sobre la región de estudio; los asteriscos
-   indican las estaciones receptoras y la línea punteada el contorno de
-   Salamanca.}
-   \label{fig:retrotrayectorias}
-\end{figure}
-
-La Figura~\ref{fig:retro_24h} presenta la retrotrayectoria promedio
-calculada a partir de las 24\,h de cada día de muestreo, desagregada por
-sitio receptor con un panel individual por estación. El panel superior
-de cada columna muestra el perfil vertical de la trayectoria (altura
-sobre el nivel del suelo, en km, en función de la distancia a la
-estación, en km), mientras que el panel inferior presenta la proyección
-horizontal correspondiente sobre el mapa de la región de estudio.
-
-A diferencia del promedio restringido al horario nocturno
-(22:00--02:00\,h), las trayectorias calculadas con el promedio de 24\,h
-muestran un mayor grado de complejidad y variabilidad vertical en los
-primeros \SIrange{200}{250}{\kilo\meter} previos a la llegada a cada
-receptor. Las oscilaciones de altura alcanzan hasta
-$\sim$\SI{1.5}{\kilo\meter} en Nativitas y DIF, y son de mayor amplitud
-en Cruz Roja y Sitio de muestreo, donde se observan además tramos de
-trayectoria con desplazamiento horizontal no monótono (retrocesos y
-bucles) en la distancia recorrida. A distancias superiores a
-$\sim$\SIrange{250}{300}{\kilo\meter}, las cuatro trayectorias adoptan
-un comportamiento más suavizado, con un ascenso gradual de altura hacia
-el origen de la retrotrayectoria, alcanzando valores máximos de entre
-\SI{3.75}{\kilo\meter} (Nativitas y DIF) y \SI{5.0}{\kilo\meter} (Cruz
-Roja y Sitio de muestreo).
-
-En la proyección horizontal, los cuatro sitios muestran un patrón de
-trayectoria consistente entre sí, con un recorrido predominante desde el
-sur-suroeste hacia el norte-noreste de la estación receptora,
-alcanzando distancias de entre \SI{300}{\kilo\meter} y
-\SI{400}{\kilo\meter}. Esto sugiere un origen regional común de las
-masas de aire durante el periodo de muestreo completo,
-independientemente del sitio considerado.
-
-\begin{figure}[htbp]
-   \centering
-   \includegraphics[width=\textwidth]{Resultados/trayectoria_diario.pdf}
-   \caption{Retrotrayectoria promedio de 24\,h por sitio receptor
-   (Sitio de muestreo, Nativitas, DIF y Cruz Roja). Panel superior:
-   perfil vertical (altura sobre el nivel del suelo vs.\ distancia a la
-   estación). Panel inferior: proyección horizontal sobre la región de
-   estudio.}
-   \label{fig:retro_24h}
-\end{figure}
-
+%\subsection{Retrotrayectoria del viento}
 \subsection{Matriz de sensibilidad fuente-receptor}
 La Figura~\ref{fig:footprints_co} muestra las matrices de sensibilidad
 fuente-receptor (\textit{footprints}) de CO obtenidas mediante las
@@ -1171,8 +1088,8 @@ particular de cada receptor dentro del dominio.
     el horario de muestreo (22:00--02:00\,h) para la campaña de febrero-marzo. 
     El recuadro rojo indica la
     posición de cada receptor; la sensibilidad se expresa en unidades
-    arbitrarias (u.a.). Las industrias están basadas en el reporte de 
-    RETC de las Tablas~\ref{tab:retc_federal} y \ref{tab:retc_estatal}}
+    arbitrarias (u.a.). Las relación numérica de las industrias ubicadas
+    puede verse en el \ref{anexo:indus_num}.}
     \label{fig:footprints_co}
 \end{figure}
 
@@ -1194,8 +1111,8 @@ contiguas al receptor.
     estaciones Nativitas, DIF, Cruz Roja y Sitio de muestreo, durante la jornada completa de 
     febrero-marzo. El recuadro rojo indica la
     posición de cada receptor; la sensibilidad se expresa en unidades
-    arbitrarias (u.a.). Las industrias están basadas en el reporte de 
-    RETC de las Tablas~\ref{tab:retc_federal} y \ref{tab:retc_estatal}.}
+    arbitrarias (u.a.). Las relación numérica de las industrias ubicadas
+    puede verse en el \ref{anexo:indus_num}.}
      \label{fig:footprints_co_24h}
 \end{figure}
 
@@ -1228,7 +1145,8 @@ el sur de los receptores.
     \includegraphics[width=\textwidth]{Resultados/TODAS_mayo_24h_campana.pdf}
     \caption{Matriz de sensibilidad fuente-receptor (\textit{footprints})
     de CO obtenidas con FLEXPART en modo retrotrayectoria para la campaña de mayo
-    considerando las 24~h del día.}
+    considerando las 24~h del día. Las estrellas indican 
+    la ubicación de industrias ubicadas en Salamanca (ver \ref{anexo:indus_num}).}
     \label{fig:flexpart_24h}
 \end{figure}
 
@@ -1259,6 +1177,7 @@ a 0.01 para los cuatro receptores.
     de la campaña de mayo para los receptores Nativitas, DIF, Cruz Roja y 
     sitio de muestreo, considerando únicamente la ventana de 22:00 a 02:00~h. 
     Las estrellas indican la ubicación de las industrias del RETC de Salamanca 
+    (ver \ref{anexo:indus_num})
     y el cuadro rojo el receptor.}
     \label{fig:flexpart_2202}
 \end{figure}
