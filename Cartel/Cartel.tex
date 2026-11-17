@@ -1,0 +1,70 @@
+\documentclass[12pt]{article}
+\usepackage[a0paper,margin=12mm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage[poster,skins]{tcolorbox}
+
+% Colores tomados del PDF
+\definecolor{fondoarriba}{HTML}{0B2F45}
+\definecolor{fondoabajo}{HTML}{3FA9DD}
+\definecolor{barratitulo}{HTML}{A7CBEA}
+
+\pagestyle{empty}
+
+\begin{document}
+\begin{tcbposter}[
+    poster={showframe=false, columns=2, rows=14, spacing=12mm},
+    coverage={spread,
+        interior style={top color=fondoarriba, bottom color=fondoabajo}},
+    boxes={enhanced, sharp corners, boxrule=0.6mm,
+        colframe=black!70, colback=white,
+        coltitle=black, colbacktitle=barratitulo,
+        halign title=center, valign=top,
+        fonttitle=\fontsize{64}{76}\selectfont\bfseries,
+        fontupper=\fontsize{42}{52}\selectfont,
+        toptitle=4mm, bottomtitle=4mm, left=10mm, right=10mm, top=8mm}
+    ]
+
+    % ---------- Encabezado ----------
+    \posterbox[colframe=white, boxrule=0pt, valign=center]
+    {name=encabezado, column=1, row=1, span=2, rowspan=2}{
+        \includegraphics[height=22cm]{UNAM_logo.pdf}\hfill
+        \parbox[c]{0.68\linewidth}{\centering\bfseries\fontsize{100}{120}\selectfont
+            Isotopic fingerprinting of atmospheric moisture and pollution
+            pathways through integrated $\delta^{2}$H--$\delta^{18}$O
+            measurements and urban atmospheric modelling}\hfill
+        \includegraphics[height=22cm]{LogoGeociencias.png}
+    }
+
+    % ---------- Introduction | Objectives ----------
+    \posterbox[title=Introduction]{name=intro, column=1, row=3, rowspan=2}{
+        CONTENIDO DE LA INTRODUCCIÓN
+    }
+    \posterbox[title=Objectives]{name=obj, column=2, row=3, rowspan=2}{
+        CONTENIDO DE LOS OBJETIVOS
+    }
+
+    % ---------- Methodology ----------
+    \posterbox[title=Methodology]{name=metodo, column=1, row=5, span=2, rowspan=3}{
+        CONTENIDO DE LA METODOLOGÍA
+    }
+
+    % ---------- Results and discussion ----------
+    \posterbox[title=Results and discussion]{name=res, column=1, row=8, span=2, rowspan=5}{
+        CONTENIDO DE RESULTADOS
+    }
+
+    % ---------- Conclusion | Bibliography ----------
+    \posterbox[title=Conclusion]{name=concl, column=1, row=13, rowspan=2}{
+        CONTENIDO DE LAS CONCLUSIONES
+    }
+    \posterbox[title=Bibliography]{name=biblio, column=2, row=13, rowspan=2}{
+        CONTENIDO DE LA BIBLIOGRAFÍA
+    }
+
+\end{tcbposter}
+\end{document}

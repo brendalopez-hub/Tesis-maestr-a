@@ -1,75 +1,442 @@
 % !TEX root = ../Tesis.tex
 \chapter{Discusión de resultados}
-\section{Calidad del aire y condiciones atmosféricas en Salamanca, Guanajuato}
+\section{Estaciones de calidad del aire en 
+Salamanca, Guanajuato}
 
-De acuerdo con el análisis de Friedman y W de Kendall indica que las diferencias entre 
-estaciones son sistemáticas. Nativitas presentó las concentraciones más 
-altas de SO$_2$, PM$_{10}$ y CO, lo cual es coherente, ya que se encuentra cerca de 
-distintas industrias. Además, Cruz Roja, presenta los máximos de NO$_2$. Finalmente, en DIF, las de PM$_{2.5}$.
-Sin embargo, es importante considerar que la estación Nativitas no reportó PM$_{2.5}$, por 
-lo que la conclusión respecto a este contaminante no es determinante. 
-A escala estatal, el inventario de emisiones de 2021 atribuye 
-casi todo el SO$_2$ a fuentes fijas (7\,331.79 de 7\,426.74~t/año) y la mayor parte del CO a 
-fuentes móviles (23\,411.99 de 26\,974.73~t/año) (\ref{tab:contaminantes}). El patrón de Nativitas sugiere 
-entonces una combinación de influencia industrial y vehicular, mientras que el de Cruz Roja podría 
-responder a una mayor influencia del tránsito. 
+%\subsection{Prueba de normalidad}
+%\label{subsec:res_normalidad}
+Como parte de la validación de datos de las estaciones de monitoreo de 
+calidad del aire, se realizaron las pruebas de normalidad, 
+Friedman y de correlación de Spearman. 
 
-Por su parte, los ciclos diurnos muestran un patrón común. El NO$_2$ y el CO presentan dos máximos, hacia las 8 y las 
-20~h, y el SO$_2$, el PM$_{10}$ y el PM$_{2.5}$ alcanzan sus máximos entre las 20 y las 21~h en Nativitas 
-y DIF. Esta estructura es compatible con emisiones vehiculares en horas pico que se acumulan bajo una capa 
-límite poco profunda, y sitúa el máximo vespertino inmediatamente antes de la ventana de muestreo 
-(22:00--02:00~h). Como la capa límite nocturna es estable y limita la mezcla vertical 
-(Figura~\ref{fig:clu_nocturna}), los contaminantes emitidos al final de la tarde tienden 
-a permanecer cerca de la superficie durante la 
-noche, lo que hace de esa ventana un momento favorable para detectar vapor derivado de la combustión. 
+De acuerdo con la prueba de normalidad (ver \ref{anexo:normal}) para la campaña de febrero 
+(Tabla~\ref{tab:normalidad_feb})
+y la campaña de mayo (Tabla~\ref{tab:normalidad_may}), así como sus respectivos 
+gráficos cuantil-cuantil (Figuras~\ref{fig:qq_cr_feb} a \ref{fig:qq_dif_feb} y 
+Figuras~\ref{fig:qq_cr} a \ref{fig:qq_dif}), los datos de las estaciones de monitoreo de 
+calidad del aire rechazan la normalidad. Esto es congruente con lo reportado 
+por Ott, 1990, quien señala que las concentraciones de contaminentes 
+atmosféricos obtenidas del ambiente siguen una distribución lognormal. 
+Esto surge de procesos físicos de mezcla y dilución que ocurren 
+en el medio ambiente. Por ello, cualquier proceso donde un contaminante 
+se diluya repetidamente en un fluido (como el aire), tenderá a 
+generar una distribución lognormal. 
 
-Las dos campañas difieren en ese contexto. En febrero el NO$_2$ y el PM$_{10}$ fueron más 
-altos y variables, con noches de más de 30~ppb de NO$_2$ entre las 21 y las 23~h (24 al 27 
-de febrero) y noches más limpias el 22 y 23 de febrero y el 2 de marzo. Por su parte, en mayo el O$_3$ 
-fue mayor (máximos más intensos y mínimos nocturnos de 20 a 30~ppb en lugar de 10 a 15~ppb).
-El menor ozono nocturno y el mayor NO$_2$ de febrero indican noches más estables y con más 
-acumulación de emisiones 
-primarias, mientras que la mayor temperatura y humedad de mayo implican más mezcla y una 
-atmósfera de fondo más húmeda (Vallero, 2025).
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Resultados/CR_normalidad_feb.pdf}
+    \caption{Gráficos cuantil-cuantil (Q-Q) de las variables de la estación CR en la campaña de febrero. La línea punteada es la referencia de una distribución normal.}
+    \label{fig:qq_cr_feb}
+\end{figure}
 
-Así mismo, un contraste relevante con los estudios de referencia en Salt Lake City y Xi\'an
-es el régimen de vientos. Mientras que aquellas investigaciones se desarrollaron bajo episodios 
-prolongados de inversión térmica invernal con estancamiento atmosférico severo, en Salamanca 
-las velocidades durante el muestreo oscilaron principalmente entre 2.1 y 5.7~m\,s$^{-1}$, con una 
-ventilación moderada que diluye 
-las emisiones locales.
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Resultados/NATIVITAS_normalidad_feb.pdf}
+    \caption{Gráficos cuantil-cuantil (Q-Q) de las variables de la estación NATIVITAS en la campaña de febrero.}
+    \label{fig:qq_nativitas_feb}
+\end{figure}
 
-Las correlaciones de Spearman (Figuras~\ref{fig:corr_feb_CR} a \ref{fig:corr_may_NAT}) 
-sugieren que el comportamiento 
-de los contaminantes está dominado por la meteorología local. Las relaciones más intensas 
-y consistentes entre estaciones son la correlación negativa entre temperatura y humedad 
-relativa ($\rho\approx-0.87$ en febrero), la correlación negativa entre O$_3$ y NO$_2$ 
-($\rho$ de $-0.47$ a $-0.80$). Esta última está relacionada con la firma de 
-la titulación del ozono por NO, donde estos gases reaccionan para generar NO$_2$, 
-disminuyendo la concentración de O$_3$ (Escudero et al., 2016).
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Resultados/DIF_normalidad_feb.pdf}
+    \caption{Gráficos cuantil-cuantil (Q-Q) de las variables de la estación DIF en la campaña de febrero.}
+    \label{fig:qq_dif_feb}
+\end{figure}
 
-Por el contrario, la correlación positiva del O$_3$ con la temperatura y la 
-radiación UV durante el día se debe a que estos parámetros propician la formación de ozono
-a través de una reacción fotoquímica (Andrade et al., 2024). En 
-la ventana nocturna de febrero la relación del O$_3$ con la temperatura desaparece o 
-cambia de signo, y la velocidad del viento pasa a controlar ambos gases: el O$_3$ aumenta 
-con el viento ($\rho$ de 0.69 a 0.81) y el NO$_2$ disminuye ($\rho$ de $-0.81$ a $-0.85$). 
-Esto podría indicar que, por la noche, las concentraciones 
-de contaminantes primarios dependen sobre todo de la ventilación y que las noches de 
-vientos débiles acumulan emisiones, que es la condición en la que otros autores detectan 
-mejor el VDC (Fiorella et al., 2018).
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Resultados/CR_normalidad_may.pdf}
+    \caption{Gráficos cuantil-cuantil (Q-Q) de las variables de la estación CR en la campaña de mayo. La línea punteada es la referencia de una distribución normal.}
+    \label{fig:qq_cr}
+\end{figure}
 
-No obstante, algunas correlaciones no son consistentes entre estaciones. 
-El SO$_2$ es el contaminante que refleja el comportamiento más divergente entre 
-las estaciones. Se observa que cambia de signo 
-según la estación y la campaña, por ejemplo con el NO$_2$ ($-0.45$ en CR, $+0.78$ en 
-Nativitas). Esta variación podría sugerir que, en Nativitas, la fuente del SO$_2$ 
-está dada por fuentes fijas, mientras que en las otras estaciones puede deberse a 
-una contribución mixta del tráfico vehicular y fuentes industriales. 
-Por su parte, el PM$_{10}$ se correlaciona positivamente con la temperatura en mayo, lo que sugiere 
-resuspensión o formación secundaria durante el día (Zender-Świercz et al., 2024). 
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Resultados/NATIVITAS_normalidad_may.pdf}
+    \caption{Gráficos cuantil-cuantil (Q-Q) de las variables de la estación NATIVITAS en la campaña de mayo.}
+    \label{fig:qq_nativitas}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Resultados/DIF_normalidad_may.pdf}
+    \caption{Gráficos cuantil-cuantil (Q-Q) de las variables de la estación DIF en la campaña de mayo.}
+    \label{fig:qq_dif}
+\end{figure}
+
+%\subsection{Prueba de Friedman entre estaciones de monitoreo}
+%\label{subsec:comparacion_estaciones_resul}
+
+Por su parte, la prueba de Friedman sirvió para detectar diferencias significativas 
+significativas entre estaciones de monitoreo
+para las variables en ambos periodos de muestreo. El tratamiento 
+\textit{post hoc} realizado fue de Bonferroni para 
+evitar el error tipo 1 (J. Liu \& Xu, 2022). Cabe destacar que,
+debido a la ausencia de datos de $\mathrm{PM_{2.5}}$ en 
+la estación de NATIVITAS, para este contaminante, solo fue posible comparar 
+la estación de DIF y CR (ver \ref{anexo:fried}). 
+
+La comparación entre las estaciones de calidad del aire
+durante la campaña de febrero (Figura~\ref{fig:feb_cajas}) 
+y la campaña de mayo (Figura~\ref{fig:may_cajas}).
+
+La W de Kendall separa las
+diferencias relevantes de las que solo son estadísticamente significativas: el
+$\mathrm{NO_2}$, el CO, el $\mathrm{SO_2}$, el $\mathrm{PM_{2.5}}$ y la humedad
+relativa mostraron los efectos más grandes, mientras que el $\mathrm{O_3}$, el
+$\mathrm{PM_{10}}$ y la temperatura mostraron efectos pequeños. Esto se aprecia
+en las Figuras.~\ref{fig:feb_24h}--\ref{fig:may_noche}, donde
+los primeros las cajas se separan o quedan escalonadas, y en los segundos se
+superponen casi por completo.
+
+\begin{figure}[htbp]
+  \centering
+  \begin{subfigure}{0.8\textwidth}
+    \centering
+    \includegraphics[width=0.8\textwidth]{Resultados/Campana1_24_feb.pdf}
+    \caption{Campaña completa (24~h).}
+    \label{fig:feb_24h}
+  \end{subfigure}
+  \par\medskip
+  \begin{subfigure}{0.8\textwidth}
+    \centering
+    \includegraphics[width=0.8\textwidth]{Resultados/Campana1_22-2_feb.pdf}
+    \caption{Ventana de muestreo (22:00--02:00~h).}
+    \label{fig:feb_noche}
+  \end{subfigure}
+  \caption{Distribución de las concentraciones y variables meteorológicas en
+  las estaciones CR, NATIVITAS y DIF durante la campaña de febrero. Los contaminantes, 
+  excepto el CO, se muestran en escala logarítimica.}
+  \label{fig:feb_cajas}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \begin{subfigure}{\textwidth}
+    \centering
+    \includegraphics[width=0.8\textwidth]{Resultados/Campana2_24_may.pdf}
+    \caption{Campaña completa (24~h).}
+    \label{fig:may_24h}
+  \end{subfigure}
+  \par\medskip
+  \begin{subfigure}{\textwidth}
+    \centering
+    \includegraphics[width=0.8\textwidth]{Resultados/Campana2_22-2_may.pdf}
+    \caption{Ventana de muestreo (22:00--02:00~h).}
+    \label{fig:may_noche}
+  \end{subfigure}
+  \caption{Distribución de las concentraciones y variables meteorológicas en
+  las estaciones CR, NATIVITAS y DIF durante la campaña de mayo. La línea
+  central es la mediana, la caja el rango intercuartílico, los bigotes
+  1.5 veces dicho rango y los círculos los valores atípicos. El eje vertical
+  está en escala logarítmica para $\mathrm{SO_2}$, $\mathrm{NO_2}$,
+  $\mathrm{PM_{10}}$ y $\mathrm{PM_{2.5}}$.}
+  \label{fig:may_cajas}
+\end{figure}
+
+El patrón de contaminantes apunta a fuentes distintas en cada sitio.
+En CR el $\mathrm{NO_2}$ fue el más alto (mediana de 25.9~ppb en febrero, frente
+a 8.5 y 6.3~ppb en NATIVITAS y DIF; $W=0.88$) y su dispersión es compacta y se
+mantiene por encima de las otras dos incluso en la ventana nocturna
+de febrero. Al ser un gas asociado principalmente a la
+combustión vehicular, esto podría sugerir una mayor influencia del tránsito en esa
+estación. NATIVITAS, en cambio, concentró el $\mathrm{SO_2}$ (19.1~ppb en
+febrero y 18.4~ppb en mayo, entre 2.5 y 3.2 veces la mediana de CR) y, en
+febrero, también el CO, cuya caja es la más amplia y se extiende hasta
+$\approx1.8$~ppm. Esto es coherente con su cercanía a la refinería y la
+termoeléctrica, y con el inventario estatal de 2021, que atribuye casi todo el
+$\mathrm{SO_2}$ a fuentes fijas (7\,331.79 de 7\,426.74~t\,año$^{-1}$) y la
+mayor parte del CO a fuentes móviles (23\,411.99 de
+26\,974.73~t\,año$^{-1}$)~(Tabla~\ref{tab:contaminantes}). La combinación de
+ambos gases sugiere una influencia mixta industrial y vehicular en NATIVITAS.
+
+El $\mathrm{SO_2}$ muestra además una diferencia de comportamiento visible. 
+En NATIVITAS y DIF la dispersión es baja, con
+valores atípicos aislados, mientras que en CR la caja es ancha en todas las
+campañas y ventanas. Esto podría significar un origen constante, posiblemente
+por una fuente fija de emisión continua.
+
+Algunas diferencias cambiaron entre campañas surgieron entre campañas. 
+El CO fue mayor en NATIVITAS en febrero (1.68~ppm) pero en DIF en
+mayo (2.03~ppm). El $\mathrm{NO_2}$ de CR bajó de 25.9 a 11.2~ppb y,
+en la ventana nocturna de mayo, mientras que las cajas de CR y NATIVITAS 
+se traslapan. 
+Como las estaciones son las mismas, estos cambios
+no pueden atribuirse a la ubicación, sino a la meteorología o a la actividad de
+las fuentes en cada periodo. Fenómenos como la inversión térmica 
+durante el invierno de la compaña de febrero, pueden favorecer 
+la acumulación de emisiones primarias y explicarían el
+$\mathrm{NO_2}$ más alto de esa campaña.
+
+El material particulado muestra un contraste distinto. En ambas campañas las
+cajas del $\mathrm{PM_{2.5}}$ de DIF y CR casi no se superponen. 
+Además, la
+razón $\mathrm{PM_{2.5}/PM_{10}}$ en 24~h fue mayor en DIF (0.41 en febrero y
+0.52 en mayo) que en CR (0.30 y 0.29). El $\mathrm{PM_{10}}$, en cambio, apenas
+se distingue entre estaciones: las cajas se traslapan en todas las campañas y
+ventanas, y en mayo por la noche la diferencia no fue significativa. 
+Una fracción fina proporcionalmente más alta suele asociarse con
+combustión o formación secundaria, mientras que una fracción gruesa dominante
+se asocia con resuspensión de polvo (Querol et al., 2001). Esto sugiere un origen
+distinto del material particulado de DIF respecto al de CR. Además, dado que 
+la velocidad del viento fue mayor
+en DIF (2.5 y 3.0~m\,s$^{-1}$ en 24~h), por lo que su $\mathrm{PM_{2.5}}$ más
+alto no se explica por una menor ventilación local.
+
+Las variables meteorológicas aportan poca separación espacial, con una
+excepción. La temperatura es prácticamente la misma en las tres estaciones: sus
+cajas se superponen casi por completo en las cuatro figuras, aunque las
+diferencias resulten significativas, y la humedad relativa fue sistemáticamente
+menor en CR.
+En la ventana nocturna las cajas son más estrechas por el menor número de
+datos, lo que explica que
+algunas diferencias significativas en 24~h pierdan significancia.
+
+%\subsection{Correlación de Spearman}
+%\label{subsec:corr_Spearman}
+
+EL análisis de correlación de Spearman para la campaña de 
+febrero (Figuras~\ref{fig:corr_feb_CR} a \ref{fig:corr_feb_noche_NAT})
+y de mayo (Figuras\ref{fig:corr_may_CR} a \ref{fig:corr_may_noche_NAT}) revela
+un ciclo diruno compartido. La temperatura y la humedad relativa se 
+correlacionan negativamente de modo que las tres estaciones responden 
+al mismo forzamiento meteorológico. Sobre ese ciclo actúa la química del 
+ozono. El O$_3$ aumenta con la temperatura y con la radiación UV en DIF, y 
+disminuye con la humedad, lo que es característico de la producción 
+fotoquímica (Andadre et al., 2024). El acoplamiento fue más fuerte en mayo, cuando
+las condiciones fueron más cálidas (medianas de 23-24°C frente a 19°C en febrero)
+
+Además, la correlación negativa entre 
+O$_3$ y NO$_2$ es coherente con la
+titulación del ozono por el NO, en la que el O$_3$ se consume al formar NO$_2$
+(Escudero et al., 2016). 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{Resultados/Correlacion_BH_Febrero_CR.pdf}  
+    \caption{Matriz de correlación de Spearman entre variables en la estación de CR 
+    durante la campaña de febrero (jornada completa). 
+    Los asteriscos indican correlaciones significativas ($p < 0.05$, ajustado 
+    por Benjamini-Hochberg).}
+    \label{fig:corr_feb_CR}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{Resultados/Correlacion_BH_Febrero_DIF.pdf}  
+    \caption{Matriz de correlación de Spearman entre variables en la estación de DIF
+    durante la campaña de febrero (jornada completa). 
+    Los asteriscos indican correlaciones significativas ($p < 0.05$, ajustado 
+    por Benjamini-Hochberg).}
+    \label{fig:corr_feb_DIF}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{Resultados/Correlacion_BH_Febrero_NATIVITAS.pdf}  
+    \caption{Matriz de correlación de Spearman entre variables en la estación de NATIVITAS 
+    durante la campaña de febrero (jornada completa). 
+    Los asteriscos indican correlaciones significativas ($p < 0.05$, ajustado 
+    por Benjamini-Hochberg).}
+    \label{fig:corr_feb_NAT}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{Resultados/Correlacion_BH_Febrero_CR_22a02h.pdf}
+    \caption{Matriz de correlación de Spearman entre variables durante la campaña 
+    de febrero en la estación CR (de 22:00 a 02:00).}
+    \label{fig:corr_feb_noche_CR}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{Resultados/Correlacion_BH_Febrero_DIF_22a02h.pdf}
+    \caption{Matriz de correlación de Spearman entre variables durante la campaña 
+    de febrero en la estación DIF (de 22:00 a 02:00).}
+    \label{fig:corr_feb_noche_DIF}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{Resultados/Correlacion_BH_Febrero_NATIVITAS_22a02h.pdf}
+    \caption{Matriz de correlación de Spearman entre variables durante la campaña 
+    de febrero en la estación Nativitas (de 22:00 a 02:00).}
+    \label{fig:corr_feb_noche_NAT}
+\end{figure}
+
+Las variables asociadas con la combustión y el material particulado covarían
+entre sí. En febrero, el NO$_2$ se correlacionó positivamente con el CO
+y con el PM$_{10}$. A su vez, el PM$_{10}$ con el PM$_{2.5}$ en CR y DIF, 
+lo que sugiere emisiones o
+procesos comunes que se refuerzan bajo una capa nocturna estable. En mayo, el
+rasgo más notable es la correlación del PM$_{10}$ con la temperatura y 
+con la humedad en la ventana
+nocturna. La explicación por resuspensión o formación secundaria durante el día
+(Zender-Świercz et al., 2024) concuerda con las correlaciones moderadas de la
+jornada completa, pero no explica por qué la relación se intensifica de noche. Como el
+PM$_{10}$ alcanza sus máximos vespertinos entre las 20 y las 21~h en NATIVITAS y
+DIF y la temperatura desciende durante toda la ventana, es plausible que parte de
+esa correlación refleje una tendencia temporal común dentro de la noche y no un
+control de la temperatura sobre las partículas.
+
+Por su parte, el SO$_2$ es la variable con el comportamiento menos consistente. 
+Su correlación
+con el NO$_2$ cambió de signo entre estaciones en febrero, y en mayo 
+su relación con la temperatura y la humedad también
+difirió. Mientras tanto, en DIF siguió el ciclo diurno, en CR tuvo el signo contrario 
+y en NATIVITAS no fue significativa. El aumento diurno del SO$_2$ en DIF
+es compatible con emisiones elevadas que alcanzan la superficie al crecer la
+capa límite, como las de chimeneas de 50 a 65~m (Violante Gavira et al., 2022),
+mientras que el signo opuesto en CR podría reflejar acumulación nocturna cerca de
+la superficie. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{Resultados/Correlacion_BH_Mayo_CR.pdf}
+    \caption{Matriz de correlación de Spearman entre variables durante la 
+    campaña de mayo en la estación CR (jornada completa).}
+    \label{fig:corr_may_CR}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{Resultados/Correlacion_BH_Mayo_DIF.pdf}
+    \caption{Matriz de correlación de Spearman entre variables durante la 
+    campaña de mayo en la estación DIF (jornada completa).}
+    \label{fig:corr_may_DIF}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{Resultados/Correlacion_BH_Mayo_NATIVITAS.pdf}
+    \caption{Matriz de correlación de Spearman entre variables durante la 
+    campaña de mayo en la estación Nativitas (jornada completa).}
+    \label{fig:corr_may_NAT}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{Resultados/Correlacion_BH_Mayo_CR_22a02h.pdf}
+    \caption{Matriz de correlación de Spearman entre variables durante la campaña 
+    de mayo en la estación CR (de 22:00 a 02:00)}
+    \label{fig:corr_may_noche_CR}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{Resultados/Correlacion_BH_Mayo_DIF_22a02h.pdf}
+    \caption{Matriz de correlación de Spearman entre variables durante la campaña 
+    de mayo en la estación DIF (de 22:00 a 02:00).}
+    \label{fig:corr_may_noche_DIF}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{Resultados/Correlacion_BH_Mayo_NATIVITAS_22a02h.pdf}
+    \caption{Matriz de correlación de Spearman entre variables durante la campaña 
+    de mayo en la estación Nativitas (de 22:00 a 02:00)}
+    \label{fig:corr_may_noche_NAT}
+\end{figure}
+
+\section{Modelos de dispersión con FLEXPART}
+
+Los resultados de las simulaciones de FLEXPART permiten inferir un origen de la contaminación. 
+Se utilizó CO como \textit{footprint} al ser un gas relacionado con la combustión de 
+combustibles fósiles y cuantificado en las estaciones de monitoreo de calidad del 
+aire. 
+
+Sumado al análisis de la rosa de los vientos, cuyos patrones son similares entre estaciones
+y que sugiere un origen de vientos común, implica que el vapor de fondo que ingresa
+a las estaciones es esencialmente el mismo, por lo que las diferencias isotópicas y en las
+concentraciones de contaminantes pueden atribuirse a emisiones locales y no de transporte
+regional. 
+
+Las matrices de sensibilidad de CO refuerzan esta interpretación. En ambas campañas, 
+la mayor sensibilidad se concentra en una franja contigua a cada receptor en las 
+celdas inmediatas y una disminución progresiva hacia el resto del dominio. Por lo 
+tanto, se infiere que el CO medido en cada punto procede, en gran medida, 
+de emisiones próximas dentro del área urbana. Sin embargo, similitud entre los \textit{footprints}
+limita la capacidad de distinguir diferencias espaciales finas en el origen de las emisiones. 
+
+Un aspecto relevante es la diferencia entre la ventana noctura y el ciclo completo. En 
+la campaña de febrero, la zona de alta sensibilidad es más alta durante la noche 
+que la jornada completa. Eso es consistente con la dinámica de la capa límite: 
+durante la noche, la estabilidad atmosférica y la menor mezcla vertical confinan las 
+emisiones a una capa superficial más delgada, lo que se traduce a una mayor sensibilidad
+de los receptores a las fuentes cercanas. Por el contrario, durante el día, la mayor mezcla
+vertical y la turbulencia dispersan las emisiones, resultando \textit{footprint} más 
+compacto y con menor extensión espacial. 
+
+Por otro lado, los \textit{footprints} de mayo, la desaparición de la zona 
+de sensibilidad de 0.3-0.5 y la reducción del área de influencia nocturna indican que
+las emisiones de las industrias del sureste tuvieron una menor probabilidad de alcanzar 
+los receptores. 
+
+No obstante, es fundamental señalar que el campo de sensibilidad describe 
+únicamente el transporte atmosférico y no la magnitud de las emisiones. 
+Es decir, una zona de alta sensibilidad no implica una mayor contribución a la
+concentración observada si en ella no hay fuentes activas. En el caso de 
+Salamanca, se ubican bajo el área de mayor influencia para el sitio 
+de muestreo y Nativitas empresas como la refinería, la termoeléctrica y 
+empresas de movilización de combustible. En tal caso destaca, por ejemplo, 
+el ciclo combinado de CFE con cerca de  $1.7\times10^{6}$~t de CO$_2$ al año. 
+Tanto la refinería como la termoeléctrica podrían mantener un aporte 
+relativamente constante de VDC durante la noche, a diferencia de otras 
+fuentes como el tráfico, cuya señal varía con la hora y la ventilación. 
+%Las chimeneas de la 
+%termoeléctrica, de entre 50 y 65~m (Violante Gavira et al., 2022), emiten por 
+%encima de la capa de inversión superficial en muchas noches, por lo que su vapor 
+%no necesariamente llega a un sitio de muestreo a nivel del suelo, pero puede 
+%hacerlo en condiciones de fumigación o de mezcla vertical parcial. 
 
 \section{Firma isotópica del vapor de agua atmosférico}
+
+\subsection{Modelo binario de mezcla}
+
+Para estimar el porcentaje de mezcla entre el vapor de fondo (atmosférico) y 
+el vapor teórico de combustión, se empleó un modelo de mezcla binaria de dos 
+extremos en el espacio $\delta$D--$\delta^{18}$O. El extremo de fondo no se
+definió como un punto fijo, sino mediante la línea meteórica regional (LMR),
+$\delta D = a\,\delta^{18}O + b$, donde $a$ y $b$ corresponden a la 
+pendiente y ordenada al origen de dicha recta. El extremo de combustión se
+fijó en los valores isotópicos teóricos ($\delta^{18}O_c$=$9$\,\textpertenthousand y 
+$\delta D_c$=$-134.4$\,\textperthousand), basados
+en los datos fijados por Gorski et al. (2015) y Xing et al. (2020). 
+
+Para cada muestra ($\delta^{18}O_s$, $\delta D_s$) se determinó su punto de
+fondo específico ($\delta^{18}O_{bg}$, $\delta D_{bg}$) mediante la intersección 
+entre la LAMR-SAL y la recta que une la muestra con el extremo de combustión. 
+Primero se calculó la pendiente de dicha recta (\ref{eq:lml}):
+
+\begin{equation}
+m_{sc} = \frac{\delta D_s - \delta D_c}{\delta^{18}O_s - \delta^{18}O_c}
+\end{equation}
+
+y, a partir de esta, las coordenadas del punto de fondo:
+
+\begin{align}
+\delta^{18}O_{bg} &= \frac{\delta D_c - m_{sc}\,\delta^{18}O_c - b}{a - m_{sc}} \\
+\delta D_{bg} &= a\,\delta^{18}O_{bg} + b
+\end{align}
+
+El porcentaje de mezcla (contribución del vapor de combustión) para 
+cada muestra se calculó de forma independiente a partir de ambos isótopos,
+
+\begin{equation}
+\% = \frac{\delta^{18}O_s - \delta^{18}O_{bg}}{\delta^{18}O_c - \delta^{18}O_{bg}} \times 100 \;=\; \frac{\delta D_s - \delta D_{bg}}{\delta D_c - \delta D_{bg}} \times 100,
+\end{equation}
+
+donde la coincidencia entre ambos valores se utilizó como criterio de 
+consistencia del modelo de mezcla. Finalmente, para la representación 
+gráfica se generaron las líneas de mezcla correspondientes a fracciones
+de combustión de $p = 0.2,\,0.4,\,0.6,\,0.8$, mediante interpolación lineal 
+entre cada punto de fondo y el extremo de combustión:
+
+\begin{align}
+O_p &= \delta^{18}O_{bg} + p\,(\delta^{18}O_c - \delta^{18}O_{bg}) \\
+D_p &= \delta D_{bg} + p\,(\delta D_c - \delta D_{bg})
+\end{align}
 
 Las muestras de vapor de agua colectadas en Salamanca se alinean en torno a la isolínea de mezcla 
 de 20\,\% del diagrama $\delta^{2}$H--$\delta^{18}$O (Figura~\ref{fig:mezcla_salamanca}),
@@ -133,68 +500,6 @@ ha demostrado que estas reacciones heterogéneas en las que interviene el agua l
 de los aerosoles desempeñan un papel predominante en la formación de sulfatos durante 
 la niebla de ciudades como en Pekín y Beijing, mediante el uso de mediciones isotópicas 
 (Wu et al., 2022). 
-
-\section{Modelos de dispersión con FLEXPART}
-
-Los resultados de las simulaciones de FLEXPART permiten inferir un origen de la contaminación. 
-Se utilizó CO como \textit{footprint} al ser un gas relacionado con la combustión de 
-combustibles fósiles y cuantificado en las estaciones de monitoreo de calidad del 
-aire. 
-
-Sumado al análisis de la rosa de los vientos, cuyos patrones son similares entre estaciones
-y que sugiere un origen de vientos común, implica que el vapor de fondo que ingresa
-a las estaciones es esencialmente el mismo, por lo que las diferencias isotópicas y en las
-concentraciones de contaminantes pueden atribuirse a emisiones locales y no de transporte
-regional. 
-
-Las matrices de sensibilidad de CO refuerzan esta interpretación. En ambas campañas, 
-la mayor sensibilidad se concentra en una franja contigua a cada receptor en las 
-celdas inmediatas y una disminución progresiva hacia el resto del dominio. Por lo 
-tanto, se infiere que el CO medido en cada punto procede, en gran medida, 
-de emisiones próximas dentro del área urbana. Sin embargo, similitud entre los \textit{footprints}
-limita la capacidad de distinguir diferencias espaciales finas en el origen de las emisiones. 
-
-Un aspecto relevante es la diferencia entre la ventana noctura y el ciclo completo. En 
-la campaña de febrero, la zona de alta sensibilidad es más alta durante la noche 
-que la jornada completa. Eso es consistente con la dinámica de la capa límite: 
-durante la noche, la estabilidad atmosférica y la menor mezcla vertical confinan las 
-emisiones a una capa superficial más delgada, lo que se traduce a una mayor sensibilidad
-de los receptores a las fuentes cercanas. Por el contrario, durante el día, la mayor mezcla
-vertical y la turbulencia dispersan las emisiones, resultando \textit{footprint} más 
-compacto y con menor extensión espacial. 
-
-Por otro lado, los \textit{footprints} de mayo, la desaparición de la zona 
-de sensibilidad de 0.3-0.5 y la reducción del área de influencia nocturna indican que
-las emisiones de las industrias del sureste tuvieron una menor probabilidad de alcanzar 
-los receptores. 
-
-No obstante, es fundamental señalar que el campo de sensibilidad describe 
-únicamente el transporte atmosférico y no la magnitud de las emisiones. 
-Es decir, una zona de alta sensibilidad no implica una mayor contribución a la
-concentración observada si en ella no hay fuentes activas. En el caso de 
-Salamanca, se ubican bajo el área de mayor influencia para el sitio 
-de muestreo y Nativitas empresas como la refinería, la termoeléctrica y 
-empresas de movilización de combustible. En tal caso destaca, por ejemplo, 
-el ciclo combinado de CFE con cerca de  $1.7\times10^{6}$~t de CO$_2$ al año.
-
-Tanto la refinería como la termoeléctrica podrían mantener un aporte 
-relativamente constante de VDC durante la noche, a diferencia de otras 
-fuentes como el tráfico, cuya señal varía con la hora y la ventilación. 
-Las chimeneas de la 
-termoeléctrica, de entre 50 y 65~m (Violante Gavira et al., 2022), emiten por 
-encima de la capa de inversión superficial en muchas noches, por lo que su vapor 
-no necesariamente llega a un sitio de muestreo a nivel del suelo, pero puede 
-hacerlo en condiciones de fumigación o de mezcla vertical parcial. 
-
-
- 
-
-
-
-
-
-
-
 
 
 

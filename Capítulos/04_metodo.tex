@@ -1,95 +1,5 @@
 % !TEX root = ../Tesis.tex
 \chapter{Metodología}
-\section{Recolección de muestras}
-
-El sitio de muestreo se seleccionó a partir de la comparación de datos 
-históricos de calidad del aire del 2023, contrastado con la normatividad
-mexicana %(ver \ref{anexo:histo_cont}).
-Las muestras se recolectaron a través de un sistema de captura y condensación.
-El sistema está compuesto por un refrigerador modificado marca Hisense, con
-una conexión de tubería de PVC en su interior. El sistema estaba adaptado 
-a un \textit{timer} para el funcionamiento automático del sistema (Figura \ref{fig:refri}). 
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.85\textwidth]{Resultados/Sistema_refri.png}
-    \caption{Esquema del sistema de captura y condensación para el muestreo
-    de vapor de agua.}
-    \label{fig:refri}
-\end{figure}
-
-Para obtener un factor del fraccionamiento isotópico que se produce al
-condensar la muestra con el equipo, se adoptó el condensador a una cámara de
-ambientes controlados. Cada 24 horas se recolecta la muestra de vapor y
-una muestra líquida. La cabina mantenía las condiciones en
-$30\,^{\circ}\mathrm{C}$ y $30\%$ de humedad relativa.
-
-\section{Análisis de $\delta^{2}$H y $\delta^{18}$O}
-\label{sec:analisis_isotopico_metodo}
-
-Las muestras fueron analizadas en el Centro de Invstigación Científica y 
-de Educación Superior de Ensenada (CICESE) a través de la Unidad de Isótopos 
-Estables de Oxígeno, Hidrógeno y Carbono. Se utilizó un analizador de isótopos 
-de agua de alta precisión Picarro L2130-i con automuestreador. 
-
-\subsection{Modelo binario de mezcla}
-
-Para estimar el porcentaje de mezcla entre el vapor de fondo (atmosférico) y 
-el vapor teórico de combustión, se empleó un modelo de mezcla binaria de dos 
-extremos en el espacio $\delta$D--$\delta^{18}$O. El extremo de fondo no se
-definió como un punto fijo, sino mediante la línea meteórica regional (LMR),
-$\delta D = a\,\delta^{18}O + b$, donde $a$ y $b$ corresponden a la 
-pendiente y ordenada al origen de dicha recta. El extremo de combustión se
-fijó en los valores isotópicos teóricos ($\delta^{18}O_c$=$9$\,\textpertenthousand y 
-$\delta D_c$=$-134.4$\,\textperthousand), basados
-en los datos fijados por Gorski et al. (2015) y Xing et al. (2020). 
-
-Para cada muestra ($\delta^{18}O_s$, $\delta D_s$) se determinó su punto de
-fondo específico ($\delta^{18}O_{bg}$, $\delta D_{bg}$) mediante la intersección 
-entre la LAMR-SAL y la recta que une la muestra con el extremo de combustión. 
-Primero se calculó la pendiente de dicha recta (\ref{eq:lml}):
-
-\begin{equation}
-m_{sc} = \frac{\delta D_s - \delta D_c}{\delta^{18}O_s - \delta^{18}O_c}
-\end{equation}
-
-y, a partir de esta, las coordenadas del punto de fondo:
-
-\begin{align}
-\delta^{18}O_{bg} &= \frac{\delta D_c - m_{sc}\,\delta^{18}O_c - b}{a - m_{sc}} \\
-\delta D_{bg} &= a\,\delta^{18}O_{bg} + b
-\end{align}
-
-El porcentaje de mezcla (contribución del vapor de combustión) para 
-cada muestra se calculó de forma independiente a partir de ambos isótopos,
-
-\begin{equation}
-\% = \frac{\delta^{18}O_s - \delta^{18}O_{bg}}{\delta^{18}O_c - \delta^{18}O_{bg}} \times 100 \;=\; \frac{\delta D_s - \delta D_{bg}}{\delta D_c - \delta D_{bg}} \times 100,
-\end{equation}
-
-donde la coincidencia entre ambos valores se utilizó como criterio de 
-consistencia del modelo de mezcla. Finalmente, para la representación 
-gráfica se generaron las líneas de mezcla correspondientes a fracciones
-de combustión de $p = 0.2,\,0.4,\,0.6,\,0.8$, mediante interpolación lineal 
-entre cada punto de fondo y el extremo de combustión:
-
-\begin{align}
-O_p &= \delta^{18}O_{bg} + p\,(\delta^{18}O_c - \delta^{18}O_{bg}) \\
-D_p &= \delta D_{bg} + p\,(\delta D_c - \delta D_{bg})
-\end{align}
-
-Por otro lado, se realizó un análisis explotatorio para evaluar la variabilidad del 
-\textit{d-excess} del vapor de agua con la concentración de 
-contaminantes. Para ello, se graficó el \textit{d-excess} frente al 
-promedio nocturno de cada variable. El promedio se calculó con los datos horarios
-válidos de la ventana de muestreo. La HR, 
-la temperatura, el CO, el NO$_2$, el SO$_2$ y el O$_3$ corresponden a la estación
-Nativitas, la más cercana al sitio de muestreo. Sin embargo, debido a que 
-esta estación no cuenta 
-con mediciones de PM$_{2.5}$, las concentraciones de PM$_{2.5}$ y PM$_{10}$ se 
-tomaron de la estación Cruz Roja, de modo que ambas fracciones provienen del 
-mismo equipo. 
-
 \section{Datos de calidad del aire}
 \subsection{Validación de datos de las estaciones de monitoreo de aire}
 \label{sec:validacion_datos}
@@ -234,11 +144,100 @@ por Lakes Environmental.
 
 \section{Modelo de dispersión FLEXPART}
 
+El modelo de dispersión de partícula flexible (FLEXPART, por sus siglas
+en inglés) fue desarrollado por el Instituto Noruego de Investigación
+Atmosférica. Es un modelo de dispersión y transporte lagrangiano de código 
+libre, codificado en Fortran 95 y se puede copilar en gfortran e ifort 
+bajo distintos sistemas operativos (Linux, Solaris, etc.)
+(Cheng et al., 2017; Vaz de Jesus et al., 2018; Wang et al., 2021). 
+
+Este tipo de modelos siguen el movimiento individual de las partículas, 
+a diferencia de su contraparte euleriana, que mide cómo cambian 
+las propiedades del fluido
+al pasar por puntos fijos. Los modelos lagrangianos permiten rastrear
+el movimiento de las partículas en el espacio y el tiempo
+(Bakels et al., 2024).
+
+FLEXPART es ampliamente utilizado para formular trayectorias
+atmosféricas, transporte y dispersión de partículas. Puede emplearse
+para análisis en modo \textit{forward} y \textit{backward}. En el primer
+caso, el análisis de las trayectorias y la dispersión se realiza
+después de la liberación de las partículas. El segundo modo permite
+rastrear el origen de una parcela de aire o un conjunto de partículas
+que llegan a un punto de interés (Foreback et al., 2024).
+
+FLEXPART es un modelo \textit{off-line} y, por lo tanto, necesita campos
+meteorológicos procedentes de modelos de predicción del tiempo. En particular, 
+puede copilar con campos del \textit{European Centre for Medium-Range 
+Weather (ECMWF)}, NCEP y, algunas versiones, con \textit{Weather Research and Forecasting
+(WRF)} (Vaz de Jesus et al., 2018).
+
+La relación fuente-receptor es un concepto importante en el modelado de
+la calidad del aire. En esencia, describe la sensibilidad de un
+receptor ante una fuente de emisión. El receptor puede ser, por
+ejemplo, la concentración promedio de cierta sustancia liberada en la
+atmósfera en una determinada celda durante cierto intervalo de tiempo
+(Seibert \& Frank, 2004).
+
 El modelo de dispersión FLEXPART versión 11 fue configurado en 
 \textit{backaward} para calcular la matriz fuente-receptor
 para el CO con respecto al sitio de muestreo y las estaciones 
-de monitoreo (Seibert \& Frank, 2004; Wang et al., 2021). 
+de monitoreo (Seibert \& Frank, 2004; Wang et al., 2021). Se 
+seleccionó este contaminante debido a su asociación con el VDC (\ref{eq:combustion})
+y, al ser un contaminante criterio, su concentración es evaluada en las 
+estaciones de monitoreo de calidad del aire. 
 El contaminante fue liberado desde el receptor 
 en retrotrayectoria por hora. Se utilizaron datos meteorológicos
 de reánalisis de ERA5 de ECMWF con una resolución de gradilla de  0.25° x 0.25° de 00:00 a 
 23:00 para los periodos de muestreo. 
+
+\section{Isótopos estables}
+Los isótopos son átomos del mismo elemento que varían en su número de 
+neutrones y, por lo tanto, existe una diferencia de masas entre ellos. 
+(Smith \& Lacey, 2024; Zachleder et al., 2018). 
+
+Las diferencias relativas en las abundancias isotópicas entre dos muestras 
+pueden determinarse con mucha mayor precisión que la exactitud con la que 
+se pueden medir las abundancias isotópicas absolutas. 
+La unidad de medida aceptada es el valor delta ($\delta$) expresado en partes 
+por mil (Ecuación~\ref{eq:delta}) (Hoefs \& Harmon, 2022).
+
+\begin{equation}
+\delta = \frac{R_x - R_{std}}{R_{std}} \times 1000
+\label{eq:delta}
+\end{equation}
+
+Donde $R_x$ y $R_{std}$ denotan la razón isotópica de la muestra y
+del estándar, respectivamente. 
+Existen distintos estándares internacionales utilizados para el 
+análisis de isótopos (Tabla~\ref{tab:estandares}).
+
+\begin{table}[h!]
+\centering
+\small
+\caption{Estándares isotópicos internacionales y valores aceptados
+(Hoefs \& Harmon, 2022)}
+\label{tab:estandares}
+\begin{tabularx}{\textwidth}{@{}X l l r@{}}
+\toprule
+\textbf{Estándar} & \textbf{Abrev.} & \textbf{Razón} &
+\textbf{Valor aceptado ($\times 10^{6}$)} \\
+\midrule
+Vienna Standard Mean Ocean Water & VSMOW & D/H & $155.76 \pm 0.10$ \\
+Vienna Standard Mean Ocean Water & VSMOW & $^{17}$O/$^{16}$O & $373 \pm 15$ \\
+Vienna Standard Mean Ocean Water & VSMOW & $^{18}$O/$^{16}$O & $2005.20 \pm 0.43$ \\
+\textit{Belemnitella americana} (Cretácico, Peedee, EE.\,UU.) & VPDB & $^{13}$C/$^{12}$C & $11237.2 \pm 2.9$ \\
+Nitrógeno atmosférico & AIR & $^{15}$N/$^{14}$N & $3676.5 \pm 8.1$ \\
+Troilita del meteorito Cañón Diablo & VCDT & $^{34}$S/$^{32}$S & $45004.5 \pm 9.3$ \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Análisis de $\delta^{2}$H y $\delta^{18}$O}
+\label{sec:analisis_isotopico_metodo}
+
+Las muestras fueron analizadas en el Centro de Invstigación Científica y 
+de Educación Superior de Ensenada (CICESE) a través de la Unidad de Isótopos 
+Estables de Oxígeno, Hidrógeno y Carbono. Se utilizó un analizador de isótopos 
+de agua de alta precisión Picarro L2130-i con automuestreador. 
+

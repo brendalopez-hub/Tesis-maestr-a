@@ -42,7 +42,7 @@ de estancamiento atmosférico.
     \centering
     \includegraphics[width=0.7\textwidth]{Imagenes_marco/Gorski_isotopos.png}
     \caption{Modelo de mezcla de \(\delta^{18}\mathrm{O}\) y 
-    \(\delta^{2}\mathrm{D}\) del vapor de agua en la capa límite
+    \(\delta\mathrm{D}\) del vapor de agua en la capa límite
     entre la línea meteórica global (LMM) y la huella isotópica
     del vapor de agua en Salt Lake City (Gorski et al., 2015).}
     \label{fig:vapor_Gorski}
@@ -75,7 +75,7 @@ emisiones antropogénicas asociadas a la combustión.
     \centering
     \includegraphics[width=0.7\textwidth]{Imagenes_marco/Xing_isotopos.png}
     \caption{Modelo de mezcla gaussiana de \(\delta^{18}\mathrm{O}\) y
-    \(\delta^{2}\mathrm{D}\) del vapor de agua en Xi'an 
+    \(\delta\mathrm{D}\) del vapor de agua en Xi'an 
     (Xing et al., 2020)}
     \label{fig:Xing_vapor}
 \end{figure}
@@ -95,7 +95,7 @@ sustituía el carbón por gas (Wu et al., 2020).
     \centering
     \includegraphics[width=0.7\textwidth]{Imagenes_marco/WU_isotopos.png}
     \caption{Modelo de mezcla gaussiana de \(\delta^{18}\mathrm{O}\) y
-    \(\delta^{2}\mathrm{D}\) del vapor de agua en estudios de 
+    \(\delta\mathrm{D}\) del vapor de agua en estudios de 
     Beijing en el inviero de 2013 a 2019 (Wu et al., 2020)}
     \label{fig:wu_vapor}
 \end{figure}
@@ -112,8 +112,8 @@ negativos que los encontrados por Xing et al (2020) en la misma ciudad.
     \centering
     \includegraphics[width=0.7\textwidth]{Imagenes_marco/liu_isotopos.png}
     \caption{Modelo de mezcla  de \(\delta^{18}\mathrm{O}\) y
-    \(\delta^{2}\mathrm{D}\) del vapor de agua en estudios de 
-    Beijing en el inviero de 2013 a 2019 (Liu et al., 2022)}
+    \(\delta\mathrm{D}\) del vapor de agua en estudios de 
+    Beijing en el invierno de 2013 a 2019 (Liu et al., 2022)}
     \label{fig:liu_vapor}
 \end{figure}
 
@@ -241,9 +241,9 @@ urbanización. Estas emisiones suelen contribuir al calentamiento global
 
 Hay dos categorías significantes de contaminantes del aire: 
 primarios y secundarios. Los primarios se forman y son 
-emitidos directamente desde la fuente, como el material CO,
-NO\textsubscript{2}, SO\textsubscript{2}, PM\textsubscript{10}
-y PM\textsubscript{2.5}. Los secundarios se generan a 
+emitidos directamente desde la fuente, como el material particulado
+(PM\textsubscript{10} y PM\textsubscript{2.5}), CO,
+NO\textsubscript{2}, SO\textsubscript{2}. Los secundarios se generan a 
 través de procesos o reacciones biológicas o químicas, y sus 
 sustancias precursoras están en el ambiente (Meo, 2025). 
 
@@ -294,50 +294,134 @@ concentraciones de los inicios de la Revolución Industrial
     \label{fig:mauna_loa}
 \end{figure}
 
-\section{Isótopos estables}
-Los isótopos son átomos del mismo elemento que varían en su número de 
-neutrones y, por lo tanto, existe una diferencia de masas entre ellos. 
-Esta diferencia de masa se reporta como una fracción del elemento más 
-pesado sobre el más ligero (Smith \& Lacey, 2024; Zachleder et al., 2018). 
+\section{Normas de calidad del aire}
+En México, la NOM-172-SEMARNAT-2023 tiene establece los
+lineamientos para la determinación y comunicación del índice de la calidad
+del aire. 
 
-Las diferencias relativas en las abundancias isotópicas entre dos muestras 
-pueden determinarse con mucha mayor precisión que la exactitud con la que 
-se pueden medir las abundancias isotópicas absolutas. 
-La unidad de medida aceptada es el valor delta ($\delta$) expresado en partes 
-por mil (Ecuación~\ref{eq:delta}) (Hoefs \& Harmon, 2022).
+Su propósito es proporcionar a la población información estandarizada, 
+clara y oportuna sobre las condiciones de la calidad del aire, los posibles 
+efectos de la exposición a contaminantes sobre la salud y las medidas 
+recomendadas para reducir dichos riesgos (Secretaría de Medio
+Ambiente y Recursos Naturales, 2024).
 
-\begin{equation}
-\delta = \frac{R_x - R_{std}}{R_{std}} \times 1000
-\label{eq:delta}
-\end{equation}
-
-Donde $R_x$ y $R_{std}$ denotan la razón isotópica de la muestra y
-del estándar, respectivamente. 
-Existen distintos estándares internacionales utilizados para el 
-análisis de isótopos (Tabla~\ref{tab:estandares}).
+El índice se determina a partir de las concentraciones registradas 
+por las estaciones de monitoreo atmosférico, considerando los periodos 
+de promediación y las cifras significativas establecidos para cada 
+contaminante. Los criterios aplicables se presentan en la Tabla~\ref{tab:cifras_significativas}.
 
 \begin{table}[h!]
 \centering
-\small
-\caption{Estándares isotópicos internacionales y valores aceptados
-(Hoefs \& Harmon, 2022)}
-\label{tab:estandares}
-\begin{tabularx}{\textwidth}{@{}X l l r@{}}
+\caption{Cifras significativas por contaminante según la
+NOM-172-SEMARNAT-2023.}
+\label{tab:cifras_significativas}
+\begin{tabular}{llc}
 \toprule
-\textbf{Estándar} & \textbf{Abrev.} & \textbf{Razón} &
-\textbf{Valor aceptado ($\times 10^{6}$)} \\
+\textbf{Contaminante} & \textbf{Unidad} &
+\textbf{Cifras significativas} \\
 \midrule
-Vienna Standard Mean Ocean Water & VSMOW & D/H & $155.76 \pm 0.10$ \\
-Vienna Standard Mean Ocean Water & VSMOW & $^{17}$O/$^{16}$O & $373 \pm 15$ \\
-Vienna Standard Mean Ocean Water & VSMOW & $^{18}$O/$^{16}$O & $2005.20 \pm 0.43$ \\
-\textit{Belemnitella americana} (Cretácico, Peedee, EE.\,UU.) & VPDB & $^{13}$C/$^{12}$C & $11237.2 \pm 2.9$ \\
-Nitrógeno atmosférico & AIR & $^{15}$N/$^{14}$N & $3676.5 \pm 8.1$ \\
-Troilita del meteorito Cañón Diablo & VCDT & $^{34}$S/$^{32}$S & $45004.5 \pm 9.3$ \\
+PM10 & \si{\micro\gram\per\cubic\meter} & 0 \\
+PM2.5 & \si{\micro\gram\per\cubic\meter} & 0 \\
+Ozono (O\textsubscript{3}) & \si{\micro\gram\per\cubic\meter} & 3 \\
+Dióxido de nitrógeno (NO\textsubscript{2}) & ppm & 3 \\
+Dióxido de azufre (SO\textsubscript{2}) & ppm & 3 \\
+Monóxido de carbono (CO) & ppm & 2 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+De manera complementaria, la normatividad mexicana define límites permisibles 
+para los principales contaminantes atmosféricos. Estos valores de referencia 
+permiten clasificar la calidad del aire, comunicar oportunamente el nivel de 
+riesgo para la salud y orientar a la población sobre las medidas de protección 
+que deben adoptarse ante episodios de contaminación 
+(Tabla~\ref{tab:limites_permisibles}) y~\ref{tab:limites_gases}).
+
+\begin{table}[H]
+\centering
+\footnotesize
+\caption{Límites permisibles para partículas suspendidas según la
+normatividad mexicana.}
+\label{tab:limites_permisibles}
+\begin{tabularx}{\textwidth}{@{}l l Y r r r@{}}
+\toprule
+\textbf{Contaminante} & \textbf{Indicador} & \textbf{Criterio} &
+\textbf{Límite 1} & \textbf{Límite 2} & \textbf{Límite 3} \\
+\midrule
+PM\textsubscript{10} & 24 horas &
+Percentil 99 (frecuencia tolerada 1\% de veces al año) &
+\SI{70}{\micro\gram\per\cubic\meter} &
+\SI{60}{\micro\gram\per\cubic\meter} &
+\SI{50}{\micro\gram\per\cubic\meter} \\
+ & Anual & Promedio anual de los promedios de 24 horas &
+\SI{36}{\micro\gram\per\cubic\meter} &
+\SI{28}{\micro\gram\per\cubic\meter} &
+\SI{20}{\micro\gram\per\cubic\meter} \\
+\midrule
+PM\textsubscript{2.5} & 24 horas &
+Percentil 99 (frecuencia tolerada 1\% de veces al año) &
+\SI{41}{\micro\gram\per\cubic\meter} &
+\SI{33}{\micro\gram\per\cubic\meter} &
+\SI{25}{\micro\gram\per\cubic\meter} \\
+ & Anual & Promedio anual de los promedios de 24 horas &
+\SI{10}{\micro\gram\per\cubic\meter} &
+\SI{10}{\micro\gram\per\cubic\meter} &
+\SI{10}{\micro\gram\per\cubic\meter} \\
 \bottomrule
 \end{tabularx}
 \end{table}
 
-\subsection{$\delta$D y $\delta^{18}$O en la atmósfera}
+\begin{table}[H]
+\centering
+\footnotesize
+\caption{Límites permisibles para gases criterio según la normatividad
+mexicana.}
+\label{tab:limites_gases}
+\begin{tabularx}{\textwidth}{@{}l l Y r@{}}
+\toprule
+\textbf{Contaminante} & \textbf{Indicador} & \textbf{Criterio} &
+\textbf{Límite} \\
+\midrule
+Ozono (O\textsubscript{3}) & 1 hora &
+Máximo de los máximos diarios de las concentraciones horarias &
+\SI{0.090}{\ppm} \\
+ & Promedio móvil de 8 horas &
+Máximo de los máximos diarios de las concentraciones de los promedios móviles &
+\SI{0.065}{\ppm}\textsuperscript{(1)} \\
+\midrule
+Dióxido de azufre (SO\textsubscript{2}) & 1 hora &
+Promedio aritmético de 3 años consecutivos de los percentiles 99 anuales del máximo diario de los datos horarios &
+\SI{0.075}{\ppm} \\
+ & 24 horas &
+Máximo de tres años consecutivos de los promedios de 24 horas &
+\SI{0.040}{\ppm} \\
+\midrule
+Dióxido de nitrógeno (NO\textsubscript{2}) & 1 hora &
+Máximo de las concentraciones horarias &
+\SI{0.106}{\ppm} \\
+ & Anual &
+Promedio aritmético anual de las concentraciones horarias &
+\SI{0.021}{\ppm} \\
+\midrule
+Monóxido de carbono (CO) & 1 hora &
+Máximo de las concentraciones horarias &
+\SI{26}{\ppm} \\
+ & Promedio móvil de 8 horas &
+Máximo de los promedios móviles de 8 horas &
+\SI{9}{\ppm} \\
+\bottomrule
+\end{tabularx}
+
+\vspace{2pt}
+\begin{minipage}{\textwidth}
+\footnotesize
+\textsuperscript{(1)} Los valores de O\textsubscript{3} para el promedio móvil de
+8 horas son \SI{0.065}{\ppm}, \SI{0.060}{\ppm} y \SI{0.051}{\ppm},
+correspondientes a los tres niveles de protección establecidos en la norma.
+\end{minipage}
+\end{table}
+
+\section{$\delta$D y $\delta^{18}$O en la atmósfera}
 La atmósfera es la capa gaseosa que envuelve la Tierra a una altitud
 superior a 100\,km, tiene una masa anual estimada de
 $5.13 \times 10^{18}$\,kg y es la base de la vida en nuestro planeta
@@ -453,7 +537,7 @@ de acuerdo al tipo de combustible fósil (Xing et al., 2026).
 
 \begin{table}[htbp]
 \centering
-\caption{Composición isotópica del $\delta^{2}\mathrm{H}$ y $\delta^{18}\mathrm{O}$ 
+\caption{Composición isotópica del $\delta\mathrm{D}$ y $\delta^{18}\mathrm{O}$ 
 en H$_2$O derivada de la combustión de distintos combustibles bajo diferentes 
 condiciones de ralentí, 20~km/h y 40~km/h (Xing et al., 2026).}
 \label{tab:isotopic_vehicle_exhaust}
@@ -476,38 +560,3 @@ gas natural & 20      & 11.3    &   $-217.0$  & $-307.0$ \\
 
 \end{table}
 
-\section{Modelo FLEXPART}
-El modelo de dispersión de partícula flexible (FLEXPART, por sus siglas
-en inglés) fue desarrollado por el Instituto Noruego de Investigación
-Atmosférica. Es un modelo de dispersión y transporte lagrangiano de código 
-libre, codificado en Fortran 95 y se puede copilar en gfortran e ifort 
-bajo distintos sistemas operativos (Linux, Solaris, etc.)
-(Cheng et al., 2017; Vaz de Jesus et al., 2018; Wang et al., 2021). 
-
-Este tipo de modelos siguen el movimiento individual de las partículas, 
-a diferencia de su contraparte euleriana, que mide cómo cambian 
-las propiedades del fluido
-al pasar por puntos fijos. Los modelos lagrangianos permiten rastrear
-el movimiento de las partículas en el espacio y el tiempo
-(Bakels et al., 2024).
-
-FLEXPART es ampliamente utilizado para formular trayectorias
-atmosféricas, transporte y dispersión de partículas. Puede emplearse
-para análisis en modo \textit{forward} y \textit{backward}. En el primer
-caso, el análisis de las trayectorias y la dispersión se realiza
-después de la liberación de las partículas. El segundo modo permite
-rastrear el origen de una parcela de aire o un conjunto de partículas
-que llegan a un punto de interés (Foreback et al., 2024).
-
-FLEXPART es un modelo \textit{off-line} y, por lo tanto, necesita campos
-meteorológicos procedentes de modelos de predicción del tiempo. En particular, 
-puede copilar con campos del \textit{European Centre for Medium-Range 
-Weather (ECMWF)}, NCEP y, algunas versiones, con \textit{Weather Research and Forecasting
-(WRF)} (Vaz de Jesus et al., 2018).
-
-La relación fuente-receptor es un concepto importante en el modelado de
-la calidad del aire. En esencia, describe la sensibilidad de un
-receptor ante una fuente de emisión. El receptor puede ser, por
-ejemplo, la concentración promedio de cierta sustancia liberada en la
-atmósfera en una determinada celda durante cierto intervalo de tiempo
-(Seibert \& Frank, 2004).
