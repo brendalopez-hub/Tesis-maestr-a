@@ -15,7 +15,7 @@ y la campaña de mayo (Tabla~\ref{tab:normalidad_may}), así como sus respectivo
 gráficos cuantil-cuantil (Figuras~\ref{fig:qq_cr_feb} a \ref{fig:qq_dif_feb} y 
 Figuras~\ref{fig:qq_cr} a \ref{fig:qq_dif}), los datos de las estaciones de monitoreo de 
 calidad del aire rechazan la normalidad. Esto es congruente con lo reportado 
-por Ott, 1990, quien señala que las concentraciones de contaminentes 
+por Ott, 1990, quien señala que las concentraciones de contaminantes 
 atmosféricos obtenidas del ambiente siguen una distribución lognormal. 
 Esto surge de procesos físicos de mezcla y dilución que ocurren 
 en el medio ambiente. Por ello, cualquier proceso donde un contaminante 
@@ -343,7 +343,7 @@ la superficie.
 
 Los resultados de las simulaciones de FLEXPART permiten inferir un origen de la contaminación. 
 Se utilizó CO como \textit{footprint} al ser un gas relacionado con la combustión de 
-combustibles fósiles y cuantificado en las estaciones de monitoreo de calidad del 
+recursos energéticos fósiles y cuantificado en las estaciones de monitoreo de calidad del 
 aire. 
 
 Sumado al análisis de la rosa de los vientos, cuyos patrones son similares entre estaciones
@@ -359,7 +359,7 @@ tanto, se infiere que el CO medido en cada punto procede, en gran medida,
 de emisiones próximas dentro del área urbana. Sin embargo, similitud entre los \textit{footprints}
 limita la capacidad de distinguir diferencias espaciales finas en el origen de las emisiones. 
 
-Un aspecto relevante es la diferencia entre la ventana noctura y el ciclo completo. En 
+Un aspecto relevante es la diferencia entre la ventana horaria noctura (22:00 h a 2:00 h) y el ciclo completo. En 
 la campaña de febrero, la zona de alta sensibilidad es más alta durante la noche 
 que la jornada completa. Eso es consistente con la dinámica de la capa límite: 
 durante la noche, la estabilidad atmosférica y la menor mezcla vertical confinan las 
@@ -440,46 +440,74 @@ D_p &= \delta D_{bg} + p\,(\delta D_c - \delta D_{bg})
 
 Las muestras de vapor de agua colectadas en Salamanca se alinean en torno a la isolínea de mezcla 
 de 20\,\% del diagrama $\delta^{2}$H--$\delta^{18}$O (Figura~\ref{fig:mezcla_salamanca}),
-sin que ninguna supere el 30\,\%. El modelo de mezcla binaria detecta, por tanto, una contribución de VDC,
+sin que ninguna supere el 30\,\% (\ref{tab:dexcess_mezcla}). El modelo de mezcla binaria detecta, por tanto, una contribución de VDC,
 en dirección desde la línea meteórica hacia 
 el extremo de combustión. El VDC se caracteriza por valores de $\delta^{18}\text{O}$ marcadamente 
 positivos (heredados del $\text{O}_2$ atmosférico, $\approx $+23.9\$\,\textperthousand) y 
-valores de $\delta^2\text{H}$ negativos (heredados del hidrógeno de los combustibles fósiles), 
+valores de $\delta^2\text{H}$ negativos (heredados del hidrógeno de los recursos
+energéticos fósiles), 
 lo que produce un $d\text{-excess}$ fuertemente negativo, típicamente entre $-470$\,\textperthousand 
 y $-180$\,\textperthousand. %CITA BIBLIOGRAFICA 
 En contraste, las muestras de SDR obtenidas con 
 el mismo sistema de muestreo caen por debajo de 2~\%.
-Esta distribución de los puntos sufiere que la señal de combustión es estable 
+Esta distribución de los puntos sugiere que la señal de combustión es estable 
 en su proporción, mientras que las ligeras variaciones isotópicas observadas pueden deberse a la 
 composición del vapor natural de fondo. 
 
-Sin embargo, la fracción de VDC cercana al 20\% es una cantidad apreciable para un municipio 
-de aproximadamente 273 mil habitantes con un entorno industrial significativo. 
-La diferencia con estudios como el de Gorski et al. (2015) en Salt Lake City, donde el VDC 
-alcanzó hasta el 13\% bajo condiciones de estancamiento invernal; Fiorella et al. (2018),
-en la misma cuenca, donde estimaron que el VDC representa típicamente de 
-5 a 10~\% de la humedad urbana, con un máximo de 16.7~\%, y un \textit{d-excess} del 
-VDC de $-179\pm17$~‰; o el de Xing et al. 
-(2020) en Xi’an, con fracciones mayores durante episodios severos de contaminación, 
-radica en el régimen de vientos antes mencionado. Estudios como el de Wu et al. (2020), 
-que en Beijing determinaron una contribución alrededor del 11\%, señalaron que los vientos, en 
-los episodios de muestreo eran débiles. En Salamanca, la ventilación moderada 
+La fracción de VDC cercana al 20\,\% no necesariamente es trazable con estudios previos,
+ya que estos no miden necesariamente el mismo tipo de fuente 
+ni la misma escala espacial. Trabajos como los de Gorski et al. (2015) en Salt Lake 
+City, Fiorella et al. (2018) en la misma cuenca, Wu et al. (2020) en Beijing o 
+Xing et al. (2020) en Xi’an estiman la contribución del vapor derivado de la 
+combustión asociada principalmente al tráfico vehicular y a fuentes difusas 
+distribuidas en la ciudad, bajo condiciones de estancamiento atmosférico. En 
+contraste, el presente estudio se realizó en un sitio ubicado muy cerca de fuentes 
+puntuales industriales, y la ventana de muestreo nocturna puede favorecer 
+la detección de la señal isotópica. Por ello, el valor cercano al 20\,\% no debe 
+interpretarse como un indicador de que Salamanca esté “más contaminada” que esas 
+ciudades, sino como una estimación local de la contribución de VDC en un receptor 
+próximo a fuentes puntuales.
+
+En Salamanca, la ventilación moderada 
 impide que el VDC se acumule en la capa límite hasta concentraciones tan altas, 
 pero también permite que una fracción detectable se mantenga mezclada en el aire nocturno. Además, 
-debido a la ventana de muestreo, fuentes como el tránsito, la quema de esquilmos y las ladrilleras
-pueden considerarse despreciables. 
+debido a la ventana de muestreo, fuentes como el tránsito, las ladrilleras, entre otros,
+pueden considerarse despreciables, debido a que la operación de estas actividades son 
+durante el día. Por el contrario, la quema de recursos energéticos fósiles en la industria 
+petroquímica y de generación eléctrica ha reportado la liberación de altas 
+concentraciones de contaminantes durante la madrugada (entre las 23:00 h y las 5:00 h) (SMAOT,2021).
 
 Con ello, es importante mencionar que los valores de VDC del modelo binario se fijaron a partir 
 de valores teóricos. Sin embargo, la composición de VDC varía con el tipo de combustible 
 (Tabla~\ref{tab:isotopic_vehicle_exhaust}), con variaciones adicionales según las condiciones
-de combustión. En un entorno urbano con mezcla de fuentes, el extremo de combustión real 
+de combustión. De acuerdo con los resultados obtenidos, 
+el cambio en el porcentaje de mezcla parece estar asociado principalmente
+a la diferencia en $\delta^{2}\mathrm{H}$ y no en $\delta^{18}\mathrm{O}$: todos los
+VDC de la literatura son más empobrecidos en $\delta^{2}\mathrm{H}$ que la referencia
+(de $-184.6$ a $-230.2$\,‰ frente a $-134.4$\,‰), mientras que el diésel a 20~km/h,
+cuyo $\delta^{18}\mathrm{O}$ es casi idéntico al de la referencia (9.1 frente a 9.0\,‰),
+produce una reducción similar a la de los demás. 
+Aun así, el orden de magnitud de la contribución de
+la combustión (alrededor de 10--20\,\%) se mantiene con cualquiera de los VDC
+considerados, por lo que las conclusiones cualitativas del modelo binario no dependen
+de la elección particular del extremo de combustión, aunque el valor puntual del
+porcentaje de mezcla sí tiene una incertidumbre de aproximadamente $-5$ a $-7$ puntos
+porcentuales respecto a la referencia. No obstante, 
+en un entorno urbano con mezcla de fuentes, el extremo de combustión real 
 puede ser realmente un promedio ponderado que no coincide exactamente con el valor 
 adoptado. 
 
+%Los resultados indican que el valor teórico adoptado es el extremo más alto del
+%intervalo y, por lo tanto, una estimación conservadora de la contribución de la
+%combustión. 
+%En un entorno urbano con mezcla de fuentes, el extremo de combustión real 
+%puede ser realmente un promedio ponderado que no coincide exactamente con el valor 
+%adoptado. 
+
 Por su parte, en la campaña de febrero las muestras con mayor CO y 
-NO$_2$ coincidideron con el valor de \textit{d-excess} más alto de esa campaña 
-($\approx -30$~\textperthousand). En cambio, en mayo, las muestras con menor 
-concentración de partículas mostró valores de \textit{d-excess} menos negativos
+NO$_2$ coincidieron con el valor de \textit{d-excess} más alto de esa campaña 
+($\approx -30$~\textperthousand). En cambio, en mayo, las muestras con menor concentración 
+de partículas mostraron valores de  \textit{d-excess} menos negativos
 ($\approx -24$~\textperthousand a $\approx -31$~\textperthousand), consistente con
 una menor contribución relativa de VDC. 
 

@@ -4,8 +4,21 @@
 \subsection{Validación de datos de las estaciones de monitoreo de aire}
 \label{sec:validacion_datos}
 
-Los datos de las estaciones de monitoreo de aire de Cruz Roja (CR),
-Nativitas y DIF fueron validados según el Protocolo de 
+La secretaria de medio ambiente del estado de Guanajuato ha instalado tres 
+estaciones de monitoreo de calidad del aire: Cruz Roja (CR), Nativitas y 
+DIF en la cuidad de Salamanca (\ref{fig:esta_mon},REF pagina web).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{Imagenes_marco/EstacionesMon.pdf}
+    \caption{Localización de las estaciones de monitoreo de calidad del aire 
+    Cruz Roja, Nativitas y DIF
+    (puntos rojos) (INECC, s. f.).}
+    \label{fig:esta_mon}
+\end{figure}
+
+Los datos crudos de las estaciones de monitoreo de aire de CR,
+Nativitas y DIF fueron obtenidos y validados según el Protocolo de 
 Manejo de Datos de Calidad del Aire
 propuesto por el Instituto Nacional de Ecología (Instituto Nacional de
 Ecología, s.f.). Se realiza una limpieza de los datos, asignando
@@ -13,8 +26,8 @@ banderas según los criterios de la Tabla~\ref{tab:banderas_limpieza}.
 Posteriormente, para la verificación de datos, se asignan nuevas banderas de acuerdo con
 la Tabla~\ref{tab:banderas_verificacion}.
 
-Para evaluar los datos estadísticamente se utilizó un análisis de datos
-atípicos a través del cálculo de la anomalía estandarizada ($z$). Este
+Para realizar una primera evaluación estadística de los datos se utilizó 
+un análisis de datos atípicos a través del cálculo de la anomalía estandarizada ($z$). Este
 parámetro se calcula restando la media muestral de los datos brutos $x$
 y dividiendo el resultado por la desviación estándar muestral
 correspondiente (Ecuación~\ref{eq:z_score}).
@@ -45,6 +58,14 @@ Q_1 - 1.5\,\mathrm{IQR} \le X \le Q_3 + 1.5\,\mathrm{IQR}
 \label{eq:rango_atipicos}
 \end{equation}
 
+Finalmente, como parte de la validación post-tratamiento, se 
+realizaron análisis de normalidad, Friedman y de Spearman, donde el 
+primero permitió verificar el supuesto de normalidad y justificar el 
+uso de pruebas no paramétricas; el segundo evaluó las diferencias 
+entre estaciones para las mismas variables pareadas por marca de 
+tiempo; y el tercero exploró las asociaciones monótonas entre 
+contaminantes y variables meteorológicas
+
 \subsection{Evaluación de la normalidad de las variables de las estaciones de calidad 
 del aire}
 \label{subsec:normalidad}
@@ -52,7 +73,8 @@ del aire}
 Para seleccionar las pruebas estadísticas para el análisis de los 
 datos de las estaciones de monitoreo de calidad del aire (CR, NATIVITAS y DIF), 
 se evaluó si cada variable seguía una distribución normal, con el fin de decidir 
-entre un enfoque paramétrico y uno no paramétrico. El análisis se realizó con series 
+entre un enfoque paramétrico y uno no paramétrico. Esto permite equilibrar 
+la precisión con la certeza de las conclusiones, evitando posibles sesgos. El análisis se realizó con series 
 horarias correspondientes a ambas campañas de muestreo (20 de febrero al 5 de marzo y 
 de 25 al 29 de mayo de 2026), a través de los datos validados. 
 
@@ -76,11 +98,11 @@ identificar el tipo de desviación.
 \subsection{Prueba de Friedman entre estaciones de monitoreo}
 \label{subsec:comparacion_estaciones}
 Se utilizaron los datos horarios de las estaciones de monitoreo de calidad del aire.
-El análisis se restingió a las dos campañas de muestreo. A su vez, para cada 
+El análisis se restringió a las dos campañas de muestreo. A su vez, para cada 
 campaña se evaluó la variación entre la campaña completa y la ventana de muestreo 
 nocturno (22 h a 2 h). 
 
-Debido a que las tres estaciones registran simultánemanete, las observaciones 
+Debido a que las tres estaciones registran simultáneamanete, las observaciones 
 se consideran pareadas por marca de tiempo. Por ello, se utilizaron únicamente 
 las horas en las que las estaciones contaban con datos válidos. 
 
@@ -146,10 +168,10 @@ por Lakes Environmental.
 
 El modelo de dispersión de partícula flexible (FLEXPART, por sus siglas
 en inglés) fue desarrollado por el Instituto Noruego de Investigación
-Atmosférica. Es un modelo de dispersión y transporte lagrangiano de código 
+Atmosférica (Cheng et al., 2017). Es un modelo de dispersión y transporte lagrangiano de código 
 libre, codificado en Fortran 95 y se puede copilar en gfortran e ifort 
 bajo distintos sistemas operativos (Linux, Solaris, etc.)
-(Cheng et al., 2017; Vaz de Jesus et al., 2018; Wang et al., 2021). 
+(Vaz de Jesus et al., 2018; Wang et al., 2021). 
 
 Este tipo de modelos siguen el movimiento individual de las partículas, 
 a diferencia de su contraparte euleriana, que mide cómo cambian 
