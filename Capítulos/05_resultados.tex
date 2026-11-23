@@ -843,14 +843,26 @@ muestra que la mayoría de las muestras se ubican entre el 18.86\,\% y el
 del 21.54\,\% de mezcla. Mientras tanto, los datos de SDR se distribuyen 
 por debajo del 2\,\% (\ref{tab:dexcess_mezcla}). 
 
-\begin{table}[htbp] \centering \
-    caption{Estadísticos descriptivos de $d$-excess y del porcentaje de mezcla por grupo.} 
-    \label{tab:dexcess_mezcla} 
-    \begin{tabular}{lrrrrrrrr} 
-        \toprule Grupo & $d$-excess (prom.) & $d$-excess (std) & $d$-excess (mín) & $d$-excess (máx) & \% mezcla (prom.) & \% mezcla (std) & \% mezcla (mín) 
-        & \% mezcla (máx) \\ \midrule Salamanca (Feb--Mar) & -33.45 & 1.67 & -34.86 & -30.43 & 19.04 & 0.70 & 17.93 & 19.80 \\ 
-        Salamanca (Mayo) & -28.23 & 3.01 & -31.35 & -23.60 & 17.29 & 1.60 & 14.76 & 19.15 \\ SDR & 13.33 & 6.67 & -10.10 & 19.39 & -0.96 & 2.96 & -4.21 & 8.44 
-        \\ \bottomrule 
+\begin{table}[htbp]
+    \centering
+    \caption{Estadísticos descriptivos de $d$-excess y del porcentaje de mezcla por grupo.}
+    \label{tab:dexcess_mezcla}
+    \begin{tabular}{llrrr}
+        \toprule
+        & Estadístico & Salamanca (Feb--Mar) & Salamanca (Mayo) & SDR \\
+        \midrule
+        \multirow{4}{*}{$d$-excess (\textperthousand)}
+        & Promedio & $-33.45$ & $-28.23$ & $13.33$ \\
+        & Desv.\ est. & $1.67$ & $3.01$ & $6.67$ \\
+        & Mínimo & $-34.86$ & $-31.35$ & $-10.10$ \\
+        & Máximo & $-30.43$ & $-23.60$ & $19.39$ \\
+        \midrule
+        \multirow{4}{*}{Mezcla (\%)}
+        & Promedio & $19.04$ & $17.29$ & $-0.96$ \\
+        & Desv.\ est. & $0.70$ & $1.60$ & $2.96$ \\
+        & Mínimo & $17.93$ & $14.76$ & $-4.21$ \\
+        & Máximo & $19.80$ & $19.15$ & $8.44$ \\
+        \bottomrule
     \end{tabular}
 \end{table}
 
